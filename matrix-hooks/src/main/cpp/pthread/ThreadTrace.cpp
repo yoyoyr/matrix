@@ -143,7 +143,7 @@ void thread_trace::add_hook_thread_name(const char *regex_str) {
 //    std::regex regex(regex_str);
     regex_t regex;
     if (0 != regcomp(&regex, regex_str, REG_NOSUB)) {
-        LOGE("PthreadHook", "regex compiled error: %s", regex_str);
+        LOGD("PthreadHook", "regex compiled error: %s", regex_str);
         return;
     }
     size_t len          = strlen(regex_str) + 1;
@@ -289,14 +289,14 @@ void thread_trace::handle_pthread_create(const pthread_t pthread) {
 
 void thread_trace::handle_pthread_setname_np(pthread_t pthread, const char *name) {
     if (NULL == name) {
-        LOGE(TAG, "setting name null");
+        LOGD(TAG, "setting name null");
         return;
     }
 
     const size_t name_len = strlen(name);
 
     if (0 == name_len || name_len >= THREAD_NAME_LEN) {
-        LOGE(TAG, "pthread name is illegal, just ignore. len(%s)", name);
+        LOGD(TAG, "pthread name is illegal, just ignore. len(%s)", name);
         return;
     }
 
@@ -309,7 +309,7 @@ void thread_trace::handle_pthread_setname_np(pthread_t pthread, const char *name
         if (UNLIKELY(!m_pthread_metas.count(pthread))) {
             auto lost_thread_name = static_cast<char *>(malloc(sizeof(char) * THREAD_NAME_LEN));
             pthread_getname_ext(pthread, lost_thread_name, THREAD_NAME_LEN);
-            LOGE(TAG,
+            LOGD(TAG,
                  "handle_pthread_setname_np: pthread hook lost: {%s} -> {%s}, maybe on_create has not been called",
                  lost_thread_name, name);
             free(lost_thread_name);
@@ -353,7 +353,7 @@ void thread_trace::handle_pthread_release(pthread_t pthread) {
 }
 
 static inline void before_routine_start() {
-    LOGI(TAG, "before_routine_start");
+    LOGD(TAG, "before_routine_start");
     std::unique_lock<std::mutex> routine_lock(m_subroutine_mutex);
 
     pthread_t self_thread = pthread_self();
@@ -362,7 +362,7 @@ static inline void before_routine_start() {
         return m_pthread_routine_flags.count(self_thread);
     });
 
-    LOGI(TAG, "before_routine_start: create ready, just continue, waiting count : %zu",
+    LOGD(TAG, "before_routine_start: create ready, just continue, waiting count : %zu",
          m_pthread_routine_flags.size());
 
     m_pthread_routine_flags.erase(self_thread);
@@ -371,7 +371,7 @@ static inline void before_routine_start() {
 
 static inline void pthread_dump_impl(FILE *log_file) {
     if (!log_file) {
-        LOGE(TAG, "open file failed");
+        LOGD(TAG, "open file failed");
         return;
     }
 
@@ -477,7 +477,7 @@ static inline bool append_meta_2_json_array(cJSON *json_array,
                               << detail.map_name
                               << ");";
 
-                LOGE(TAG, "#pc %p %s %s", (void *) detail.rel_pc, demangled_name,
+                LOGD(TAG, "#pc %p %s %s", (void *) detail.rel_pc, demangled_name,
                      detail.map_name);
 
                 if (demangled_name) {
@@ -489,7 +489,7 @@ static inline bool append_meta_2_json_array(cJSON *json_array,
                     front_backtrace->frames.get(), front_backtrace->frame_size,
                     frame_detail_lambda);
 
-            LOGE(TAG, "-------------------");
+            LOGD(TAG, "-------------------");
             cJSON_AddStringToObject(hash_obj, "native", stack_builder.str().c_str());
 
             const char *java_stacktrace = metas.front().java_stacktrace.load(
@@ -507,11 +507,11 @@ static inline bool append_meta_2_json_array(cJSON *json_array,
                                     true, stacktrace_elements,
                                     max_elements, elements_size);
             bool found_java = false;
-            LOGI(TAG, "Pthread using quicken: elements_size %zu, frames_size %zu", elements_size,
+            LOGD(TAG, "Pthread using quicken: elements_size %zu, frames_size %zu", elements_size,
                  front_backtrace->frame_size);
             for (size_t i = 0; i < elements_size; i++) {
                 auto element = &stacktrace_elements[i];
-                LOGI(TAG, "elements #%zu: %llx %s %d", i, (uint64_t) element->rel_pc,
+                LOGD(TAG, "elements #%zu: %llx %s %d", i, (uint64_t) element->rel_pc,
                      element->function_name.c_str(), element->maybe_java);
                 if (!found_java) found_java = element->maybe_java;
                 if (!found_java) {
@@ -530,7 +530,7 @@ static inline bool append_meta_2_json_array(cJSON *json_array,
                 }
             }
 
-            LOGE(TAG, "-------------------");
+            LOGD(TAG, "-------------------");
 
             cJSON_AddStringToObject(hash_obj, "native", native_stack_builder.str().c_str());
             cJSON_AddStringToObject(hash_obj, "java", java_stack_builder.str().c_str());
