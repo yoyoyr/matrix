@@ -226,8 +226,8 @@ Java_com_tencent_matrix_test_memoryhook_MemoryHookTestNative_nativeRunTest(
 //    }
 
 
-    pthread_t pthreads [30];
-    for ( int i = 0; i < 30; ++i ) {
+    pthread_t pthreads [23];
+    for ( int i = 0; i < 23; ++i ) {
         int ret = pthread_create(&pthreads[i],NULL, &thread_test,nullptr);
         if ( i % 500 == 0) {
             sleep( 1 );
