@@ -1,0 +1,401 @@
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"supportedProtocolVersions":[{"isExperimental":true,"major":1,"minor":1}],"type":"hello"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {
+  "type": "handshake",
+  "cookie": "gradle-cmake-cookie",
+  "protocolVersion": {
+    "isExperimental": true,
+    "major": 1,
+    "minor": 1
+  },
+  "sourceDirectory": "C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks",
+  "buildDirectory": "C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks/.cxx/cmake/debug/arm64-v8a",
+  "generator": "Ninja"
+}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"gradle-cmake-cookie","inReplyTo":"handshake","type":"reply"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {
+  "type": "configure",
+  "cacheArguments": [
+    "",
+    "-DCMAKE_FIND_ROOT_PATH\u003dC:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-hooks\\.cxx\\cmake\\debug\\prefab\\arm64-v8a\\prefab",
+    "-DCMAKE_BUILD_TYPE\u003dDebug",
+    "-DCMAKE_TOOLCHAIN_FILE\u003dC:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\build\\cmake\\android.toolchain.cmake",
+    "-DANDROID_ABI\u003darm64-v8a",
+    "-DANDROID_NDK\u003dC:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462",
+    "-DANDROID_PLATFORM\u003dandroid-21",
+    "-DCMAKE_ANDROID_ARCH_ABI\u003darm64-v8a",
+    "-DCMAKE_ANDROID_NDK\u003dC:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462",
+    "-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON",
+    "-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003dC:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-hooks\\build\\intermediates\\cmake\\debug\\obj\\arm64-v8a",
+    "-DCMAKE_MAKE_PROGRAM\u003dC:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+    "-DCMAKE_SYSTEM_NAME\u003dAndroid",
+    "-DCMAKE_SYSTEM_VERSION\u003d21",
+    "-DEXT_DEP\u003dC:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-hooks\\build\\intermediates\\native_deps\\extracted_native_dependencies",
+    "-DANDROID_STL\u003dc++_shared",
+    "-DEnableLOG\u003dOFF"
+  ]
+}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Check for working C compiler: C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Check for working C compiler: C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe
+CMAKE SERVER: Check for working C compiler: C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":33,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Check for working C compiler: C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe -- works","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Check for working C compiler: C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe -- works
+CMAKE SERVER: Check for working C compiler: C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe -- works
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Detecting C compiler ABI info","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Detecting C compiler ABI info
+CMAKE SERVER: Detecting C compiler ABI info
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":65,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Detecting C compiler ABI info - done","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Detecting C compiler ABI info - done
+CMAKE SERVER: Detecting C compiler ABI info - done
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Detecting C compile features","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Detecting C compile features
+CMAKE SERVER: Detecting C compile features
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":96,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":126,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":155,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Detecting C compile features - done","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Detecting C compile features - done
+CMAKE SERVER: Detecting C compile features - done
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Check for working CXX compiler: C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Check for working CXX compiler: C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe
+CMAKE SERVER: Check for working CXX compiler: C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":184,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Check for working CXX compiler: C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe -- works","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Check for working CXX compiler: C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe -- works
+CMAKE SERVER: Check for working CXX compiler: C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe -- works
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Detecting CXX compiler ABI info","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Detecting CXX compiler ABI info
+CMAKE SERVER: Detecting CXX compiler ABI info
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":211,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Detecting CXX compiler ABI info - done","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Detecting CXX compiler ABI info - done
+CMAKE SERVER: Detecting CXX compiler ABI info - done
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Detecting CXX compile features","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Detecting CXX compile features
+CMAKE SERVER: Detecting CXX compile features
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":237,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":262,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":287,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":311,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Detecting CXX compile features - done","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Detecting CXX compile features - done
+CMAKE SERVER: Detecting CXX compile features - done
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":334,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":356,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":933,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":966,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":1000,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Configuring done","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Configuring done
+CMAKE SERVER: Configuring done
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","type":"reply"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"type":"compute"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"compute","progressCurrent":333,"progressMaximum":1000,"progressMessage":"Generating","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"compute","progressCurrent":666,"progressMaximum":1000,"progressMessage":"Generating","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"compute","progressCurrent":1000,"progressMaximum":1000,"progressMessage":"Generating","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"compute","message":"Generating done","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Generating done
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"compute","type":"reply"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"type":"cmakeInputs"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"buildFiles":[{"isCMake":true,"isTemporary":false,"sources":["C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineSystem.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Determine.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystem.cmake.in","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystemSpecificInitialize.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Initialize.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCCompiler.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompiler.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Determine-C.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android/Determine-Compiler.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeFindBinUtils.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-FindBinUtils.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCCompiler.cmake.in","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCXXCompiler.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompiler.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Determine-CXX.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android/Determine-Compiler.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeFindBinUtils.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-FindBinUtils.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXCompiler.cmake.in","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystemSpecificInformation.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeGenericSystem.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Linux.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/UnixPaths.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCInformation.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeLanguageInformation.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/CMakeCommonCompilerMacros.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/GNU.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/CMakeCommonCompilerMacros.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang-C.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCommonLanguageInclude.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCCompiler.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCompilerCommon.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompilerABI.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeParseImplicitLinkInfo.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCCompilerABI.c","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompileFeatures.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Internal/FeatureTesting.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C-FeatureTests.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C-FeatureTests.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C-FeatureTests.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCCompiler.cmake.in","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXInformation.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeLanguageInformation.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang-CXX.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCommonLanguageInclude.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCXXCompiler.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCompilerCommon.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompilerABI.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeParseImplicitLinkInfo.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompileFeatures.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Internal/FeatureTesting.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-FeatureTests.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-TestableFeatures.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-FeatureTests.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-TestableFeatures.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-FeatureTests.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-TestableFeatures.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-FeatureTests.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-TestableFeatures.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXCompiler.cmake.in"]},{"isCMake":false,"isTemporary":false,"sources":["CMakeLists.txt","C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/build/cmake/android.toolchain.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/build/cmake/platforms.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/build/cmake/android.toolchain.cmake","src/main/cpp/external/libcJSON/CMakeLists.txt","src/main/cpp/external/fastunwind/CMakeLists.txt"]},{"isCMake":false,"isTemporary":true,"sources":[".cxx/cmake/debug/arm64-v8a/CMakeFiles/3.10.2/CMakeSystem.cmake",".cxx/cmake/debug/arm64-v8a/CMakeFiles/3.10.2/CMakeCCompiler.cmake",".cxx/cmake/debug/arm64-v8a/CMakeFiles/3.10.2/CMakeCXXCompiler.cmake",".cxx/cmake/debug/arm64-v8a/CMakeFiles/feature_tests.c",".cxx/cmake/debug/arm64-v8a/CMakeFiles/feature_tests.c",".cxx/cmake/debug/arm64-v8a/CMakeFiles/feature_tests.c",".cxx/cmake/debug/arm64-v8a/CMakeFiles/3.10.2/CMakeCCompiler.cmake",".cxx/cmake/debug/arm64-v8a/CMakeFiles/feature_tests.cxx",".cxx/cmake/debug/arm64-v8a/CMakeFiles/feature_tests.cxx",".cxx/cmake/debug/arm64-v8a/CMakeFiles/feature_tests.cxx",".cxx/cmake/debug/arm64-v8a/CMakeFiles/feature_tests.cxx",".cxx/cmake/debug/arm64-v8a/CMakeFiles/3.10.2/CMakeCXXCompiler.cmake"]}],"cmakeRootDirectory":"C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10","cookie":"","inReplyTo":"cmakeInputs","sourceDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks","type":"reply"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"type":"codemodel"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"configurations":[{"name":"Debug","projects":[{"buildDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks/.cxx/cmake/debug/arm64-v8a","name":"Project","sourceDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks","targets":[{"artifacts":["C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libcJSON/libcJSON.a"],"buildDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libcJSON","fileGroups":[{"compileFlags":"-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC  ","includePath":[{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks/src/main/cpp/external/libcJSON"}],"isGenerated":false,"language":"C","sources":["cJSON.c"]}],"fullName":"libcJSON.a","linkerLanguage":"C","name":"cJSON","sourceDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks/src/main/cpp/external/libcJSON","sysroot":"C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot","type":"STATIC_LIBRARY"},{"artifacts":["C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks/build/intermediates/cmake/debug/obj/arm64-v8a/libmatrix-memoryhook.so"],"buildDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks/.cxx/cmake/debug/arm64-v8a","fileGroups":[{"compileFlags":"-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++17 -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -fvisibility=hidden -fstack-protector","defines":["matrix_memoryhook_EXPORTS"],"includePath":[{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks/src/main/cpp"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks/build/intermediates/native_deps/extracted_native_dependencies/include"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks/build/intermediates/native_deps/extracted_native_dependencies/include/backtrace"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks/build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks/src/main/cpp/external/libcJSON"}],"isGenerated":false,"language":"CXX","sources":["src/main/cpp/memory/GCSemiSpaceTrimmer.cpp","src/main/cpp/memory/GCSemiSpaceTrimmerJNI.cpp","src/main/cpp/memory/MemoryHookJNI.cpp","src/main/cpp/memory/MemoryHook.cpp","src/main/cpp/memory/MemoryBufferQueue.cpp","src/main/cpp/memory/MemoryHookFunctions.cpp","src/main/cpp/memory/WVPreAllocTrimmer.cpp","src/main/cpp/memory/WVPreAllocHookJNI.cpp"]}],"fullName":"libmatrix-memoryhook.so","linkFlags":"-Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -Wl,--build-id -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments","linkLibraries":"..\\..\\..\\..\\build\\intermediates\\cmake\\debug\\obj\\arm64-v8a\\libmatrix-hookcommon.so -Wl,--version-script=C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks/src/main/cpp/memory/memory.ver -Wl,--gc-sections src\\main\\cpp\\external\\libcJSON\\libcJSON.a -llog -lwechatbacktrace -latomic -lm","linkPath":"-LC:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-hooks\\build\\intermediates\\native_deps\\extracted_native_dependencies\\lib\\arm64-v8a","linkerLanguage":"CXX","name":"matrix-memoryhook","sourceDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks","sysroot":"C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot","type":"SHARED_LIBRARY"},{"artifacts":["C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks/build/intermediates/cmake/debug/obj/arm64-v8a/libmatrix-pthreadhook.so"],"buildDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks/.cxx/cmake/debug/arm64-v8a","fileGroups":[{"compileFlags":"-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++17 -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -fvisibility=hidden -fstack-protector","defines":["matrix_pthreadhook_EXPORTS"],"includePath":[{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks/src/main/cpp"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks/build/intermediates/native_deps/extracted_native_dependencies/include"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks/build/intermediates/native_deps/extracted_native_dependencies/include/backtrace"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks/build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks/src/main/cpp/external/libcJSON"}],"isGenerated":false,"language":"CXX","sources":["src/main/cpp/pthread/ThreadTrace.cpp","src/main/cpp/pthread/ThreadStackShink.cpp","src/main/cpp/pthread/PthreadHook.cpp","src/main/cpp/pthread/PthreadHookJNI.cpp"]}],"fullName":"libmatrix-pthreadhook.so","linkFlags":"-Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -Wl,--build-id -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments","linkLibraries":"..\\..\\..\\..\\build\\intermediates\\cmake\\debug\\obj\\arm64-v8a\\libmatrix-hookcommon.so -Wl,--version-script=C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks/src/main/cpp/pthread/pthread.ver -Wl,--gc-sections src\\main\\cpp\\external\\libcJSON\\libcJSON.a -llog -lwechatbacktrace -latomic -lm","linkPath":"-LC:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-hooks\\build\\intermediates\\native_deps\\extracted_native_dependencies\\lib\\arm64-v8a","linkerLanguage":"CXX","name":"matrix-pthreadhook","sourceDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks","sysroot":"C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot","type":"SHARED_LIBRARY"},{"artifacts":["C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/fastunwind/libfastunwind.a"],"buildDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/fastunwind","fileGroups":[{"compileFlags":"-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -Werror -fvisibility=hidden","includePath":[{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks/src/main/cpp/external/fastunwind"}],"isGenerated":false,"language":"CXX","sources":["FastUnwind.cpp"]}],"fullName":"libfastunwind.a","linkerLanguage":"CXX","name":"fastunwind","sourceDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks/src/main/cpp/external/fastunwind","sysroot":"C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot","type":"STATIC_LIBRARY"},{"artifacts":["C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks/build/intermediates/cmake/debug/obj/arm64-v8a/libmatrix-hookcommon.so"],"buildDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks/.cxx/cmake/debug/arm64-v8a","fileGroups":[{"compileFlags":"-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++17 -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -fvisibility=hidden -fstack-protector","defines":["matrix_hookcommon_EXPORTS"],"includePath":[{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks/src/main/cpp"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks/build/intermediates/native_deps/extracted_native_dependencies/include"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks/build/intermediates/native_deps/extracted_native_dependencies/include/backtrace"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks/build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks/src/main/cpp/external/libcJSON"}],"isGenerated":false,"language":"CXX","sources":["src/main/cpp/common/JNICommon.cpp","src/main/cpp/common/HookCommon.cpp","src/main/cpp/common/ReentrantPrevention.cpp","src/main/cpp/common/Log.cpp","src/main/cpp/common/Maps.cpp","src/main/cpp/common/SoLoadMonitor.cpp","src/main/cpp/common/ProfileRecord.cpp"]}],"fullName":"libmatrix-hookcommon.so","linkFlags":"-Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -Wl,--build-id -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments","linkLibraries":"-Wl,--gc-sections src\\main\\cpp\\external\\libcJSON\\libcJSON.a -llog -lwechatbacktrace -Wl,--whole-archive ..\\..\\..\\..\\build\\intermediates\\native_deps\\extracted_native_dependencies\\lib\\arm64-v8a\\libxhook.a -Wl,--no-whole-archive -Wl,--whole-archive ..\\..\\..\\..\\build\\intermediates\\native_deps\\extracted_native_dependencies\\lib\\arm64-v8a\\libsemi_dlfcn.a -Wl,--no-whole-archive -Wl,--version-script=C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks/src/main/cpp/common/common.ver -latomic -lm","linkPath":"-LC:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-hooks\\build\\intermediates\\native_deps\\extracted_native_dependencies\\lib\\arm64-v8a","linkerLanguage":"CXX","name":"matrix-hookcommon","sourceDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks","sysroot":"C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot","type":"SHARED_LIBRARY"},{"artifacts":["C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks/build/intermediates/cmake/debug/obj/arm64-v8a/libmatrix-memguard.so"],"buildDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks/.cxx/cmake/debug/arm64-v8a","fileGroups":[{"compileFlags":"-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -Werror -Wno-unused-function -fvisibility=hidden -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -std=c++17 -fstack-protector -DMEMGUARD_LOG_LEVEL=4","defines":["matrix_memguard_EXPORTS"],"includePath":[{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks/src/main/cpp/memguard"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks/build/intermediates/native_deps/extracted_native_dependencies/include"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks/build/intermediates/native_deps/extracted_native_dependencies/include/backtrace"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks/build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks/src/main/cpp"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks/src/main/cpp/external/libcJSON"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks/src/main/cpp/external/fastunwind"}],"isGenerated":false,"language":"CXX","sources":["src/main/cpp/memguard/jni/com_tencent_mm_tools_memguard_MemGuard.cpp","src/main/cpp/memguard/jni/com_tencent_mm_tools_memguard_MemGuard_00024Options.cpp","src/main/cpp/memguard/jni/JNIAux.cpp","src/main/cpp/memguard/jni/C2Java.cpp"]}],"fullName":"libmatrix-memguard.so","linkFlags":"-Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -Wl,--build-id -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments","linkLibraries":"-Wl,--gc-sections -Wl,--version-script=C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks/src/main/cpp/memguard/memguard.map -llog libmemguard_base.a ..\\..\\..\\..\\build\\intermediates\\cmake\\debug\\obj\\arm64-v8a\\libmatrix-hookcommon.so -Wl,--gc-sections src\\main\\cpp\\external\\libcJSON\\libcJSON.a -llog -lwechatbacktrace -lwechatbacktrace ..\\..\\..\\..\\build\\intermediates\\native_deps\\extracted_native_dependencies\\lib\\arm64-v8a\\libunwindstack.a src\\main\\cpp\\external\\fastunwind\\libfastunwind.a -latomic -lm","linkPath":"-LC:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-hooks\\build\\intermediates\\native_deps\\extracted_native_dependencies\\lib\\arm64-v8a","linkerLanguage":"CXX","name":"matrix-memguard","sourceDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks","sysroot":"C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot","type":"SHARED_LIBRARY"},{"artifacts":["C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks/.cxx/cmake/debug/arm64-v8a/libmemguard_base.a"],"buildDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks/.cxx/cmake/debug/arm64-v8a","fileGroups":[{"compileFlags":"-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -Werror -Wno-unused-function -std=c++17 -fvisibility=hidden -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -DMEMGUARD_LOG_LEVEL=4 -fstack-protector","includePath":[{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks/src/main/cpp/memguard"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks/src/main/cpp"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks/build/intermediates/native_deps/extracted_native_dependencies/include"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks/build/intermediates/native_deps/extracted_native_dependencies/include/backtrace"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks/build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks/src/main/cpp/external/libcJSON"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks/src/main/cpp/external/fastunwind"}],"isGenerated":false,"language":"CXX","sources":["src/main/cpp/memguard/port/Hook.cpp","src/main/cpp/memguard/port/Log.cpp","src/main/cpp/memguard/port/Memory.cpp","src/main/cpp/memguard/port/Mutex.cpp","src/main/cpp/memguard/port/Paths.cpp","src/main/cpp/memguard/port/Random.cpp","src/main/cpp/memguard/port/Unwind.cpp","src/main/cpp/memguard/port/FdSanWrapper.cpp","src/main/cpp/memguard/util/SignalHandler.cpp","src/main/cpp/memguard/util/Interception.cpp","src/main/cpp/memguard/util/PagePool.cpp","src/main/cpp/memguard/util/Allocation.cpp","src/main/cpp/memguard/util/Thread.cpp","src/main/cpp/memguard/util/Issue.cpp","src/main/cpp/memguard/MemGuard.cpp"]}],"fullName":"libmemguard_base.a","linkerLanguage":"CXX","name":"memguard_base","sourceDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks","sysroot":"C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot","type":"STATIC_LIBRARY"}]},{"buildDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libcJSON","name":"libcJSON","sourceDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks/src/main/cpp/external/libcJSON","targets":[{"artifacts":["C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libcJSON/libcJSON.a"],"buildDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libcJSON","fileGroups":[{"compileFlags":"-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC  ","includePath":[{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks/src/main/cpp/external/libcJSON"}],"isGenerated":false,"language":"C","sources":["cJSON.c"]}],"fullName":"libcJSON.a","linkerLanguage":"C","name":"cJSON","sourceDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks/src/main/cpp/external/libcJSON","sysroot":"C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot","type":"STATIC_LIBRARY"}]}]}],"cookie":"","inReplyTo":"codemodel","type":"reply"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+

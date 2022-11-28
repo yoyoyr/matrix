@@ -1,0 +1,92 @@
+{
+  "stringTable": {
+    "0": "C:/Users/yoyo/Desktop/git/project/matrix/matrix-io-canary/.cxx/cmake/debug/x86",
+    "1": "--target=i686-none-linux-android19 --gcc-toolchain=C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dio_canary_EXPORTS -I../../../../../matrix-android-commons/src/main/cpp/md5 -I../../../../src/main/cpp -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -std=gnu++11 -frtti -fexceptions -O0 -fno-limit-debug-info -fPIC",
+    "2": "--target=i686-none-linux-android19 --gcc-toolchain=C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dio_canary_EXPORTS -I../../../../../matrix-android-commons/src/main/cpp/md5 -I../../../../src/main/cpp -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC"
+  },
+  "buildFiles": [
+    "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-io-canary\\CMakeLists.txt",
+    "C:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\build\\cmake\\android.toolchain.cmake",
+    "C:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\build\\cmake\\platforms.cmake"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-io-canary\\.cxx\\cmake\\debug\\x86\" clean"
+  ],
+  "buildTargetsCommand": "C:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-io-canary\\.cxx\\cmake\\debug\\x86\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "io-canary-Debug-x86": {
+      "buildCommand": "C:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-io-canary\\.cxx\\cmake\\debug\\x86\" io-canary",
+      "buildType": "debug",
+      "toolchain": "2830578112",
+      "abi": "x86",
+      "artifactName": "io-canary",
+      "files": [
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-io-canary\\src\\main\\cpp\\comm\\io_canary_utils.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-io-canary\\src\\main\\cpp\\detector\\detector.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-io-canary\\src\\main\\cpp\\detector\\main_thread_detector.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-io-canary\\src\\main\\cpp\\detector\\repeat_read_detector.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-io-canary\\src\\main\\cpp\\detector\\small_buffer_detector.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-io-canary\\src\\main\\cpp\\core\\io_canary.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-io-canary\\src\\main\\cpp\\core\\io_canary_env.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-io-canary\\src\\main\\cpp\\core\\io_info_collector.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-io-canary\\src\\main\\cpp\\io_canary_jni.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-android-commons\\src\\main\\cpp\\md5\\md5.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-io-canary\\build\\intermediates\\cmake\\debug\\obj\\x86\\libio-canary.so",
+      "runtimeFiles": []
+    }
+  },
+  "toolchains": {
+    "2830578112": {
+      "cCompilerExecutable": "C:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe",
+      "cppCompilerExecutable": "C:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
+    }
+  },
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": [
+    "cc"
+  ]
+}

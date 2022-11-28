@@ -1,0 +1,3 @@
+C:/Users/yoyo/Desktop/git/project/matrix/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.cxx/cmake/fullDebug/x86/CMakeFiles/SqliteLint-lib.dir
+C:/Users/yoyo/Desktop/git/project/matrix/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.cxx/cmake/fullDebug/x86/CMakeFiles/edit_cache.dir
+C:/Users/yoyo/Desktop/git/project/matrix/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.cxx/cmake/fullDebug/x86/CMakeFiles/rebuild_cache.dir

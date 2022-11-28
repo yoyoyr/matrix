@@ -1,0 +1,127 @@
+{
+  "stringTable": {
+    "0": "C:/Users/yoyo/Desktop/git/project/matrix/matrix-android-commons/.cxx/cmake/debug/arm64-v8a",
+    "1": "--target=aarch64-none-linux-android21 --gcc-toolchain=C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot -I../../../../src/main/cpp/libsemi_dlfcn -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC",
+    "2": "--target=aarch64-none-linux-android21 --gcc-toolchain=C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot -I../../../../src/main/cpp/libenhance_dlsym -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC",
+    "3": "--target=aarch64-none-linux-android21 --gcc-toolchain=C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot -I../../../../src/main/cpp/libxhook -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC"
+  },
+  "buildFiles": [
+    "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-android-commons\\CMakeLists.txt",
+    "C:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\build\\cmake\\android.toolchain.cmake",
+    "C:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\build\\cmake\\platforms.cmake",
+    "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-android-commons\\src\\main\\cpp\\libsemi_dlfcn\\CMakeLists.txt",
+    "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-android-commons\\src\\main\\cpp\\libenhance_dlsym\\CMakeLists.txt",
+    "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-android-commons\\src\\main\\cpp\\libxhook\\CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-android-commons\\.cxx\\cmake\\debug\\arm64-v8a\" clean"
+  ],
+  "buildTargetsCommand": "C:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-android-commons\\.cxx\\cmake\\debug\\arm64-v8a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "semi_dlfcn-Debug-arm64-v8a": {
+      "buildCommand": "C:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-android-commons\\.cxx\\cmake\\debug\\arm64-v8a\" semi_dlfcn",
+      "buildType": "debug",
+      "toolchain": "2830578112",
+      "abi": "arm64-v8a",
+      "artifactName": "semi_dlfcn",
+      "files": [
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-android-commons\\src\\main\\cpp\\libsemi_dlfcn\\semi_dlfcn.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-android-commons\\src\\main\\cpp\\libsemi_dlfcn\\sd_log.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-android-commons\\.cxx\\cmake\\debug\\arm64-v8a\\src\\main\\cpp\\libsemi_dlfcn\\libsemi_dlfcn.a"
+    },
+    "xhook-Debug-arm64-v8a": {
+      "buildCommand": "C:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-android-commons\\.cxx\\cmake\\debug\\arm64-v8a\" xhook",
+      "buildType": "debug",
+      "toolchain": "2830578112",
+      "abi": "arm64-v8a",
+      "artifactName": "xhook",
+      "files": [
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-android-commons\\src\\main\\cpp\\libxhook\\xh_core.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-android-commons\\src\\main\\cpp\\libxhook\\xh_elf.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-android-commons\\src\\main\\cpp\\libxhook\\xh_jni.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-android-commons\\src\\main\\cpp\\libxhook\\xh_log.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-android-commons\\src\\main\\cpp\\libxhook\\xh_util.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-android-commons\\src\\main\\cpp\\libxhook\\xh_version.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-android-commons\\src\\main\\cpp\\libxhook\\xh_maps.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-android-commons\\src\\main\\cpp\\libxhook\\xhook.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-android-commons\\src\\main\\cpp\\libxhook\\xhook_ext.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-android-commons\\.cxx\\cmake\\debug\\arm64-v8a\\src\\main\\cpp\\libxhook\\libxhook.a"
+    },
+    "enhance_dlsym-Debug-arm64-v8a": {
+      "buildCommand": "C:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-android-commons\\.cxx\\cmake\\debug\\arm64-v8a\" enhance_dlsym",
+      "buildType": "debug",
+      "toolchain": "2830578112",
+      "abi": "arm64-v8a",
+      "artifactName": "enhance_dlsym",
+      "files": [
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-android-commons\\src\\main\\cpp\\libenhance_dlsym\\EnhanceDlsym.cpp",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-android-commons\\.cxx\\cmake\\debug\\arm64-v8a\\src\\main\\cpp\\libenhance_dlsym\\libenhance_dlsym.a"
+    }
+  },
+  "toolchains": {
+    "2830578112": {
+      "cCompilerExecutable": "C:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe",
+      "cppCompilerExecutable": "C:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
+    }
+  },
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

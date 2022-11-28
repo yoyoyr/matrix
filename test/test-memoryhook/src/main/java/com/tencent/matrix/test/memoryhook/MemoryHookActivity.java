@@ -142,6 +142,7 @@ public class MemoryHookActivity extends AppCompatActivity {
         if (mHasPrepared) return;
         mHasPrepared = true;
         PthreadHook.INSTANCE.enableLogger(true);
+        //true 不打印java堆栈
         PthreadHook.INSTANCE.enableQuicken(true);
         PthreadHook.INSTANCE.enableTracePthreadRelease(true);
         PthreadHook.INSTANCE.setThreadTraceEnabled(true);

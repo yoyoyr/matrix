@@ -1,0 +1,20 @@
+{
+  "buildFiles": [
+    "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-opengl-leak\\CMakeLists.txt",
+    "C:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\build\\cmake\\android.toolchain.cmake",
+    "C:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\build\\cmake\\platforms.cmake"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-opengl-leak\\.cxx\\cmake\\debug\\arm64-v8a\" clean"
+  ],
+  "buildTargetsCommand": "C:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-opengl-leak\\.cxx\\cmake\\debug\\arm64-v8a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "matrix-opengl-leak-Debug-arm64-v8a": {
+      "artifactName": "matrix-opengl-leak",
+      "buildCommand": "C:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-opengl-leak\\.cxx\\cmake\\debug\\arm64-v8a\" matrix-opengl-leak",
+      "abi": "arm64-v8a",
+      "output": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-opengl-leak\\build\\intermediates\\cmake\\debug\\obj\\arm64-v8a\\libmatrix-opengl-leak.so",
+      "runtimeFiles": []
+    }
+  }
+}

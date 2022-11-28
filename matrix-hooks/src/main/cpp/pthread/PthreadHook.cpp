@@ -60,7 +60,7 @@ DEFINE_HOOK_FUN(int, pthread_create,
         tmpAttr = *attr;
     }
 
-    if (callerInfoOk && sThreadStackShrinkEnabled) {
+    if (callerInfoOk && sThreadStackShrinkEnabled) {//如果条件合适，缩小栈空间
         thread_stack_shink::OnPThreadCreate(&callerInfo, pthread, &tmpAttr, start_routine, args);
     }
 
@@ -75,7 +75,7 @@ DEFINE_HOOK_FUN(int, pthread_create,
         ret = tmpRet;
     }
 
-    if (LIKELY(ret == 0) && sThreadTraceEnabled) {
+    if (LIKELY(ret == 0) && sThreadTraceEnabled) {//hook pthread_create
         thread_trace::handle_pthread_create(*pthread);
     }
 

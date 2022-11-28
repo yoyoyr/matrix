@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="#JAVA_HOME" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/matrix-android-commons" />
+            <option value="$PROJECT_DIR$/matrix-android-lib" />
+            <option value="$PROJECT_DIR$/matrix-apk-canary" />
+            <option value="$PROJECT_DIR$/matrix-arscutil" />
+            <option value="$PROJECT_DIR$/matrix-backtrace" />
+            <option value="$PROJECT_DIR$/matrix-battery-canary" />
+            <option value="$PROJECT_DIR$/matrix-commons" />
+            <option value="$PROJECT_DIR$/matrix-fd" />
+            <option value="$PROJECT_DIR$/matrix-gradle-plugin" />
+            <option value="$PROJECT_DIR$/matrix-hooks" />
+            <option value="$PROJECT_DIR$/matrix-io-canary" />
+            <option value="$PROJECT_DIR$/matrix-jectl" />
+            <option value="$PROJECT_DIR$/matrix-memory-dump" />
+            <option value="$PROJECT_DIR$/matrix-opengl-leak" />
+            <option value="$PROJECT_DIR$/matrix-resource-canary" />
+            <option value="$PROJECT_DIR$/matrix-resource-canary/matrix-resource-canary-analyzer" />
+            <option value="$PROJECT_DIR$/matrix-resource-canary/matrix-resource-canary-analyzer-cli" />
+            <option value="$PROJECT_DIR$/matrix-resource-canary/matrix-resource-canary-android" />
+            <option value="$PROJECT_DIR$/matrix-resource-canary/matrix-resource-canary-common" />
+            <option value="$PROJECT_DIR$/matrix-sqlite-lint" />
+            <option value="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk" />
+            <option value="$PROJECT_DIR$/matrix-trace-canary" />
+            <option value="$PROJECT_DIR$/matrix-traffic" />
+            <option value="$PROJECT_DIR$/test" />
+            <option value="$PROJECT_DIR$/test/matrix-backtrace-benchmark" />
+            <option value="$PROJECT_DIR$/test/test-memoryhook" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

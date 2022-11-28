@@ -1,0 +1,248 @@
+{
+  "stringTable": {
+    "0": "C:/Users/yoyo/Desktop/git/project/matrix/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.cxx/cmake/fullDebug/x86",
+    "1": "--target=i686-none-linux-android19 --gcc-toolchain=C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DSqliteLint_lib_EXPORTS -I../../../../../../matrix-android-commons/src/main/cpp/md5 -I../../../../../src -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -O0 -fno-limit-debug-info -fPIC",
+    "2": "--target=i686-none-linux-android19 --gcc-toolchain=C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DSqliteLint_lib_EXPORTS -I../../../../../../matrix-android-commons/src/main/cpp/md5 -I../../../../../src -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC"
+  },
+  "buildFiles": [
+    "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-sqlite-lint\\CMakeLists.txt",
+    "C:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\build\\cmake\\android.toolchain.cmake",
+    "C:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\build\\cmake\\platforms.cmake",
+    "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-sqlite-lint\\matrix-sqlite-lint-android-sdk\\AndroidBuildSQLiteLint.cmake"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-sqlite-lint\\matrix-sqlite-lint-android-sdk\\.cxx\\cmake\\fullDebug\\x86\" clean"
+  ],
+  "buildTargetsCommand": "C:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-sqlite-lint\\matrix-sqlite-lint-android-sdk\\.cxx\\cmake\\fullDebug\\x86\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "SqliteLint-lib-Debug-x86": {
+      "buildCommand": "C:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-sqlite-lint\\matrix-sqlite-lint-android-sdk\\.cxx\\cmake\\fullDebug\\x86\" SqliteLint-lib",
+      "buildType": "debug",
+      "toolchain": "2830578112",
+      "abi": "x86",
+      "artifactName": "SqliteLint-lib",
+      "files": [
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-sqlite-lint\\matrix-sqlite-lint-android-sdk\\src\\full\\cpp\\com_tencent_sqlitelint_SqliteLint.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-sqlite-lint\\matrix-sqlite-lint-android-sdk\\src\\full\\cpp\\com_tencent_sqlitelint_util_SLog.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-sqlite-lint\\matrix-sqlite-lint-android-sdk\\src\\full\\cpp\\jni_helper.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-sqlite-lint\\matrix-sqlite-lint-android-sdk\\src\\full\\cpp\\loader.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-sqlite-lint\\matrix-sqlite-lint-android-sdk\\src\\full\\cpp\\sqlite3_profile_hook.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-sqlite-lint\\src\\core\\lint.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-sqlite-lint\\src\\core\\lint_env.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-sqlite-lint\\src\\core\\lint_info.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-sqlite-lint\\src\\core\\lint_logic.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-sqlite-lint\\src\\core\\lint_manager.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-sqlite-lint\\src\\core\\sql_Info_processor.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-sqlite-lint\\src\\core\\white_list_mgr.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-sqlite-lint\\src\\checker\\avoid_auto_increment_checker.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-sqlite-lint\\src\\checker\\avoid_select_all_checker.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-sqlite-lint\\src\\checker\\checker.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-sqlite-lint\\src\\checker\\prepared_statement_better_checker.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-sqlite-lint\\src\\checker\\redundant_index_checker.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-sqlite-lint\\src\\checker\\without_rowid_better_checker.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-sqlite-lint\\src\\comm\\lint_util.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-sqlite-lint\\src\\checker\\eqp\\explain_query_plan_checker.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-sqlite-lint\\src\\checker\\eqp\\explain_query_plan_tree.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-sqlite-lint\\src\\checker\\eqp\\select_tree_helper.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-sqlite-lint\\src\\checker\\eqp\\where_clause_table_column_finder.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-sqlite-lint\\src\\sqlite_lint.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-sqlite-lint\\src\\comm\\log\\logger.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-sqlite-lint\\src\\lemon\\build.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-sqlite-lint\\src\\lemon\\delete.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-sqlite-lint\\src\\lemon\\expr.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-sqlite-lint\\src\\lemon\\insert.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-sqlite-lint\\src\\lemon\\os.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-sqlite-lint\\src\\lemon\\os_unix.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-sqlite-lint\\src\\lemon\\os_win.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-sqlite-lint\\src\\lemon\\parse.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-sqlite-lint\\src\\lemon\\printf.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-sqlite-lint\\src\\lemon\\random.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-sqlite-lint\\src\\lemon\\select.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-sqlite-lint\\src\\lemon\\tokenize.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-sqlite-lint\\src\\lemon\\update.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-sqlite-lint\\src\\lemon\\util.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-sqlite-lint\\src\\lemon\\where.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-android-commons\\src\\main\\cpp\\md5\\md5.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-sqlite-lint\\matrix-sqlite-lint-android-sdk\\build\\intermediates\\cmake\\fullDebug\\obj\\x86\\libSqliteLint-lib.so",
+      "runtimeFiles": []
+    }
+  },
+  "toolchains": {
+    "2830578112": {
+      "cCompilerExecutable": "C:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe",
+      "cppCompilerExecutable": "C:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
+    }
+  },
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": [
+    "cc"
+  ]
+}

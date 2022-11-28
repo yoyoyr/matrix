@@ -1,0 +1,70 @@
+{
+  "buildFiles": [
+    "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-hooks\\CMakeLists.txt",
+    "C:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\build\\cmake\\android.toolchain.cmake",
+    "C:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\build\\cmake\\platforms.cmake",
+    "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-hooks\\src\\main\\cpp\\external\\libcJSON\\CMakeLists.txt",
+    "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-hooks\\src\\main\\cpp\\external\\fastunwind\\CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-hooks\\.cxx\\cmake\\debug\\arm64-v8a\" clean"
+  ],
+  "buildTargetsCommand": "C:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-hooks\\.cxx\\cmake\\debug\\arm64-v8a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "matrix-memoryhook-Debug-arm64-v8a": {
+      "artifactName": "matrix-memoryhook",
+      "buildCommand": "C:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-hooks\\.cxx\\cmake\\debug\\arm64-v8a\" matrix-memoryhook",
+      "abi": "arm64-v8a",
+      "output": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-hooks\\build\\intermediates\\cmake\\debug\\obj\\arm64-v8a\\libmatrix-memoryhook.so",
+      "runtimeFiles": [
+        "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-hooks\\build\\intermediates\\cmake\\debug\\obj\\arm64-v8a\\libmatrix-hookcommon.so"
+      ]
+    },
+    "matrix-pthreadhook-Debug-arm64-v8a": {
+      "artifactName": "matrix-pthreadhook",
+      "buildCommand": "C:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-hooks\\.cxx\\cmake\\debug\\arm64-v8a\" matrix-pthreadhook",
+      "abi": "arm64-v8a",
+      "output": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-hooks\\build\\intermediates\\cmake\\debug\\obj\\arm64-v8a\\libmatrix-pthreadhook.so",
+      "runtimeFiles": [
+        "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-hooks\\build\\intermediates\\cmake\\debug\\obj\\arm64-v8a\\libmatrix-hookcommon.so"
+      ]
+    },
+    "matrix-memguard-Debug-arm64-v8a": {
+      "artifactName": "matrix-memguard",
+      "buildCommand": "C:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-hooks\\.cxx\\cmake\\debug\\arm64-v8a\" matrix-memguard",
+      "abi": "arm64-v8a",
+      "output": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-hooks\\build\\intermediates\\cmake\\debug\\obj\\arm64-v8a\\libmatrix-memguard.so",
+      "runtimeFiles": [
+        "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-hooks\\build\\intermediates\\cmake\\debug\\obj\\arm64-v8a\\libmatrix-hookcommon.so"
+      ]
+    },
+    "fastunwind-Debug-arm64-v8a": {
+      "artifactName": "fastunwind",
+      "buildCommand": "C:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-hooks\\.cxx\\cmake\\debug\\arm64-v8a\" fastunwind",
+      "abi": "arm64-v8a",
+      "output": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-hooks\\.cxx\\cmake\\debug\\arm64-v8a\\src\\main\\cpp\\external\\fastunwind\\libfastunwind.a",
+      "runtimeFiles": []
+    },
+    "matrix-hookcommon-Debug-arm64-v8a": {
+      "artifactName": "matrix-hookcommon",
+      "buildCommand": "C:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-hooks\\.cxx\\cmake\\debug\\arm64-v8a\" matrix-hookcommon",
+      "abi": "arm64-v8a",
+      "output": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-hooks\\build\\intermediates\\cmake\\debug\\obj\\arm64-v8a\\libmatrix-hookcommon.so",
+      "runtimeFiles": []
+    },
+    "cJSON-Debug-arm64-v8a": {
+      "artifactName": "cJSON",
+      "buildCommand": "C:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-hooks\\.cxx\\cmake\\debug\\arm64-v8a\" cJSON",
+      "abi": "arm64-v8a",
+      "output": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-hooks\\.cxx\\cmake\\debug\\arm64-v8a\\src\\main\\cpp\\external\\libcJSON\\libcJSON.a",
+      "runtimeFiles": []
+    },
+    "memguard_base-Debug-arm64-v8a": {
+      "artifactName": "memguard_base",
+      "buildCommand": "C:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-hooks\\.cxx\\cmake\\debug\\arm64-v8a\" memguard_base",
+      "abi": "arm64-v8a",
+      "output": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-hooks\\.cxx\\cmake\\debug\\arm64-v8a\\libmemguard_base.a",
+      "runtimeFiles": []
+    }
+  }
+}

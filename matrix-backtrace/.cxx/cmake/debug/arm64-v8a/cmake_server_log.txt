@@ -1,0 +1,531 @@
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"supportedProtocolVersions":[{"isExperimental":true,"major":1,"minor":1}],"type":"hello"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {
+  "type": "handshake",
+  "cookie": "gradle-cmake-cookie",
+  "protocolVersion": {
+    "isExperimental": true,
+    "major": 1,
+    "minor": 1
+  },
+  "sourceDirectory": "C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace",
+  "buildDirectory": "C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/.cxx/cmake/debug/arm64-v8a",
+  "generator": "Ninja"
+}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"gradle-cmake-cookie","inReplyTo":"handshake","type":"reply"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {
+  "type": "configure",
+  "cacheArguments": [
+    "",
+    "-DCMAKE_FIND_ROOT_PATH\u003dC:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-backtrace\\.cxx\\cmake\\debug\\prefab\\arm64-v8a\\prefab",
+    "-DCMAKE_BUILD_TYPE\u003dDebug",
+    "-DCMAKE_TOOLCHAIN_FILE\u003dC:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\build\\cmake\\android.toolchain.cmake",
+    "-DANDROID_ABI\u003darm64-v8a",
+    "-DANDROID_NDK\u003dC:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462",
+    "-DANDROID_PLATFORM\u003dandroid-21",
+    "-DCMAKE_ANDROID_ARCH_ABI\u003darm64-v8a",
+    "-DCMAKE_ANDROID_NDK\u003dC:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462",
+    "-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON",
+    "-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003dC:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-backtrace\\build\\intermediates\\cmake\\debug\\obj\\arm64-v8a",
+    "-DCMAKE_MAKE_PROGRAM\u003dC:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+    "-DCMAKE_SYSTEM_NAME\u003dAndroid",
+    "-DCMAKE_SYSTEM_VERSION\u003d21",
+    "-DEXT_DEP\u003dC:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-backtrace\\build\\intermediates\\native_deps\\extracted_native_dependencies",
+    "-DANDROID_STL\u003dc++_shared",
+    "-DEnableLOG\u003dOFF",
+    "-DQUT_STATISTIC_ENABLE\u003dOFF"
+  ]
+}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Check for working C compiler: C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Check for working C compiler: C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe
+CMAKE SERVER: Check for working C compiler: C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":33,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Check for working C compiler: C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe -- works","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Check for working C compiler: C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe -- works
+CMAKE SERVER: Check for working C compiler: C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe -- works
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Detecting C compiler ABI info","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Detecting C compiler ABI info
+CMAKE SERVER: Detecting C compiler ABI info
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":65,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Detecting C compiler ABI info - done","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Detecting C compiler ABI info - done
+CMAKE SERVER: Detecting C compiler ABI info - done
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Detecting C compile features","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Detecting C compile features
+CMAKE SERVER: Detecting C compile features
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":96,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":126,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":155,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Detecting C compile features - done","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Detecting C compile features - done
+CMAKE SERVER: Detecting C compile features - done
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Check for working CXX compiler: C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Check for working CXX compiler: C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe
+CMAKE SERVER: Check for working CXX compiler: C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":184,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Check for working CXX compiler: C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe -- works","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Check for working CXX compiler: C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe -- works
+CMAKE SERVER: Check for working CXX compiler: C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe -- works
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Detecting CXX compiler ABI info","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Detecting CXX compiler ABI info
+CMAKE SERVER: Detecting CXX compiler ABI info
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":211,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Detecting CXX compiler ABI info - done","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Detecting CXX compiler ABI info - done
+CMAKE SERVER: Detecting CXX compiler ABI info - done
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Detecting CXX compile features","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Detecting CXX compile features
+CMAKE SERVER: Detecting CXX compile features
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":237,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":262,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":287,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":311,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Detecting CXX compile features - done","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Detecting CXX compile features - done
+CMAKE SERVER: Detecting CXX compile features - done
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":334,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"The ASM compiler identification is Clang","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: The ASM compiler identification is Clang
+CMAKE SERVER: The ASM compiler identification is Clang
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Found assembler: C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Found assembler: C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe
+CMAKE SERVER: Found assembler: C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":356,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":377,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":398,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":418,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":438,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":914,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":928,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":942,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":957,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":971,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":985,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":1000,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Configuring done","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Configuring done
+CMAKE SERVER: Configuring done
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","type":"reply"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"type":"compute"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"compute","progressCurrent":142,"progressMaximum":1000,"progressMessage":"Generating","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"compute","progressCurrent":285,"progressMaximum":1000,"progressMessage":"Generating","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"compute","progressCurrent":428,"progressMaximum":1000,"progressMessage":"Generating","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"compute","progressCurrent":571,"progressMaximum":1000,"progressMessage":"Generating","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"compute","progressCurrent":714,"progressMaximum":1000,"progressMessage":"Generating","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"compute","progressCurrent":857,"progressMaximum":1000,"progressMessage":"Generating","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"compute","progressCurrent":1000,"progressMaximum":1000,"progressMessage":"Generating","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"compute","message":"Generating done","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Generating done
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"compute","message":"CMake Warning:\n  Manually-specified variables were not used by the project:\n\n    EXT_DEP\n\n","title":"Warning","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    EXT_DEP
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"compute","type":"reply"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"type":"cmakeInputs"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"buildFiles":[{"isCMake":true,"isTemporary":false,"sources":["C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineSystem.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Determine.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystem.cmake.in","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystemSpecificInitialize.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Initialize.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCCompiler.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompiler.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Determine-C.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android/Determine-Compiler.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeFindBinUtils.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-FindBinUtils.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCCompiler.cmake.in","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCXXCompiler.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompiler.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Determine-CXX.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android/Determine-Compiler.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeFindBinUtils.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-FindBinUtils.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXCompiler.cmake.in","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystemSpecificInformation.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeGenericSystem.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Linux.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/UnixPaths.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCInformation.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeLanguageInformation.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/CMakeCommonCompilerMacros.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/GNU.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/CMakeCommonCompilerMacros.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang-C.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCommonLanguageInclude.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCCompiler.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCompilerCommon.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompilerABI.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeParseImplicitLinkInfo.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCCompilerABI.c","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompileFeatures.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Internal/FeatureTesting.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C-FeatureTests.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C-FeatureTests.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C-FeatureTests.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCCompiler.cmake.in","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXInformation.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeLanguageInformation.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang-CXX.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCommonLanguageInclude.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCXXCompiler.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCompilerCommon.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompilerABI.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeParseImplicitLinkInfo.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompileFeatures.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Internal/FeatureTesting.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-FeatureTests.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-TestableFeatures.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-FeatureTests.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-TestableFeatures.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-FeatureTests.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-TestableFeatures.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-FeatureTests.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-TestableFeatures.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXCompiler.cmake.in","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineASMCompiler.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompiler.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeFindBinUtils.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-FindBinUtils.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeASMCompiler.cmake.in","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeASMInformation.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-ASM.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang-ASM.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestASMCompiler.cmake"]},{"isCMake":false,"isTemporary":false,"sources":["CMakeLists.txt","C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/build/cmake/android.toolchain.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/build/cmake/platforms.cmake","C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/build/cmake/android.toolchain.cmake","src/main/cpp/external/libunwindstack/CMakeLists.txt","src/main/cpp/external/libunwindstack/deps/android-base/CMakeLists.txt","src/main/cpp/external/libunwindstack/deps/liblzma/CMakeLists.txt","src/main/cpp/external/libunwindstack/deps/sys_compat/CMakeLists.txt","src/main/cpp/external/libunwindstack/deps/libprocinfo/CMakeLists.txt","src/main/cpp/external/libunwindstack/deps/demangle/CMakeLists.txt"]},{"isCMake":false,"isTemporary":true,"sources":[".cxx/cmake/debug/arm64-v8a/CMakeFiles/3.10.2/CMakeSystem.cmake",".cxx/cmake/debug/arm64-v8a/CMakeFiles/3.10.2/CMakeCCompiler.cmake",".cxx/cmake/debug/arm64-v8a/CMakeFiles/3.10.2/CMakeCXXCompiler.cmake",".cxx/cmake/debug/arm64-v8a/CMakeFiles/feature_tests.c",".cxx/cmake/debug/arm64-v8a/CMakeFiles/feature_tests.c",".cxx/cmake/debug/arm64-v8a/CMakeFiles/feature_tests.c",".cxx/cmake/debug/arm64-v8a/CMakeFiles/3.10.2/CMakeCCompiler.cmake",".cxx/cmake/debug/arm64-v8a/CMakeFiles/feature_tests.cxx",".cxx/cmake/debug/arm64-v8a/CMakeFiles/feature_tests.cxx",".cxx/cmake/debug/arm64-v8a/CMakeFiles/feature_tests.cxx",".cxx/cmake/debug/arm64-v8a/CMakeFiles/feature_tests.cxx",".cxx/cmake/debug/arm64-v8a/CMakeFiles/3.10.2/CMakeCXXCompiler.cmake",".cxx/cmake/debug/arm64-v8a/CMakeFiles/3.10.2/CMakeASMCompiler.cmake"]}],"cmakeRootDirectory":"C:/Users/yoyo/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10","cookie":"","inReplyTo":"cmakeInputs","sourceDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace","type":"reply"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"type":"codemodel"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"configurations":[{"name":"Debug","projects":[{"buildDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libunwindstack/deps/android-base","name":"AndroidBase","sourceDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/android-base","targets":[{"artifacts":["C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libunwindstack/deps/android-base/libandroid-base.a"],"buildDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libunwindstack/deps/android-base","fileGroups":[{"compileFlags":"-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -Wexit-time-destructors","includePath":[{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/android-base"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/android-base/include"}],"isGenerated":false,"language":"CXX","sources":["stringprintf.cpp","file.cpp","logging.cpp","chrono_utils.cpp","mapped_file.cpp","parsenetaddress.cpp","quick_exit.cpp","strings.cpp","threads.cpp","test_utils.cpp"]}],"fullName":"libandroid-base.a","linkerLanguage":"CXX","name":"android-base","sourceDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/android-base","sysroot":"C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot","type":"STATIC_LIBRARY"}]},{"buildDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libunwindstack/deps/demangle","name":"Demangle","sourceDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/demangle","targets":[{"artifacts":["C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libunwindstack/deps/demangle/libdemangle.a"],"buildDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libunwindstack/deps/demangle","fileGroups":[{"compileFlags":"-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC  ","includePath":[{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/demangle"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/demangle/include"}],"isGenerated":false,"language":"CXX","sources":["Demangler.cpp"]}],"fullName":"libdemangle.a","linkerLanguage":"CXX","name":"demangle","sourceDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/demangle","sysroot":"C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot","type":"STATIC_LIBRARY"}]},{"buildDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libunwindstack/deps/liblzma","name":"LibLzma","sourceDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/liblzma","targets":[{"artifacts":["C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libunwindstack/deps/liblzma/liblzma.a"],"buildDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libunwindstack/deps/liblzma","fileGroups":[{"compileFlags":"-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -D_7ZIP_ST -Wall -Wno-enum-conversion -Wno-logical-op-parentheses -Wno-unused-value -Wno-empty-body -Wno-self-assign","includePath":[{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/liblzma/C"}],"isGenerated":false,"language":"C","sources":["C/7zAlloc.c","C/7zArcIn.c","C/7zBuf2.c","C/7zBuf.c","C/7zCrc.c","C/7zCrcOpt.c","C/7zDec.c","C/7zFile.c","C/7zStream.c","C/Aes.c","C/AesOpt.c","C/Alloc.c","C/Bcj2.c","C/Bra86.c","C/Bra.c","C/BraIA64.c","C/CpuArch.c","C/Delta.c","C/LzFind.c","C/Lzma2Dec.c","C/Lzma2Enc.c","C/Lzma86Dec.c","C/Lzma86Enc.c","C/LzmaDec.c","C/LzmaEnc.c","C/LzmaLib.c","C/Ppmd7.c","C/Ppmd7Dec.c","C/Ppmd7Enc.c","C/Sha256.c","C/Sort.c","C/Xz.c","C/XzCrc64.c","C/XzCrc64Opt.c","C/XzDec.c","C/XzEnc.c","C/XzIn.c"]}],"fullName":"liblzma.a","linkerLanguage":"C","name":"lzma","sourceDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/liblzma","sysroot":"C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot","type":"STATIC_LIBRARY"}]},{"buildDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libunwindstack/deps/libprocinfo","name":"LibProcinfo","sourceDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/libprocinfo","targets":[{"artifacts":["C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libunwindstack/deps/libprocinfo/libprocinfo.a"],"buildDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libunwindstack/deps/libprocinfo","fileGroups":[{"compileFlags":"-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC  ","includePath":[{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/libprocinfo/include"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/libprocinfo/../android-base/include"}],"isGenerated":false,"language":"CXX","sources":["process.cpp"]}],"fullName":"libprocinfo.a","linkerLanguage":"CXX","name":"procinfo","sourceDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/libprocinfo","sysroot":"C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot","type":"STATIC_LIBRARY"}]},{"buildDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libunwindstack","name":"LibUnwindStack","sourceDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack","targets":[{"artifacts":["C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libunwindstack/deps/demangle/libdemangle.a"],"buildDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libunwindstack/deps/demangle","fileGroups":[{"compileFlags":"-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC  ","includePath":[{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/demangle"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/demangle/include"}],"isGenerated":false,"language":"CXX","sources":["Demangler.cpp"]}],"fullName":"libdemangle.a","linkerLanguage":"CXX","name":"demangle","sourceDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/demangle","sysroot":"C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot","type":"STATIC_LIBRARY"},{"artifacts":["C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libunwindstack/deps/libprocinfo/libprocinfo.a"],"buildDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libunwindstack/deps/libprocinfo","fileGroups":[{"compileFlags":"-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC  ","includePath":[{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/libprocinfo/include"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/libprocinfo/../android-base/include"}],"isGenerated":false,"language":"CXX","sources":["process.cpp"]}],"fullName":"libprocinfo.a","linkerLanguage":"CXX","name":"procinfo","sourceDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/libprocinfo","sysroot":"C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot","type":"STATIC_LIBRARY"},{"artifacts":["C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libunwindstack/deps/sys_compat/libsys_compat.a"],"buildDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libunwindstack/deps/sys_compat","fileGroups":[{"compileFlags":"-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC  ","includePath":[{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/sys_compat"}],"isGenerated":false,"language":"C","sources":["compat_uio.c"]}],"fullName":"libsys_compat.a","linkerLanguage":"C","name":"sys_compat","sourceDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/sys_compat","sysroot":"C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot","type":"STATIC_LIBRARY"},{"artifacts":["C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libunwindstack/deps/liblzma/liblzma.a"],"buildDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libunwindstack/deps/liblzma","fileGroups":[{"compileFlags":"-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -D_7ZIP_ST -Wall -Wno-enum-conversion -Wno-logical-op-parentheses -Wno-unused-value -Wno-empty-body -Wno-self-assign","includePath":[{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/liblzma/C"}],"isGenerated":false,"language":"C","sources":["C/7zAlloc.c","C/7zArcIn.c","C/7zBuf2.c","C/7zBuf.c","C/7zCrc.c","C/7zCrcOpt.c","C/7zDec.c","C/7zFile.c","C/7zStream.c","C/Aes.c","C/AesOpt.c","C/Alloc.c","C/Bcj2.c","C/Bra86.c","C/Bra.c","C/BraIA64.c","C/CpuArch.c","C/Delta.c","C/LzFind.c","C/Lzma2Dec.c","C/Lzma2Enc.c","C/Lzma86Dec.c","C/Lzma86Enc.c","C/LzmaDec.c","C/LzmaEnc.c","C/LzmaLib.c","C/Ppmd7.c","C/Ppmd7Dec.c","C/Ppmd7Enc.c","C/Sha256.c","C/Sort.c","C/Xz.c","C/XzCrc64.c","C/XzCrc64Opt.c","C/XzDec.c","C/XzEnc.c","C/XzIn.c"]}],"fullName":"liblzma.a","linkerLanguage":"C","name":"lzma","sourceDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/liblzma","sysroot":"C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot","type":"STATIC_LIBRARY"},{"artifacts":["C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libunwindstack/libunwindstack.a"],"buildDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libunwindstack","fileGroups":[{"compileFlags":"-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -fvisibility=default -fdata-sections -ffunction-sections -Wexit-time-destructors -Wno-unused-value -std=c++17 -Wall -Wextra -D_7ZIP_ST -Wno-enum-conversion -Wno-logical-op-parentheses -Wno-empty-body -Wno-self-assign","includePath":[{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/."},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/include"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/android-base"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/android-base/include"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/liblzma/C"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/sys_compat"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/libprocinfo/include"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/libprocinfo/../android-base/include"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/demangle"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/demangle/include"}],"isGenerated":false,"language":"CXX","sources":["ArmExidx.cpp","DwarfCfa.cpp","DwarfEhFrameWithHdr.cpp","DwarfMemory.cpp","DwarfOp.cpp","DwarfSection.cpp","Elf.cpp","ElfInterface.cpp","ElfInterfaceArm.cpp","JitDebug.cpp","Log.cpp","LocalUnwinder.cpp","MapInfo.cpp","Maps.cpp","Memory.cpp","Regs.cpp","RegsArm.cpp","RegsArm64.cpp","RegsX86.cpp","RegsX86_64.cpp","RegsMips.cpp","RegsMips64.cpp","Unwinder.cpp","Symbols.cpp","Global.cpp"]}],"fullName":"libunwindstack.a","linkerLanguage":"CXX","name":"unwindstack","sourceDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack","sysroot":"C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot","type":"STATIC_LIBRARY"},{"artifacts":["C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libunwindstack/deps/android-base/libandroid-base.a"],"buildDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libunwindstack/deps/android-base","fileGroups":[{"compileFlags":"-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -Wexit-time-destructors","includePath":[{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/android-base"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/android-base/include"}],"isGenerated":false,"language":"CXX","sources":["stringprintf.cpp","file.cpp","logging.cpp","chrono_utils.cpp","mapped_file.cpp","parsenetaddress.cpp","quick_exit.cpp","strings.cpp","threads.cpp","test_utils.cpp"]}],"fullName":"libandroid-base.a","linkerLanguage":"CXX","name":"android-base","sourceDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/android-base","sysroot":"C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot","type":"STATIC_LIBRARY"}]},{"buildDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/.cxx/cmake/debug/arm64-v8a","name":"Project","sourceDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace","targets":[{"artifacts":["C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libunwindstack/deps/demangle/libdemangle.a"],"buildDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libunwindstack/deps/demangle","fileGroups":[{"compileFlags":"-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC  ","includePath":[{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/demangle"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/demangle/include"}],"isGenerated":false,"language":"CXX","sources":["Demangler.cpp"]}],"fullName":"libdemangle.a","linkerLanguage":"CXX","name":"demangle","sourceDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/demangle","sysroot":"C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot","type":"STATIC_LIBRARY"},{"artifacts":["C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libunwindstack/deps/libprocinfo/libprocinfo.a"],"buildDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libunwindstack/deps/libprocinfo","fileGroups":[{"compileFlags":"-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC  ","includePath":[{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/libprocinfo/include"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/libprocinfo/../android-base/include"}],"isGenerated":false,"language":"CXX","sources":["process.cpp"]}],"fullName":"libprocinfo.a","linkerLanguage":"CXX","name":"procinfo","sourceDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/libprocinfo","sysroot":"C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot","type":"STATIC_LIBRARY"},{"artifacts":["C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libunwindstack/deps/sys_compat/libsys_compat.a"],"buildDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libunwindstack/deps/sys_compat","fileGroups":[{"compileFlags":"-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC  ","includePath":[{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/sys_compat"}],"isGenerated":false,"language":"C","sources":["compat_uio.c"]}],"fullName":"libsys_compat.a","linkerLanguage":"C","name":"sys_compat","sourceDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/sys_compat","sysroot":"C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot","type":"STATIC_LIBRARY"},{"artifacts":["C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libunwindstack/deps/liblzma/liblzma.a"],"buildDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libunwindstack/deps/liblzma","fileGroups":[{"compileFlags":"-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -D_7ZIP_ST -Wall -Wno-enum-conversion -Wno-logical-op-parentheses -Wno-unused-value -Wno-empty-body -Wno-self-assign","includePath":[{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/liblzma/C"}],"isGenerated":false,"language":"C","sources":["C/7zAlloc.c","C/7zArcIn.c","C/7zBuf2.c","C/7zBuf.c","C/7zCrc.c","C/7zCrcOpt.c","C/7zDec.c","C/7zFile.c","C/7zStream.c","C/Aes.c","C/AesOpt.c","C/Alloc.c","C/Bcj2.c","C/Bra86.c","C/Bra.c","C/BraIA64.c","C/CpuArch.c","C/Delta.c","C/LzFind.c","C/Lzma2Dec.c","C/Lzma2Enc.c","C/Lzma86Dec.c","C/Lzma86Enc.c","C/LzmaDec.c","C/LzmaEnc.c","C/LzmaLib.c","C/Ppmd7.c","C/Ppmd7Dec.c","C/Ppmd7Enc.c","C/Sha256.c","C/Sort.c","C/Xz.c","C/XzCrc64.c","C/XzCrc64Opt.c","C/XzDec.c","C/XzEnc.c","C/XzIn.c"]}],"fullName":"liblzma.a","linkerLanguage":"C","name":"lzma","sourceDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/liblzma","sysroot":"C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot","type":"STATIC_LIBRARY"},{"artifacts":["C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libunwindstack/libunwindstack.a"],"buildDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libunwindstack","fileGroups":[{"compileFlags":"-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -fvisibility=default -fdata-sections -ffunction-sections -Wexit-time-destructors -Wno-unused-value -std=c++17 -Wall -Wextra -D_7ZIP_ST -Wno-enum-conversion -Wno-logical-op-parentheses -Wno-empty-body -Wno-self-assign","includePath":[{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/."},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/include"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/android-base"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/android-base/include"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/liblzma/C"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/sys_compat"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/libprocinfo/include"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/libprocinfo/../android-base/include"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/demangle"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/demangle/include"}],"isGenerated":false,"language":"CXX","sources":["ArmExidx.cpp","DwarfCfa.cpp","DwarfEhFrameWithHdr.cpp","DwarfMemory.cpp","DwarfOp.cpp","DwarfSection.cpp","Elf.cpp","ElfInterface.cpp","ElfInterfaceArm.cpp","JitDebug.cpp","Log.cpp","LocalUnwinder.cpp","MapInfo.cpp","Maps.cpp","Memory.cpp","Regs.cpp","RegsArm.cpp","RegsArm64.cpp","RegsX86.cpp","RegsX86_64.cpp","RegsMips.cpp","RegsMips64.cpp","Unwinder.cpp","Symbols.cpp","Global.cpp"]}],"fullName":"libunwindstack.a","linkerLanguage":"CXX","name":"unwindstack","sourceDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack","sysroot":"C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot","type":"STATIC_LIBRARY"},{"artifacts":["C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/build/intermediates/cmake/debug/obj/arm64-v8a/libwechatbacktrace.so"],"buildDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/.cxx/cmake/debug/arm64-v8a","fileGroups":[{"compileFlags":"-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++17 -fno-exceptions -frtti -fstack-protector -fvisibility=hidden -Wall -Wextra -Wexit-time-destructors -D_7ZIP_ST -Wno-enum-conversion -Wno-logical-op-parentheses -Wno-unused-value -Wno-empty-body -Wno-self-assign","defines":["wechatbacktrace_EXPORTS"],"includePath":[{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/common"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/libwechatbacktrace/include"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/include"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/dexfile/include"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/android-base"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/android-base/include"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/liblzma/C"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/sys_compat"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/libprocinfo/include"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/libprocinfo/../android-base/include"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/demangle"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/demangle/include"}],"isGenerated":false,"language":"CXX","sources":["src/main/cpp/common/Utils.cpp","src/main/cpp/common/PthreadExt.cpp","src/main/cpp/common/Log.cpp","src/main/cpp/common/LogExt.cpp","src/main/cpp/libwechatbacktrace/QutStatistics.cpp","src/main/cpp/libwechatbacktrace/ExidxDecoder.cpp","src/main/cpp/libwechatbacktrace/DwarfCfa.cpp","src/main/cpp/libwechatbacktrace/DwarfSectionDecoder.cpp","src/main/cpp/libwechatbacktrace/DwarfEhFrameWithHdrDecoder.cpp","src/main/cpp/libwechatbacktrace/DwarfOp.cpp","src/main/cpp/libwechatbacktrace/ElfWrapper.cpp","src/main/cpp/libwechatbacktrace/QuickenTable.cpp","src/main/cpp/libwechatbacktrace/QuickenMemory.cpp","src/main/cpp/libwechatbacktrace/QuickenTableManager.cpp","src/main/cpp/libwechatbacktrace/QuickenMaps.cpp","src/main/cpp/libwechatbacktrace/QuickenTableGenerator.cpp","src/main/cpp/libwechatbacktrace/QuickenInMemory.cpp","src/main/cpp/libwechatbacktrace/QuickenInterface.cpp","src/main/cpp/libwechatbacktrace/QuickenUnwinder.cpp","src/main/cpp/libwechatbacktrace/QuickenJNI.cpp","src/main/cpp/libwechatbacktrace/LocalMaps.cpp","src/main/cpp/libwechatbacktrace/FpUnwinder.cpp","src/main/cpp/libwechatbacktrace/Backtrace.cpp","src/main/cpp/dexfile/dex_file_loader.cc","src/main/cpp/dexfile/compact_offset_table.cc","src/main/cpp/dexfile/primitive.cc","src/main/cpp/dexfile/descriptors_names.cc","src/main/cpp/dexfile/dex_file.cc","src/main/cpp/dexfile/standard_dex_file.cc","src/main/cpp/dexfile/compact_dex_file.cc","src/main/cpp/dexfile/dex_file_ext.cc","src/main/cpp/libwechatbacktrace/DebugGlobal.cpp","src/main/cpp/libwechatbacktrace/DebugDexFiles.cpp","src/main/cpp/libwechatbacktrace/DebugJit.cpp","src/main/cpp/libwechatbacktrace/QuickenProperties.cpp"]},{"compileFlags":"-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -std=c99 -fstack-protector -fvisibility=hidden -Wall -Wextra -Wexit-time-destructors -D_7ZIP_ST -Wno-enum-conversion -Wno-logical-op-parentheses -Wno-unused-value -Wno-empty-body -Wno-self-assign","defines":["wechatbacktrace_EXPORTS"],"includePath":[{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/common"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/libwechatbacktrace/include"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/include"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/dexfile/include"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/android-base"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/android-base/include"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/liblzma/C"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/sys_compat"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/libprocinfo/include"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/libprocinfo/../android-base/include"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/demangle"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/demangle/include"}],"isGenerated":false,"language":"C","sources":["src/main/cpp/common/fake_dlfcn.c"]}],"fullName":"libwechatbacktrace.so","linkFlags":"-Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -Wl,--build-id -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments","linkLibraries":"-llog src\\main\\cpp\\external\\libunwindstack\\libunwindstack.a src\\main\\cpp\\external\\libunwindstack\\deps\\android-base\\libandroid-base.a src\\main\\cpp\\external\\libunwindstack\\deps\\liblzma\\liblzma.a src\\main\\cpp\\external\\libunwindstack\\deps\\sys_compat\\libsys_compat.a src\\main\\cpp\\external\\libunwindstack\\deps\\libprocinfo\\libprocinfo.a src\\main\\cpp\\external\\libunwindstack\\deps\\demangle\\libdemangle.a -Wl,--gc-sections -fvisibility=hidden -llog -latomic -lm","linkerLanguage":"CXX","name":"wechatbacktrace","sourceDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace","sysroot":"C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot","type":"SHARED_LIBRARY"},{"artifacts":["C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libunwindstack/deps/android-base/libandroid-base.a"],"buildDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libunwindstack/deps/android-base","fileGroups":[{"compileFlags":"-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -Wexit-time-destructors","includePath":[{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/android-base"},{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/android-base/include"}],"isGenerated":false,"language":"CXX","sources":["stringprintf.cpp","file.cpp","logging.cpp","chrono_utils.cpp","mapped_file.cpp","parsenetaddress.cpp","quick_exit.cpp","strings.cpp","threads.cpp","test_utils.cpp"]}],"fullName":"libandroid-base.a","linkerLanguage":"CXX","name":"android-base","sourceDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/android-base","sysroot":"C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot","type":"STATIC_LIBRARY"}]},{"buildDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libunwindstack/deps/sys_compat","name":"SysCompat","sourceDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/sys_compat","targets":[{"artifacts":["C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libunwindstack/deps/sys_compat/libsys_compat.a"],"buildDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libunwindstack/deps/sys_compat","fileGroups":[{"compileFlags":"-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC  ","includePath":[{"path":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/sys_compat"}],"isGenerated":false,"language":"C","sources":["compat_uio.c"]}],"fullName":"libsys_compat.a","linkerLanguage":"C","name":"sys_compat","sourceDirectory":"C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/sys_compat","sysroot":"C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot","type":"STATIC_LIBRARY"}]}]}],"cookie":"","inReplyTo":"codemodel","type":"reply"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+

@@ -1,0 +1,68 @@
+{
+  "buildFiles": [
+    "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-backtrace\\CMakeLists.txt",
+    "C:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\build\\cmake\\android.toolchain.cmake",
+    "C:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\build\\cmake\\platforms.cmake",
+    "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-backtrace\\src\\main\\cpp\\external\\libunwindstack\\CMakeLists.txt",
+    "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-backtrace\\src\\main\\cpp\\external\\libunwindstack\\deps\\android-base\\CMakeLists.txt",
+    "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-backtrace\\src\\main\\cpp\\external\\libunwindstack\\deps\\liblzma\\CMakeLists.txt",
+    "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-backtrace\\src\\main\\cpp\\external\\libunwindstack\\deps\\sys_compat\\CMakeLists.txt",
+    "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-backtrace\\src\\main\\cpp\\external\\libunwindstack\\deps\\libprocinfo\\CMakeLists.txt",
+    "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-backtrace\\src\\main\\cpp\\external\\libunwindstack\\deps\\demangle\\CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-backtrace\\.cxx\\cmake\\debug\\arm64-v8a\" clean"
+  ],
+  "buildTargetsCommand": "C:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-backtrace\\.cxx\\cmake\\debug\\arm64-v8a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "unwindstack-Debug-arm64-v8a": {
+      "artifactName": "unwindstack",
+      "buildCommand": "C:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-backtrace\\.cxx\\cmake\\debug\\arm64-v8a\" unwindstack",
+      "abi": "arm64-v8a",
+      "output": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-backtrace\\.cxx\\cmake\\debug\\arm64-v8a\\src\\main\\cpp\\external\\libunwindstack\\libunwindstack.a",
+      "runtimeFiles": []
+    },
+    "procinfo-Debug-arm64-v8a": {
+      "artifactName": "procinfo",
+      "buildCommand": "C:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-backtrace\\.cxx\\cmake\\debug\\arm64-v8a\" procinfo",
+      "abi": "arm64-v8a",
+      "output": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-backtrace\\.cxx\\cmake\\debug\\arm64-v8a\\src\\main\\cpp\\external\\libunwindstack\\deps\\libprocinfo\\libprocinfo.a",
+      "runtimeFiles": []
+    },
+    "sys_compat-Debug-arm64-v8a": {
+      "artifactName": "sys_compat",
+      "buildCommand": "C:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-backtrace\\.cxx\\cmake\\debug\\arm64-v8a\" sys_compat",
+      "abi": "arm64-v8a",
+      "output": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-backtrace\\.cxx\\cmake\\debug\\arm64-v8a\\src\\main\\cpp\\external\\libunwindstack\\deps\\sys_compat\\libsys_compat.a",
+      "runtimeFiles": []
+    },
+    "demangle-Debug-arm64-v8a": {
+      "artifactName": "demangle",
+      "buildCommand": "C:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-backtrace\\.cxx\\cmake\\debug\\arm64-v8a\" demangle",
+      "abi": "arm64-v8a",
+      "output": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-backtrace\\.cxx\\cmake\\debug\\arm64-v8a\\src\\main\\cpp\\external\\libunwindstack\\deps\\demangle\\libdemangle.a",
+      "runtimeFiles": []
+    },
+    "lzma-Debug-arm64-v8a": {
+      "artifactName": "lzma",
+      "buildCommand": "C:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-backtrace\\.cxx\\cmake\\debug\\arm64-v8a\" lzma",
+      "abi": "arm64-v8a",
+      "output": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-backtrace\\.cxx\\cmake\\debug\\arm64-v8a\\src\\main\\cpp\\external\\libunwindstack\\deps\\liblzma\\liblzma.a",
+      "runtimeFiles": []
+    },
+    "wechatbacktrace-Debug-arm64-v8a": {
+      "artifactName": "wechatbacktrace",
+      "buildCommand": "C:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-backtrace\\.cxx\\cmake\\debug\\arm64-v8a\" wechatbacktrace",
+      "abi": "arm64-v8a",
+      "output": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-backtrace\\build\\intermediates\\cmake\\debug\\obj\\arm64-v8a\\libwechatbacktrace.so",
+      "runtimeFiles": []
+    },
+    "android-base-Debug-arm64-v8a": {
+      "artifactName": "android-base",
+      "buildCommand": "C:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-backtrace\\.cxx\\cmake\\debug\\arm64-v8a\" android-base",
+      "abi": "arm64-v8a",
+      "output": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-backtrace\\.cxx\\cmake\\debug\\arm64-v8a\\src\\main\\cpp\\external\\libunwindstack\\deps\\android-base\\libandroid-base.a",
+      "runtimeFiles": []
+    }
+  }
+}
