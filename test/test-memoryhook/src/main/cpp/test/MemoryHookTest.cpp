@@ -155,6 +155,10 @@ void prepare_data_routine(std::string filepath) {
     file.close();
 }
 
+static void *thread_test(void *arg){
+    return NULL;
+}
+
 JNIEXPORT void JNICALL
 Java_com_tencent_matrix_test_memoryhook_MemoryHookTestNative_nativePrepareData(JNIEnv *env,
                                                                                jclass clazz) {
@@ -170,6 +174,7 @@ Java_com_tencent_matrix_test_memoryhook_MemoryHookTestNative_nativePrepareData(J
         while ((en = readdir(dr)) != nullptr) {
             std::string absolute_path = std::string(dir_path) + std::string(en->d_name);
             auto th = new std::thread(prepare_data_routine, absolute_path);
+
             threads.push_back(th);
         }
         closedir(dr); //close all directory
@@ -179,8 +184,8 @@ Java_com_tencent_matrix_test_memoryhook_MemoryHookTestNative_nativePrepareData(J
         thread->join();
         delete thread;
     }
-}
 
+}
 
 extern "C" void fake_malloc(void *ptr, size_t byte_count);
 extern "C" void fake_free(void *ptr);
@@ -210,13 +215,26 @@ Java_com_tencent_matrix_test_memoryhook_MemoryHookTestNative_nativeRunTest(
     for (size_t i = 0; i < THREAD_MAX_COUNT; i++) {
         if (thread_vectors[i]) {
             auto th = new std::thread(routine, i);
+
             threads.push_back(th);
         }
     }
 
-    for (auto & thread : threads) {
-        thread->join();
-        delete thread;
+//    for (auto & thread : threads) {
+//        thread->join();
+//        delete thread;
+//    }
+
+
+    pthread_t pthreads [30];
+    for ( int i = 0; i < 30; ++i ) {
+        int ret = pthread_create(&pthreads[i],NULL, &thread_test,nullptr);
+        if ( i % 500 == 0) {
+            sleep( 1 );
+        }
+        if(ret !=0){
+//            LOGD(TAG，"pthread_create error [ %d ] : %d" , i， ret ) ;break;
+        }
     }
 }
 

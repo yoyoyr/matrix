@@ -141,6 +141,14 @@ public class MemoryHookActivity extends AppCompatActivity {
     public void prepareData(View view) {
         if (mHasPrepared) return;
         mHasPrepared = true;
+        PthreadHook.INSTANCE.enableLogger(true);
+        PthreadHook.INSTANCE.enableQuicken(true);
+        PthreadHook.INSTANCE.enableTracePthreadRelease(true);
+        PthreadHook.INSTANCE.setThreadTraceEnabled(true);
+
+
+
+//        PthreadHook.INSTANCE.
 
         System.loadLibrary("test-memoryhook");
 
@@ -161,9 +169,9 @@ public class MemoryHookActivity extends AppCompatActivity {
                     // Memory hook
                     .addHook(MemoryHook.INSTANCE
 //                            .addHookSo(".*test-memoryhook\\.so$")
-                            .addHookSo(".*library-not-exists\\.so$")
-                            .enableStacktrace(true)
-                            .stacktraceLogThreshold(0)
+                                    .addHookSo(".*library-not-exists\\.so$")
+                                    .enableStacktrace(true)
+                                    .stacktraceLogThreshold(0)
                     )
 
                     // Thread hook
@@ -189,6 +197,8 @@ public class MemoryHookActivity extends AppCompatActivity {
     public void dump(View view) {
         String logPath = getExternalCacheDir().getAbsolutePath() + "/memory-hook.log";
         String jsonPath = getExternalCacheDir().getAbsolutePath() + "/memory-hook.json";
+        PthreadHook.INSTANCE.dump(getExternalCacheDir().getAbsolutePath() + "/memory-thread.log");
+        System.out.println("log path " + logPath);
         MemoryHook.INSTANCE.dump(logPath, jsonPath);
     }
 
@@ -196,6 +206,22 @@ public class MemoryHookActivity extends AppCompatActivity {
 
         int b = i + 1;
 
+        for (int z = 0; z < 10; ++z) {
+            Thread thread = new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    System.out.println(Thread.currentThread().getName() + " start");
+//                    while (true) {
+                        try {
+                            Thread.sleep(500);
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+//                    }
+                }
+            }, "thread-" + z);
+            thread.start();
+        }
         if (i == j) {
             long start = System.currentTimeMillis();
             MemoryHookTestNative.nativeRunTest();

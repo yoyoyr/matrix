@@ -47,6 +47,7 @@
 #define PTHREAD_BACKTRACE_MAX_FRAMES MAX_FRAME_SHORT
 #define PTHREAD_BACKTRACE_MAX_FRAMES_LONG MAX_FRAME_LONG_LONG
 #define PTHREAD_BACKTRACE_FRAME_ELEMENTS_MAX_SIZE MAX_FRAME_NORMAL
+#define LOGD(tag,fmt, ...) __android_log_print(ANDROID_LOG_WARN,  tag, fmt, ##__VA_ARGS__)
 
 typedef void *(*pthread_routine_t)(void *);
 
