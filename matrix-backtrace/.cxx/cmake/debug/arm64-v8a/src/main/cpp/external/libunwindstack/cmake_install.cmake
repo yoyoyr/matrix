@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack
+# Install script for directory: C:/project/demo/matrix-dev/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,11 +39,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libunwindstack/deps/android-base/cmake_install.cmake")
-  include("C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libunwindstack/deps/liblzma/cmake_install.cmake")
-  include("C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libunwindstack/deps/sys_compat/cmake_install.cmake")
-  include("C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libunwindstack/deps/libprocinfo/cmake_install.cmake")
-  include("C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libunwindstack/deps/demangle/cmake_install.cmake")
+  include("C:/project/demo/matrix-dev/matrix/matrix-android/matrix-backtrace/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libunwindstack/deps/android-base/cmake_install.cmake")
+  include("C:/project/demo/matrix-dev/matrix/matrix-android/matrix-backtrace/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libunwindstack/deps/liblzma/cmake_install.cmake")
+  include("C:/project/demo/matrix-dev/matrix/matrix-android/matrix-backtrace/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libunwindstack/deps/sys_compat/cmake_install.cmake")
+  include("C:/project/demo/matrix-dev/matrix/matrix-android/matrix-backtrace/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libunwindstack/deps/libprocinfo/cmake_install.cmake")
+  include("C:/project/demo/matrix-dev/matrix/matrix-android/matrix-backtrace/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libunwindstack/deps/demangle/cmake_install.cmake")
 
 endif()
 

@@ -143,7 +143,7 @@ public class MemoryHookActivity extends AppCompatActivity {
         mHasPrepared = true;
         PthreadHook.INSTANCE.enableLogger(true);
         //true 不打印java堆栈
-        PthreadHook.INSTANCE.enableQuicken(true);
+        PthreadHook.INSTANCE.enableQuicken(false);
         PthreadHook.INSTANCE.enableTracePthreadRelease(true);
         PthreadHook.INSTANCE.setThreadTraceEnabled(true);
 
@@ -207,18 +207,18 @@ public class MemoryHookActivity extends AppCompatActivity {
 
         int b = i + 1;
 
-        for (int z = 0; z < 10; ++z) {
+        for (int z = 0; z < 2; ++z) {
             Thread thread = new Thread(new Runnable() {
                 @Override
                 public void run() {
                     System.out.println(Thread.currentThread().getName() + " start");
-//                    while (true) {
+                    while (true) {
                         try {
                             Thread.sleep(500);
                         } catch (InterruptedException e) {
                             e.printStackTrace();
                         }
-//                    }
+                    }
                 }
             }, "thread-" + z);
             thread.start();

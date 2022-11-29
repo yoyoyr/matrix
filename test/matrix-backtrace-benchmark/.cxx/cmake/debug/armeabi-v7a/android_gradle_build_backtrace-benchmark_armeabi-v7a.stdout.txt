@@ -1,0 +1,15 @@
+ninja: Entering directory `C:\project\demo\matrix-dev\matrix\matrix-android\test\matrix-backtrace-benchmark\.cxx\cmake\debug\armeabi-v7a'
+[1/10] Building CXX object CMakeFiles/backtrace-benchmark.dir/src/main/cpp/test/UnwindTestCase_SelfSo.cpp.o
+[2/10] Building C object CMakeFiles/backtrace-benchmark.dir/src/main/cpp/test/unwind32/backtrace-arm.c.o
+[3/10] Building C object CMakeFiles/backtrace-benchmark.dir/src/main/cpp/test/unwind32/backtrace.c.o
+../../../../src/main/cpp/test/unwind32/backtrace.c:37:14: warning: implicit declaration of function 'unwind_backtrace_signal_arch_selfnogcc' is invalid in C99 [-Wimplicit-function-declaration]
+    frames = unwind_backtrace_signal_arch_selfnogcc(milist, backtrace, ignore_depth, max_depth);
+             ^
+1 warning generated.
+[4/10] Building C object CMakeFiles/backtrace-benchmark.dir/src/main/cpp/test/unwind32/backtrace-helper.c.o
+[5/10] Building C object CMakeFiles/backtrace-benchmark.dir/src/main/cpp/test/unwind32/map_info.c.o
+[6/10] Building CXX object CMakeFiles/backtrace-benchmark.dir/src/main/cpp/test/JavaStacktrace.cpp.o
+[7/10] Building C object CMakeFiles/backtrace-benchmark.dir/src/main/cpp/test/unwind32/ptrace.c.o
+[8/10] Building CXX object CMakeFiles/backtrace-benchmark.dir/src/main/cpp/test/UnwindTestBenchmark.cpp.o
+[9/10] Building CXX object CMakeFiles/backtrace-benchmark.dir/src/main/cpp/test/UnwindTestCommon.cpp.o
+[10/10] Linking CXX shared library ..\..\..\..\build\intermediates\cmake\debug\obj\armeabi-v7a\libbacktrace-benchmark.so

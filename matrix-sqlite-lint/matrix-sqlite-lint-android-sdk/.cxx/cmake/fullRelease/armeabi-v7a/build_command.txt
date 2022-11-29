@@ -1,0 +1,24 @@
+                Executable : C:\Users\29655\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\cmake.exe
+arguments : 
+-HC:\project\demo\matrix-dev\matrix\matrix-android\matrix-sqlite-lint
+-DCMAKE_CXX_FLAGS=-std=c++11 -frtti -fexceptions
+-DCMAKE_FIND_ROOT_PATH=C:\project\demo\matrix-dev\matrix\matrix-android\matrix-sqlite-lint\matrix-sqlite-lint-android-sdk\.cxx\cmake\fullRelease\prefab\armeabi-v7a\prefab
+-DCMAKE_BUILD_TYPE=Release
+-DCMAKE_TOOLCHAIN_FILE=C:\Users\29655\AppData\Local\Android\Sdk\ndk\21.1.6352462\build\cmake\android.toolchain.cmake
+-DANDROID_ABI=armeabi-v7a
+-DANDROID_NDK=C:\Users\29655\AppData\Local\Android\Sdk\ndk\21.1.6352462
+-DANDROID_PLATFORM=android-19
+-DCMAKE_ANDROID_ARCH_ABI=armeabi-v7a
+-DCMAKE_ANDROID_NDK=C:\Users\29655\AppData\Local\Android\Sdk\ndk\21.1.6352462
+-DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=C:\project\demo\matrix-dev\matrix\matrix-android\matrix-sqlite-lint\matrix-sqlite-lint-android-sdk\build\intermediates\cmake\fullRelease\obj\armeabi-v7a
+-DCMAKE_MAKE_PROGRAM=C:\Users\29655\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe
+-DCMAKE_SYSTEM_NAME=Android
+-DCMAKE_SYSTEM_VERSION=19
+-DEXT_DEP=C:\project\demo\matrix-dev\matrix\matrix-android\matrix-sqlite-lint\matrix-sqlite-lint-android-sdk\build\intermediates\native_deps\extracted_native_dependencies
+-Dplatform=android
+-BC:\project\demo\matrix-dev\matrix\matrix-android\matrix-sqlite-lint\matrix-sqlite-lint-android-sdk\.cxx\cmake\fullRelease\armeabi-v7a
+-GNinja
+jvmArgs : 
+
+Build command args:

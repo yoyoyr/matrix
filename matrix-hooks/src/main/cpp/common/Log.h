@@ -44,9 +44,9 @@ internal_hook_vlogger(int log_level, const char *tag, const char *format, va_lis
 #define LOGE(TAG, FMT, args...) internal_hook_logger(ANDROID_LOG_ERROR, TAG, FMT, ##args)
 
 #else
-#define LOGD(TAG, FMT, args...) __android_log_print(ANDROID_LOG_WARN,  tag, fmt, ##__VA_ARGS__)
-#define LOGI(TAG, FMT, args...) __android_log_print(ANDROID_LOG_WARN,  tag, fmt, ##__VA_ARGS__)
-#define LOGE(TAG, FMT, args...) __android_log_print(ANDROID_LOG_WARN,  tag, fmt, ##__VA_ARGS__)
+#define LOGD(TAG, FMT, args...) //__android_log_print(ANDROID_LOG_WARN,  tag, FMT, args)
+#define LOGI(TAG, FMT, args...) //__android_log_print(ANDROID_LOG_WARN,  tag, FMT, args)
+#define LOGE(TAG, FMT, args...) //__android_log_print(ANDROID_LOG_WARN,  tag, FMT, args)
 
 #endif
 

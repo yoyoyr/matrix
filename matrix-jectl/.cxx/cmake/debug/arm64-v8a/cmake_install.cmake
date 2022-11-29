@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/yoyo/Desktop/git/project/matrix/matrix-jectl
+# Install script for directory: C:/project/demo/matrix-dev/matrix/matrix-android/matrix-jectl
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/yoyo/Desktop/git/project/matrix/matrix-jectl/.cxx/cmake/debug/arm64-v8a/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/project/demo/matrix-dev/matrix/matrix-android/matrix-jectl/.cxx/cmake/debug/arm64-v8a/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

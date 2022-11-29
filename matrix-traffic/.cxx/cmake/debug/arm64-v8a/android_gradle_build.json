@@ -1,54 +1,54 @@
 {
   "stringTable": {
-    "0": "C:/Users/yoyo/Desktop/git/project/matrix/matrix-traffic/.cxx/cmake/debug/arm64-v8a",
-    "1": "--target=aarch64-none-linux-android21 --gcc-toolchain=C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/yoyo/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dmatrix_traffic_EXPORTS -I../../../../src/main/cpp -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -std=gnu++11 -frtti -fexceptions -O0 -fno-limit-debug-info -fPIC -std=c++1z"
+    "0": "C:/project/demo/matrix-dev/matrix/matrix-android/matrix-traffic/.cxx/cmake/debug/arm64-v8a",
+    "1": "--target=aarch64-none-linux-android21 --gcc-toolchain=C:/Users/29655/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/29655/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dmatrix_traffic_EXPORTS -I../../../../src/main/cpp -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -std=gnu++11 -frtti -fexceptions -O0 -fno-limit-debug-info -fPIC -std=c++1z"
   },
   "buildFiles": [
-    "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-traffic\\CMakeLists.txt",
-    "C:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\build\\cmake\\android.toolchain.cmake",
-    "C:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\build\\cmake\\platforms.cmake"
+    "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-traffic\\CMakeLists.txt",
+    "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\build\\cmake\\android.toolchain.cmake",
+    "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\build\\cmake\\platforms.cmake"
   ],
   "cleanCommands": [
-    "C:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-traffic\\.cxx\\cmake\\debug\\arm64-v8a\" clean"
+    "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-traffic\\.cxx\\cmake\\debug\\arm64-v8a\" clean"
   ],
-  "buildTargetsCommand": "C:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-traffic\\.cxx\\cmake\\debug\\arm64-v8a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "buildTargetsCommand": "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-traffic\\.cxx\\cmake\\debug\\arm64-v8a\" {LIST_OF_TARGETS_TO_BUILD}",
   "libraries": {
     "matrix-traffic-Debug-arm64-v8a": {
-      "buildCommand": "C:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-traffic\\.cxx\\cmake\\debug\\arm64-v8a\" matrix-traffic",
+      "buildCommand": "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-traffic\\.cxx\\cmake\\debug\\arm64-v8a\" matrix-traffic",
       "buildType": "debug",
-      "toolchain": "3442694048",
+      "toolchain": "699593489",
       "abi": "arm64-v8a",
       "artifactName": "matrix-traffic",
       "files": [
         {
-          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-traffic\\src\\main\\cpp\\MatrixTraffic.cc",
+          "src": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-traffic\\src\\main\\cpp\\MatrixTraffic.cc",
           "flagsOrdinal": 1,
           "workingDirectoryOrdinal": 0
         },
         {
-          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-traffic\\src\\main\\cpp\\TrafficCollector.cc",
+          "src": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-traffic\\src\\main\\cpp\\TrafficCollector.cc",
           "flagsOrdinal": 1,
           "workingDirectoryOrdinal": 0
         },
         {
-          "src": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-traffic\\src\\main\\cpp\\util\\managed_jnienv.cc",
+          "src": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-traffic\\src\\main\\cpp\\util\\managed_jnienv.cc",
           "flagsOrdinal": 1,
           "workingDirectoryOrdinal": 0
         }
       ],
       "headers": [
         {
-          "header": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-traffic\\src\\main\\cpp\\util\\blocking_queue.h",
+          "header": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-traffic\\src\\main\\cpp\\util\\blocking_queue.h",
           "workingDirectoryOrdinal": 0
         }
       ],
-      "output": "C:\\Users\\yoyo\\Desktop\\git\\project\\matrix\\matrix-traffic\\build\\intermediates\\cmake\\debug\\obj\\arm64-v8a\\libmatrix-traffic.so",
+      "output": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-traffic\\build\\intermediates\\cmake\\debug\\obj\\arm64-v8a\\libmatrix-traffic.so",
       "runtimeFiles": []
     }
   },
   "toolchains": {
-    "3442694048": {
-      "cppCompilerExecutable": "C:\\Users\\yoyo\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
+    "699593489": {
+      "cppCompilerExecutable": "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
     }
   },
   "cFileExtensions": [],

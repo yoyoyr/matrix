@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/yoyo/Desktop/git/project/matrix/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/sys_compat
+# Install script for directory: C:/project/demo/matrix-dev/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/sys_compat
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

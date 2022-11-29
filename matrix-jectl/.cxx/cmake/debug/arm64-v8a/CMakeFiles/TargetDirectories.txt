@@ -1,3 +1,3 @@
-C:/Users/yoyo/Desktop/git/project/matrix/matrix-jectl/.cxx/cmake/debug/arm64-v8a/CMakeFiles/matrix-jectl.dir
-C:/Users/yoyo/Desktop/git/project/matrix/matrix-jectl/.cxx/cmake/debug/arm64-v8a/CMakeFiles/edit_cache.dir
-C:/Users/yoyo/Desktop/git/project/matrix/matrix-jectl/.cxx/cmake/debug/arm64-v8a/CMakeFiles/rebuild_cache.dir
+C:/project/demo/matrix-dev/matrix/matrix-android/matrix-jectl/.cxx/cmake/debug/arm64-v8a/CMakeFiles/matrix-jectl.dir
+C:/project/demo/matrix-dev/matrix/matrix-android/matrix-jectl/.cxx/cmake/debug/arm64-v8a/CMakeFiles/edit_cache.dir
+C:/project/demo/matrix-dev/matrix/matrix-android/matrix-jectl/.cxx/cmake/debug/arm64-v8a/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,3 @@
+ninja: Entering directory `C:\project\demo\matrix-dev\matrix\matrix-android\test\test-memoryhook\.cxx\cmake\debug\arm64-v8a'
+[1/2] Building CXX object CMakeFiles/test-memoryhook.dir/src/main/cpp/test/MemoryHookTest.cpp.o
+[2/2] Linking CXX shared library ..\..\..\..\build\intermediates\cmake\debug\obj\arm64-v8a\libtest-memoryhook.so

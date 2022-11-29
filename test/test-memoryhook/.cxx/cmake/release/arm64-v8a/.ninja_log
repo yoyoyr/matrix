@@ -1,0 +1,3 @@
+# ninja log v5
+0	1140	691325076	CMakeFiles/test-memoryhook.dir/src/main/cpp/test/MemoryHookTest.cpp.o	742d15b0adf80823
+1141	1386	691325076	../../../../build/intermediates/cmake/release/obj/arm64-v8a/libtest-memoryhook.so	2088e3eb416f9ccb

@@ -116,7 +116,7 @@ void prepare_data_routine(std::string filepath) {
             auto splits = split_string(line, ":");
             CHECK(splits.size(), 2);
             auto backtrace = split_string(splits[1], ";");
-            auto* backtrace_ = new vector<uint64_t>;
+            auto *backtrace_ = new vector<uint64_t>;
 
             for (const auto &str: backtrace) {
                 if (str.empty()) continue;
@@ -155,18 +155,24 @@ void prepare_data_routine(std::string filepath) {
     file.close();
 }
 
-static void *thread_test(void *arg){
+static void *thread_test(void *arg) {
     return NULL;
+}
+
+static void *thread_leak(void *arg) {
+    while (true) {
+        sleep(1);
+    }
 }
 
 JNIEXPORT void JNICALL
 Java_com_tencent_matrix_test_memoryhook_MemoryHookTestNative_nativePrepareData(JNIEnv *env,
                                                                                jclass clazz) {
 
-    vector<thread*> threads;
+    vector<thread *> threads;
 
     // Unzip and push data/memory-record.1.zip to this folder.
-    const char * dir_path = "/data/local/tmp/simulate-malloc/memory-record.1/";
+    const char *dir_path = "/data/local/tmp/simulate-malloc/memory-record.1/";
     DIR *dr;
     struct dirent *en;
     dr = opendir(dir_path);
@@ -180,7 +186,7 @@ Java_com_tencent_matrix_test_memoryhook_MemoryHookTestNative_nativePrepareData(J
         closedir(dr); //close all directory
     }
 
-    for (auto & thread : threads) {
+    for (auto &thread: threads) {
         thread->join();
         delete thread;
     }
@@ -190,11 +196,10 @@ Java_com_tencent_matrix_test_memoryhook_MemoryHookTestNative_nativePrepareData(J
 extern "C" void fake_malloc(void *ptr, size_t byte_count);
 extern "C" void fake_free(void *ptr);
 
-void routine(size_t fake_tid)
-{
+void routine(size_t fake_tid) {
     set_fake_backtrace_vectors(thread_backtrace_vectors[fake_tid]);
     uint64_t last_ts;
-    for (auto chunk : *thread_vectors[fake_tid]) {
+    for (auto chunk: *thread_vectors[fake_tid]) {
         if (chunk.ts > last_ts && (chunk.ts - last_ts) >= 1000000) {
             usleep(1000);
         }
@@ -211,7 +216,7 @@ JNIEXPORT void JNICALL
 Java_com_tencent_matrix_test_memoryhook_MemoryHookTestNative_nativeRunTest(
         JNIEnv *env, jclass clazz) {
 
-    vector<thread*> threads;
+    vector<thread *> threads;
     for (size_t i = 0; i < THREAD_MAX_COUNT; i++) {
         if (thread_vectors[i]) {
             auto th = new std::thread(routine, i);
@@ -226,19 +231,28 @@ Java_com_tencent_matrix_test_memoryhook_MemoryHookTestNative_nativeRunTest(
 //    }
 
 
-    pthread_t pthreads [23];
-    for ( int i = 0; i < 23; ++i ) {
-        int ret = pthread_create(&pthreads[i],NULL, &thread_test,nullptr);
-        if ( i % 500 == 0) {
-            sleep( 1 );
+    pthread_t pthreads[23];
+    for (int i = 0; i < 23; ++i) {
+        int ret = pthread_create(&pthreads[i], NULL, &thread_test, nullptr);
+        if (i % 500 == 0) {
+            sleep(1);
         }
-        if(ret !=0){
+        if (ret != 0) {
+//            LOGD(TAG，"pthread_create error [ %d ] : %d" , i， ret ) ;break;
+        }
+    }
+
+
+    pthread_t leakThreads[5];
+    for (int i = 0; i < 5; ++i) {
+        int ret = pthread_create(&leakThreads[i], NULL, &thread_leak, nullptr);
+        if (ret != 0) {
 //            LOGD(TAG，"pthread_create error [ %d ] : %d" , i， ret ) ;break;
         }
     }
 }
 
-uint64_t hash_backtrace_frames_1(std::vector<uint64_t>* frames) {
+uint64_t hash_backtrace_frames_1(std::vector<uint64_t> *frames) {
     uint64_t sum = 1;
     if (frames == nullptr) {
         return (uint64_t) sum;
@@ -249,7 +263,7 @@ uint64_t hash_backtrace_frames_1(std::vector<uint64_t>* frames) {
     return (uint64_t) sum;
 }
 
-uint64_t hash_backtrace_frames_2(std::vector<uint64_t>* frames) {
+uint64_t hash_backtrace_frames_2(std::vector<uint64_t> *frames) {
 
     if (UNLIKELY(frames == nullptr || frames->empty())) {
         return 1;
@@ -269,9 +283,9 @@ Java_com_tencent_matrix_test_memoryhook_MemoryHookTestNative_nativeHashCollision
     std::map<uint64_t, vector<FakeRecordMemoryBacktrace> *> hashtable;
     std::vector<uint64_t> collision;
     std::vector<uint64_t> size_collision;
-    for (auto & thread_backtrace_vector : thread_backtrace_vectors) {
+    for (auto &thread_backtrace_vector: thread_backtrace_vectors) {
         if (thread_backtrace_vector) {
-            for (auto backtrace : *thread_backtrace_vector) {
+            for (auto backtrace: *thread_backtrace_vector) {
                 uint64_t hash = hash_backtrace_frames_2(backtrace.frames);
 
                 if (hashtable.find(hash) == hashtable.end()) {
@@ -279,7 +293,7 @@ Java_com_tencent_matrix_test_memoryhook_MemoryHookTestNative_nativeHashCollision
                 }
                 bool has_collision = true;
                 bool has_size_collision = false;
-                for (auto b : *hashtable[hash]) {
+                for (auto b: *hashtable[hash]) {
                     bool is_collision = b.frames->size() != backtrace.frames->size();
                     if (!is_collision) {
                         for (size_t idx = 0; idx < backtrace.frames->size(); idx++) {
@@ -309,16 +323,18 @@ Java_com_tencent_matrix_test_memoryhook_MemoryHookTestNative_nativeHashCollision
     }
 
     size_t c_count = 0;
-    for (auto hash : collision) {
+    for (auto hash: collision) {
         c_count += hashtable[hash]->size();
     }
 
-    TEST_LOG_ERROR("Found hash collision %zu, size collision %zu, in total %zu, backtrace count %zu", collision.size(), size_collision.size(), hashtable.size(), c_count);
+    TEST_LOG_ERROR(
+            "Found hash collision %zu, size collision %zu, in total %zu, backtrace count %zu",
+            collision.size(), size_collision.size(), hashtable.size(), c_count);
 
 }
 
 struct TaggedPtr {
-    void * ptr = nullptr;
+    void *ptr = nullptr;
     size_t size = 111;
 };
 

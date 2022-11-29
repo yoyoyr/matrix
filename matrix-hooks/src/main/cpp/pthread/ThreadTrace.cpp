@@ -47,21 +47,21 @@
 #define PTHREAD_BACKTRACE_MAX_FRAMES MAX_FRAME_SHORT
 #define PTHREAD_BACKTRACE_MAX_FRAMES_LONG MAX_FRAME_LONG_LONG
 #define PTHREAD_BACKTRACE_FRAME_ELEMENTS_MAX_SIZE MAX_FRAME_NORMAL
-#define LOGD(tag,fmt, ...) __android_log_print(ANDROID_LOG_WARN,  tag, fmt, ##__VA_ARGS__)
+#define LOGD(tag, fmt, ...) __android_log_print(ANDROID_LOG_WARN,  tag, fmt, ##__VA_ARGS__)
 
 typedef void *(*pthread_routine_t)(void *);
 
-static volatile bool   m_quicken_unwind               = false;
+static volatile bool m_quicken_unwind = false;
 static volatile size_t m_pthread_backtrace_max_frames =
-                               m_quicken_unwind ? PTHREAD_BACKTRACE_MAX_FRAMES_LONG
-                                                : PTHREAD_BACKTRACE_MAX_FRAMES;
+        m_quicken_unwind ? PTHREAD_BACKTRACE_MAX_FRAMES_LONG
+                         : PTHREAD_BACKTRACE_MAX_FRAMES;
 
 static volatile bool m_trace_pthread_release = false;
 
 struct pthread_meta_t {
-    pid_t                           tid;
+    pid_t tid;
     // fixme using std::string
-    char                            *thread_name;
+    char *thread_name;
 //    char  *parent_name;
     wechat_backtrace::BacktraceMode unwind_mode;
 
@@ -86,11 +86,11 @@ struct pthread_meta_t {
     ~pthread_meta_t() = default;
 
     pthread_meta_t(const pthread_meta_t &src) {
-        tid              = src.tid;
-        thread_name      = src.thread_name;
+        tid = src.tid;
+        thread_name = src.thread_name;
 //        parent_name       = src.parent_name;
-        unwind_mode      = src.unwind_mode;
-        hash             = src.hash;
+        unwind_mode = src.unwind_mode;
+        hash = src.hash;
         native_backtrace = src.native_backtrace;
         java_stacktrace.store(src.java_stacktrace.load(std::memory_order_acquire),
                               std::memory_order_release);
@@ -100,7 +100,7 @@ struct pthread_meta_t {
 
 struct regex_wrapper {
     const char *regex_str;
-    regex_t    regex;
+    regex_t regex;
 
     regex_wrapper(const char *regexStr, const regex_t &regex) : regex_str(regexStr), regex(regex) {}
 
@@ -109,18 +109,18 @@ struct regex_wrapper {
     }
 };
 
-static std::mutex                   m_pthread_meta_mutex;
-static std::timed_mutex             m_java_stacktrace_mutex;
+static std::mutex m_pthread_meta_mutex;
+static std::timed_mutex m_java_stacktrace_mutex;
 typedef std::lock_guard<std::mutex> pthread_meta_lock;
 
 static std::map<pthread_t, pthread_meta_t> m_pthread_metas;
-static std::set<pthread_t>                 m_filtered_pthreads;
+static std::set<pthread_t> m_filtered_pthreads;
 
 static std::set<regex_wrapper> m_hook_thread_name_regex;
 
 static pthread_key_t m_destructor_key;
 
-static std::mutex              m_subroutine_mutex;
+static std::mutex m_subroutine_mutex;
 static std::condition_variable m_subroutine_cv;
 
 static std::set<pthread_t> m_pthread_routine_flags;
@@ -146,8 +146,8 @@ void thread_trace::add_hook_thread_name(const char *regex_str) {
         LOGD("PthreadHook", "regex compiled error: %s", regex_str);
         return;
     }
-    size_t len          = strlen(regex_str) + 1;
-    char   *p_regex_str = static_cast<char *>(malloc(len));
+    size_t len = strlen(regex_str) + 1;
+    char *p_regex_str = static_cast<char *>(malloc(len));
     strncpy(p_regex_str, regex_str, len);
     regex_wrapper w_regex(p_regex_str, regex);
     m_hook_thread_name_regex.insert(w_regex);
@@ -155,7 +155,7 @@ void thread_trace::add_hook_thread_name(const char *regex_str) {
 }
 
 static bool test_match_thread_name(pthread_meta_t &meta) {
-    for (const auto &w : m_hook_thread_name_regex) {
+    for (const auto &w: m_hook_thread_name_regex) {
         if (meta.thread_name && 0 == regexec(&w.regex, meta.thread_name, 0, NULL, 0)) {
             LOGD(TAG, "test_match_thread_name: %s matches regex %s", meta.thread_name,
                  w.regex_str);
@@ -199,7 +199,7 @@ on_pthread_create_locked(const pthread_t pthread, char *java_stacktrace, bool qu
     }
 
     uint64_t native_hash = 0;
-    uint64_t java_hash   = 0;
+    uint64_t java_hash = 0;
 
     if (quicken_unwind) {
         meta.unwind_mode = wechat_backtrace::Quicken;
@@ -243,7 +243,7 @@ static void notify_routine(const pthread_t pthread) {
 void thread_trace::handle_pthread_create(const pthread_t pthread) {
     const char *arch =
 #ifdef __aarch64__
-                       "aarch64";
+            "aarch64";
 #elif defined __arm__
     "arm";
 #endif
@@ -258,8 +258,8 @@ void thread_trace::handle_pthread_create(const pthread_t pthread) {
     }
 
     if (!m_quicken_unwind) {
-        const size_t BUF_SIZE         = 1024;
-        char         *java_stacktrace = static_cast<char *>(malloc(BUF_SIZE));
+        const size_t BUF_SIZE = 1024;
+        char *java_stacktrace = static_cast<char *>(malloc(BUF_SIZE));
         strncpy(java_stacktrace, "(init stacktrace)", BUF_SIZE);
         if (m_java_stacktrace_mutex.try_lock_for(std::chrono::milliseconds(100))) {
             if (java_stacktrace) {
@@ -391,7 +391,7 @@ static inline void pthread_dump_impl(FILE *log_file) {
             flogger0(log_file, "native stacktrace:\n");
 
             auto frame_detail_lambda = [&log_file](wechat_backtrace::FrameDetail detail) -> void {
-                int  status          = 0;
+                int status = 0;
                 char *demangled_name = abi::__cxa_demangle(detail.function_name, nullptr, 0,
                                                            &status);
 
@@ -419,8 +419,8 @@ static inline void pthread_dump_impl(FILE *log_file) {
             LOGD(TAG, "native stacktrace:");
             flogger0(log_file, "native stacktrace:\n");
 
-            size_t                         elements_size = 0;
-            const size_t                   max_elements  = PTHREAD_BACKTRACE_FRAME_ELEMENTS_MAX_SIZE;
+            size_t elements_size = 0;
+            const size_t max_elements = PTHREAD_BACKTRACE_FRAME_ELEMENTS_MAX_SIZE;
             wechat_backtrace::FrameElement stacktrace_elements[max_elements];
 
             get_stacktrace_elements(meta.native_backtrace.frames.get(),
@@ -445,8 +445,8 @@ static inline void pthread_dump_impl(FILE *log_file) {
 
 static inline bool append_meta_2_json_array(cJSON *json_array,
                                             std::map<uint64_t, std::vector<pthread_meta_t>> &pthread_metas_by_hash) {
-    for (auto &i : pthread_metas_by_hash) {
-        auto &hash  = i.first;
+    for (auto &i: pthread_metas_by_hash) {
+        auto &hash = i.first;
         auto &metas = i.second;
 
         cJSON *hash_obj = cJSON_CreateObject();
@@ -458,7 +458,7 @@ static inline bool append_meta_2_json_array(cJSON *json_array,
         cJSON_AddStringToObject(hash_obj, "hash", std::to_string(hash).c_str());
         assert(!metas.empty());
 
-        auto meta            = metas.front();
+        auto meta = metas.front();
         auto front_backtrace = &metas.front().native_backtrace;
         if (meta.unwind_mode == wechat_backtrace::FramePointer) {
             std::stringstream stack_builder;
@@ -499,8 +499,8 @@ static inline bool append_meta_2_json_array(cJSON *json_array,
             std::stringstream native_stack_builder;
             std::stringstream java_stack_builder;
 
-            size_t                         elements_size = 0;
-            const size_t                   max_elements  = PTHREAD_BACKTRACE_FRAME_ELEMENTS_MAX_SIZE;
+            size_t elements_size = 0;
+            const size_t max_elements = PTHREAD_BACKTRACE_FRAME_ELEMENTS_MAX_SIZE;
             wechat_backtrace::FrameElement stacktrace_elements[max_elements];
             get_stacktrace_elements(front_backtrace->frames.get(),
                                     front_backtrace->frame_size,
@@ -569,20 +569,29 @@ static inline void pthread_dump_json_impl(FILE *log_file) {
     LOGD(TAG, "pthread dump waiting count: %zu", m_pthread_routine_flags.size());
 
     std::map<uint64_t, std::vector<pthread_meta_t>> pthread_metas_not_exited;
+    //仅打印匹配的线程
+//    for (auto &i : m_filtered_pthreads) {
+//        if (m_pthread_metas.count(i)) {
+//            auto &meta = m_pthread_metas.at(i);
+//            if (meta.hash) {
+//                auto &hash_bucket = pthread_metas_not_exited[meta.hash];
+//                hash_bucket.emplace_back(meta);
+//            }
+//        }
+//    }
 
-    for (auto &i : m_filtered_pthreads) {
-        if (m_pthread_metas.count(i)) {
-            auto &meta = m_pthread_metas.at(i);
-            if (meta.hash) {
-                auto &hash_bucket = pthread_metas_not_exited[meta.hash];
-                hash_bucket.emplace_back(meta);
-            }
+//打印所有线程
+    for (auto &i: m_pthread_metas) {
+        auto &meta = i.second;
+        if (meta.hash) {
+            auto &hash_bucket = pthread_metas_not_exited[meta.hash];
+            hash_bucket.emplace_back(meta);
         }
     }
 
     std::map<uint64_t, std::vector<pthread_meta_t>> pthread_metas_not_released;
 
-    for (auto &i : m_pthread_metas) {
+    for (auto &i: m_pthread_metas) {
         auto &meta = i.second;
         if (!meta.exited) {
             continue;
@@ -593,10 +602,10 @@ static inline void pthread_dump_json_impl(FILE *log_file) {
         }
     }
 
-    char  *json_str                        = NULL;
-    cJSON *json_array_threads_not_exited   = NULL;
+    char *json_str = NULL;
+    cJSON *json_array_threads_not_exited = NULL;
     cJSON *json_array_threads_not_released = NULL;
-    bool  success                          = false;
+    bool success = false;
 
     cJSON *json_obj = cJSON_CreateObject();
 
@@ -612,7 +621,8 @@ static inline void pthread_dump_json_impl(FILE *log_file) {
     }
 
     success &= append_meta_2_json_array(json_array_threads_not_exited, pthread_metas_not_exited);
-    success &= append_meta_2_json_array(json_array_threads_not_released, pthread_metas_not_released);
+    success &= append_meta_2_json_array(json_array_threads_not_released,
+                                        pthread_metas_not_released);
 
     json_str = cJSON_PrintUnformatted(json_obj);
 
@@ -656,7 +666,8 @@ void thread_trace::pthread_dump_json(const char *path) {
          ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> pthread dump json end <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<");
 }
 
-static void erase_meta(std::map<pthread_t, pthread_meta_t> &metas, pthread_t &pthread, pthread_meta_t &meta) {
+static void
+erase_meta(std::map<pthread_t, pthread_meta_t> &metas, pthread_t &pthread, pthread_meta_t &meta) {
     free(meta.thread_name);
 
     char *java_stacktrace = meta.java_stacktrace.load(std::memory_order_acquire);
@@ -728,7 +739,7 @@ static void *pthread_routine_wrapper(void *arg) {
     before_routine_start();
 
     auto *args_wrapper = (thread_trace::routine_wrapper_t *) arg;
-    void *ret          = args_wrapper->origin_func(args_wrapper->origin_args);
+    void *ret = args_wrapper->origin_func(args_wrapper->origin_args);
     free(args_wrapper);
     return ret;
 }
@@ -738,8 +749,8 @@ thread_trace::wrap_pthread_routine(pthread_hook::pthread_routine_t start_routine
     auto routine_wrapper = (thread_trace::routine_wrapper_t *) malloc(
             sizeof(thread_trace::routine_wrapper_t));
     routine_wrapper->wrapped_func = pthread_routine_wrapper;
-    routine_wrapper->origin_func  = start_routine;
-    routine_wrapper->origin_args  = args;
+    routine_wrapper->origin_func = start_routine;
+    routine_wrapper->origin_args = args;
     return routine_wrapper;
 }
 

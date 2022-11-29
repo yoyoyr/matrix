@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/yoyo/Desktop/git/project/matrix/matrix-android-commons/src/main/cpp/libsemi_dlfcn
+# Install script for directory: C:/project/demo/matrix-dev/matrix/matrix-android/matrix-android-commons/src/main/cpp/libsemi_dlfcn
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -1,0 +1,21 @@
+{
+  "buildFiles": [
+    "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-sqlite-lint\\CMakeLists.txt",
+    "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\build\\cmake\\android.toolchain.cmake",
+    "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\build\\cmake\\platforms.cmake",
+    "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-sqlite-lint\\matrix-sqlite-lint-android-sdk\\AndroidBuildSQLiteLint.cmake"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-sqlite-lint\\matrix-sqlite-lint-android-sdk\\.cxx\\cmake\\stubRelease\\armeabi-v7a\" clean"
+  ],
+  "buildTargetsCommand": "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-sqlite-lint\\matrix-sqlite-lint-android-sdk\\.cxx\\cmake\\stubRelease\\armeabi-v7a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "SqliteLint-lib-Release-armeabi-v7a": {
+      "artifactName": "SqliteLint-lib",
+      "buildCommand": "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-sqlite-lint\\matrix-sqlite-lint-android-sdk\\.cxx\\cmake\\stubRelease\\armeabi-v7a\" SqliteLint-lib",
+      "abi": "armeabi-v7a",
+      "output": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-sqlite-lint\\matrix-sqlite-lint-android-sdk\\build\\intermediates\\cmake\\stubRelease\\obj\\armeabi-v7a\\libSqliteLint-lib.so",
+      "runtimeFiles": []
+    }
+  }
+}

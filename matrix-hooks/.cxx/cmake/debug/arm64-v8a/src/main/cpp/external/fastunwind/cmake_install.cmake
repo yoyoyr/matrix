@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/yoyo/Desktop/git/project/matrix/matrix-hooks/src/main/cpp/external/fastunwind
+# Install script for directory: C:/project/demo/matrix-dev/matrix/matrix-android/matrix-hooks/src/main/cpp/external/fastunwind
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

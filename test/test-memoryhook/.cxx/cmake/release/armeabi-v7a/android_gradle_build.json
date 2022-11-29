@@ -1,0 +1,43 @@
+{
+  "stringTable": {
+    "0": "C:/project/demo/matrix-dev/matrix/matrix-android/test/test-memoryhook/.cxx/cmake/release/armeabi-v7a",
+    "1": "--target=armv7-none-linux-androideabi21 --gcc-toolchain=C:/Users/29655/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/29655/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DEnableLOG -Dtest_memoryhook_EXPORTS -I../../../../src/main/cpp/test -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security -Oz -DNDEBUG -fPIC -std=c++17 -fno-exceptions -frtti -O0 -fstack-protector"
+  },
+  "buildFiles": [
+    "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\test\\test-memoryhook\\CMakeLists.txt",
+    "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\build\\cmake\\android.toolchain.cmake",
+    "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\build\\cmake\\platforms.cmake"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\test\\test-memoryhook\\.cxx\\cmake\\release\\armeabi-v7a\" clean"
+  ],
+  "buildTargetsCommand": "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\test\\test-memoryhook\\.cxx\\cmake\\release\\armeabi-v7a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "test-memoryhook-Release-armeabi-v7a": {
+      "buildCommand": "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\test\\test-memoryhook\\.cxx\\cmake\\release\\armeabi-v7a\" test-memoryhook",
+      "buildType": "release",
+      "toolchain": "699593489",
+      "abi": "armeabi-v7a",
+      "artifactName": "test-memoryhook",
+      "files": [
+        {
+          "src": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\test\\test-memoryhook\\src\\main\\cpp\\test\\MemoryHookTest.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\test\\test-memoryhook\\build\\intermediates\\cmake\\release\\obj\\armeabi-v7a\\libtest-memoryhook.so",
+      "runtimeFiles": []
+    }
+  },
+  "toolchains": {
+    "699593489": {
+      "cppCompilerExecutable": "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

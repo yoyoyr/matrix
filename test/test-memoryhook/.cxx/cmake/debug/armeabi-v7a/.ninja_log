@@ -1,0 +1,5 @@
+# ninja log v5
+1	1478	691324810	CMakeFiles/test-memoryhook.dir/src/main/cpp/test/MemoryHookTest.cpp.o	2a9369f79df6ed4b
+1479	1707	691324811	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libtest-memoryhook.so	4a3b430a45c345ea
+2	1292	691324976	CMakeFiles/test-memoryhook.dir/src/main/cpp/test/MemoryHookTest.cpp.o	2a9369f79df6ed4b
+1292	1517	691324977	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libtest-memoryhook.so	4a3b430a45c345ea

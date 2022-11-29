@@ -1,0 +1,7 @@
+Executable : C:\Users\29655\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe
+arguments : 
+-C
+C:\project\demo\matrix-dev\matrix\matrix-android\test\test-memoryhook\.cxx\cmake\debug\armeabi-v7a
+test-memoryhook
+jvmArgs : 
+
