@@ -223,6 +223,11 @@ public class MemoryHookActivity extends AppCompatActivity {
             }, "thread-" + z);
             thread.start();
         }
+
+        ThreadGroup threadGroup = Looper.getMainLooper().getThread().getThreadGroup();
+        Thread[] threads = new Thread[threadGroup.activeCount() *2];
+        threadGroup.enumerate(threads);
+        
         if (i == j) {
             long start = System.currentTimeMillis();
             MemoryHookTestNative.nativeRunTest();
