@@ -23,8 +23,11 @@
 #include <xh_errno.h>
 #include <common/HookCommon.h>
 #include <common/SoLoadMonitor.h>
+#include <sys/mman.h>
 #include "MemoryHookFunctions.h"
 #include "MemoryHook.h"
+
+#define LOGD(fmt, ...) __android_log_print(ANDROID_LOG_ERROR, "memoryhook", fmt, ##__VA_ARGS__)
 
 #ifdef __cplusplus
 extern "C" {
@@ -133,7 +136,6 @@ Java_com_tencent_matrix_hook_memory_MemoryHook_setTracingAllocSizeRangeNative(JN
 JNIEXPORT void JNICALL
 Java_com_tencent_matrix_hook_memory_MemoryHook_dumpNative(JNIEnv *env, jobject instance,
                                                          jstring j_log_path, jstring j_json_path) {
-
     const char *log_path  = j_log_path ? env->GetStringUTFChars(j_log_path, nullptr) : nullptr;
     const char *json_path = j_json_path ? env->GetStringUTFChars(j_json_path, nullptr) : nullptr;
 
@@ -208,3 +210,11 @@ Java_com_tencent_matrix_hook_memory_MemoryHook_installHooksNative(JNIEnv* env, j
 #ifdef __cplusplus
 }
 #endif
+extern "C"
+JNIEXPORT void JNICALL
+Java_com_tencent_matrix_test_memoryhook_MemoryHookTestNative_nativeMmap(JNIEnv *env, jclass clazz) {
+    char *mapping = static_cast<char *>(
+            mmap(nullptr, 4 * 1025, PROT_READ | PROT_WRITE, MAP_PRIVATE | MAP_ANONYMOUS, -1, 0));
+    __android_log_print(ANDROID_LOG_INFO, "hello", "%s", &"jni will crash");
+
+}

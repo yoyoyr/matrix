@@ -5,6 +5,7 @@ import android.annotation.SuppressLint;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.Process;
@@ -34,6 +35,7 @@ public class MemoryHookActivity extends AppCompatActivity {
         checkPermission();
 
         backtraceInit();
+        request();
     }
 
     @Override
@@ -148,7 +150,6 @@ public class MemoryHookActivity extends AppCompatActivity {
         PthreadHook.INSTANCE.setThreadTraceEnabled(true);
 
 
-
 //        PthreadHook.INSTANCE.
 
         System.loadLibrary("test-memoryhook");
@@ -169,14 +170,16 @@ public class MemoryHookActivity extends AppCompatActivity {
 
                     // Memory hook
                     .addHook(MemoryHook.INSTANCE
-//                            .addHookSo(".*test-memoryhook\\.so$")
-                                    .addHookSo(".*library-not-exists\\.so$")
-                                    .enableStacktrace(true)
-                                    .stacktraceLogThreshold(0)
+                            .addHookSo(".*test-memoryhook\\.so$")
+                            .addHookSo(".*library-not-exists\\.so$")
+                            .enableStacktrace(true)
+                            .enableMmapHook(true)
+                            .tracingAllocSizeRange(0, 0)
+                            .stacktraceLogThreshold(0)
                     )
 
                     // Thread hook
-                    .addHook(PthreadHook.INSTANCE)
+//                    .addHook(PthreadHook.INSTANCE)
                     .commitHooks();
         } catch (HookManager.HookFailedException e) {
             e.printStackTrace();
@@ -196,11 +199,18 @@ public class MemoryHookActivity extends AppCompatActivity {
     }
 
     public void dump(View view) {
-        String logPath = getExternalCacheDir().getAbsolutePath() + "/memory-hook.log";
-        String jsonPath = getExternalCacheDir().getAbsolutePath() + "/memory-hook.json";
-        PthreadHook.INSTANCE.dump(getExternalCacheDir().getAbsolutePath() + "/memory-thread.log");
-        System.out.println("log path " + logPath);
-        MemoryHook.INSTANCE.dump(logPath, jsonPath);
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                String matrix = Environment.getExternalStorageDirectory().getPath() + "/matrix";
+                String logPath = matrix + "/memory-hook.log";
+                String jsonPath = matrix + "/memory-hook.json";
+                PthreadHook.INSTANCE.dump(matrix + "/memory-thread.log");
+                System.out.println("log path " + logPath);
+                MemoryHook.INSTANCE.dump(logPath, jsonPath);
+
+            }
+        }).start();
     }
 
     public int warpFunctionImpl(int i, int j) {
@@ -225,12 +235,13 @@ public class MemoryHookActivity extends AppCompatActivity {
         }
 
         ThreadGroup threadGroup = Looper.getMainLooper().getThread().getThreadGroup();
-        Thread[] threads = new Thread[threadGroup.activeCount() *2];
+        Thread[] threads = new Thread[threadGroup.activeCount() * 2];
         threadGroup.enumerate(threads);
-        
+
         if (i == j) {
             long start = System.currentTimeMillis();
             MemoryHookTestNative.nativeRunTest();
+            MemoryHookTestNative.nativeMmap();
             long duration = System.currentTimeMillis() - start;
 
             Log.e(TAG, "Run test duration: " + duration);
@@ -250,4 +261,7 @@ public class MemoryHookActivity extends AppCompatActivity {
         Process.killProcess(Process.myPid());
     }
 
+    private void request() {
+        ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE}, 1);
+    }
 }

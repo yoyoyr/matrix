@@ -7,4 +7,6 @@ public class MemoryHookTestNative {
     public static native void nativeRunTest();
 
     public static native void nativeHashCollisionEstimate();
+
+    public static native void nativeMmap();
 }

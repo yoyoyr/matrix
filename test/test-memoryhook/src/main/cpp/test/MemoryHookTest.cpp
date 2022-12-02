@@ -225,31 +225,31 @@ Java_com_tencent_matrix_test_memoryhook_MemoryHookTestNative_nativeRunTest(
         }
     }
 
-//    for (auto & thread : threads) {
-//        thread->join();
-//        delete thread;
+    for (auto & thread : threads) {
+        thread->join();
+        delete thread;
+    }
+
+
+//    pthread_t pthreads[23];
+//    for (int i = 0; i < 23; ++i) {
+//        int ret = pthread_create(&pthreads[i], NULL, &thread_test, nullptr);
+//        if (i % 500 == 0) {
+//            sleep(1);
+//        }
+//        if (ret != 0) {
+////            LOGD(TAG，"pthread_create error [ %d ] : %d" , i， ret ) ;break;
+//        }
 //    }
 
 
-    pthread_t pthreads[23];
-    for (int i = 0; i < 23; ++i) {
-        int ret = pthread_create(&pthreads[i], NULL, &thread_test, nullptr);
-        if (i % 500 == 0) {
-            sleep(1);
-        }
-        if (ret != 0) {
-//            LOGD(TAG，"pthread_create error [ %d ] : %d" , i， ret ) ;break;
-        }
-    }
-
-
-    pthread_t leakThreads[5];
-    for (int i = 0; i < 5; ++i) {
-        int ret = pthread_create(&leakThreads[i], NULL, &thread_leak, nullptr);
-        if (ret != 0) {
-//            LOGD(TAG，"pthread_create error [ %d ] : %d" , i， ret ) ;break;
-        }
-    }
+//    pthread_t leakThreads[5];
+//    for (int i = 0; i < 5; ++i) {
+//        int ret = pthread_create(&leakThreads[i], NULL, &thread_leak, nullptr);
+//        if (ret != 0) {
+////            LOGD(TAG，"pthread_create error [ %d ] : %d" , i， ret ) ;break;
+//        }
+//    }
 }
 
 uint64_t hash_backtrace_frames_1(std::vector<uint64_t> *frames) {

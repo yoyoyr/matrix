@@ -46,6 +46,8 @@
 #include "MemoryHook.h"
 #include "MemoryBufferQueue.h"
 
+#define LOGD(TAG, fmt, ...) __android_log_print(ANDROID_LOG_ERROR, TAG, fmt, ##__VA_ARGS__)
+
 static memory_meta_container m_memory_meta_container;
 
 std::atomic<size_t> buffer_source_memory::g_realloc_counter = 0;
@@ -272,7 +274,7 @@ static inline void dump_callers(FILE *log_file,
 
     LOGD(TAG, "caller so begin");
     // 按 so 聚类
-    for (auto &i : caller_metas) {
+    for (auto &i: caller_metas) {
         auto caller = i.first;
         auto caller_meta = i.second;
 
@@ -288,7 +290,7 @@ static inline void dump_callers(FILE *log_file,
         caller_alloc_size_of_so[fname] += caller_meta.total_size;
 
         // 按 size 聚类
-        for (auto pointer : caller_meta.pointers) {
+        for (auto pointer: caller_meta.pointers) {
             m_memory_meta_container.get(pointer,
                                         [&same_size_count_of_so, &fname](ptr_meta_t &meta) {
                                             same_size_count_of_so[fname][meta.size]++;
@@ -412,7 +414,7 @@ static inline void dump_stacks(FILE *log_file,
 
     size_t backtrace_counter = 0;
 
-    for (auto &stack_meta_it : stack_metas) {
+    for (auto &stack_meta_it: stack_metas) {
         auto size = stack_meta_it.second.size;
         auto backtrace = stack_meta_it.second.backtrace;
         void *caller = reinterpret_cast<void *>(stack_meta_it.second.caller);
@@ -462,7 +464,7 @@ static inline void dump_stacks(FILE *log_file,
             if (caller_so_name.empty()) { // fallback
                 LOGD(TAG, "fallback getting so name -> caller = %p", stack_meta_it.second.caller);
                 if (so_name.find("libwechatbacktrace.so") != std::string::npos ||
-                        so_name.find("libmatrix-hooks.so") != std::string::npos) {
+                    so_name.find("libmatrix-hooks.so") != std::string::npos) {
                     return;
                 }
                 caller_so_name = so_name;
@@ -486,7 +488,7 @@ static inline void dump_stacks(FILE *log_file,
     // 从大到小排序
     std::vector<std::pair<std::string, size_t>> so_sorted_by_size;
     so_sorted_by_size.reserve(stack_alloc_size_of_so.size());
-    for (auto &p : stack_alloc_size_of_so) {
+    for (auto &p: stack_alloc_size_of_so) {
         so_sorted_by_size.emplace_back(p);
     }
     std::sort(so_sorted_by_size.begin(), so_sorted_by_size.end(),
@@ -499,7 +501,7 @@ static inline void dump_stacks(FILE *log_file,
 
     size_t json_so_count = 3;
 
-    for (auto &p : so_sorted_by_size) {
+    for (auto &p: so_sorted_by_size) {
         auto so_name = p.first;
         auto so_alloc_size = p.second;
 
@@ -536,7 +538,7 @@ static inline void dump_stacks(FILE *log_file,
 
         size_t json_stacktrace_count = 3;
 
-        for (auto &stack_dump_meta : stacktrace_sorted_by_size) {
+        for (auto &stack_dump_meta: stacktrace_sorted_by_size) {
 
             LOGD(TAG, "malloc size of the same stack = %zu\n stacktrace : \n%s",
                  stack_dump_meta.size,
