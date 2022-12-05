@@ -175,7 +175,6 @@
       "project": {
         "compilerSettingsCacheFolder": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\.cxx",
         "cxxFolder": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\.cxx",
-        "ideBuildTargetAbi": "arm64-v8a,armeabi-v7a,armeabi",
         "isBuildOnlyTargetAbiEnabled": true,
         "isCmakeBuildCohabitationEnabled": false,
         "isNativeCompilerSettingsCacheEnabled": false,
@@ -199,6 +198,7 @@
     "objFolder": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\test\\test-memoryhook\\build\\intermediates\\cmake\\debug\\obj",
     "variantName": "debug",
     "validAbiList": [
+      "ARMEABI_V7A",
       "ARM64_V8A"
     ],
     "prefabDirectory": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\test\\test-memoryhook\\.cxx\\cmake\\debug\\prefab",
