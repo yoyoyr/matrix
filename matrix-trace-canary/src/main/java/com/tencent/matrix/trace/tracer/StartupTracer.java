@@ -142,6 +142,7 @@ public class StartupTracer extends Tracer implements IAppMethodBeatListener, Act
             }
             createdTimeMap.put(key, uptimeMillis() - createdTime);
 
+//            ActivityThreadHacker.getEggBrokenTime()  第一个Method in 方法
             if (firstScreenCost == 0) {
                 this.firstScreenCost = uptimeMillis() - ActivityThreadHacker.getEggBrokenTime();
             }
