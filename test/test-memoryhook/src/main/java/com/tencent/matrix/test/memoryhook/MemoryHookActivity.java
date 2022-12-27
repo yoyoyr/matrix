@@ -34,6 +34,24 @@ public class MemoryHookActivity extends AppCompatActivity {
 
         checkPermission();
 
+        // Init Hooks.
+        try {
+            HookManager.INSTANCE
+
+                    // Memory hook
+                    .addHook(MemoryHook.INSTANCE
+                            .addHookSo(".*test-memoryhook\\.so$")
+                            .addHookSo(".*library-not-exists\\.so$")
+                            .enableStacktrace(true)
+                            .enableMmapHook(true)
+                    )
+
+                    // Thread hook
+//                    .addHook(PthreadHook.INSTANCE)
+                    .commitHooks();
+        } catch (HookManager.HookFailedException e) {
+            e.printStackTrace();
+        }
         backtraceInit();
         request();
     }
@@ -164,26 +182,6 @@ public class MemoryHookActivity extends AppCompatActivity {
         if (!mHasPrepared || mHasRunTest) return;
         mHasRunTest = true;
 
-        // Init Hooks.
-        try {
-            HookManager.INSTANCE
-
-                    // Memory hook
-                    .addHook(MemoryHook.INSTANCE
-                            .addHookSo(".*test-memoryhook\\.so$")
-                            .addHookSo(".*library-not-exists\\.so$")
-                            .enableStacktrace(true)
-                            .enableMmapHook(true)
-                            .tracingAllocSizeRange(0, 0)
-                            .stacktraceLogThreshold(0)
-                    )
-
-                    // Thread hook
-//                    .addHook(PthreadHook.INSTANCE)
-                    .commitHooks();
-        } catch (HookManager.HookFailedException e) {
-            e.printStackTrace();
-        }
 
         try {
             Thread.sleep(500);

@@ -14,7 +14,7 @@ app/
 .DS_Store
 /captures
 .externalNativeBuild
-*/.cxx/
+.cxx
 local.properties
 .gradle/6.5/executionHistory
 repo
