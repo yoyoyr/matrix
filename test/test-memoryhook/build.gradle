@@ -86,6 +86,7 @@ dependencies {
 
     implementation project(':matrix-hooks')
     implementation project(':matrix-trace-canary')
+    implementation project(':matrix-android-lib')
 
 //    implementation group: "com.tencent.matrix", name: "matrix-android-lib", version: MATRIX_VERSION, changing: true
 //    implementation group: "com.tencent.matrix", name: "matrix-android-commons", version: MATRIX_VERSION, changing: true

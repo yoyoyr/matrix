@@ -61,6 +61,8 @@ public class SignalAnrTracer extends Tracer {
     private static final long FOREGROUND_MSG_THRESHOLD = -2000;
     private static final long BACKGROUND_MSG_THRESHOLD = -10000;
     private static boolean currentForeground = false;
+
+
     private static String sAnrTraceFilePath = "";
     private static String sPrintTraceFilePath = "";
     private static SignalAnrDetectedListener sSignalAnrDetectedListener;
@@ -138,6 +140,7 @@ public class SignalAnrTracer extends Tracer {
         if (needReport) {
             report(false, isSigQuit);
         } else {
+
             new Thread(new Runnable() {
                 @Override
                 public void run() {
@@ -152,10 +155,12 @@ public class SignalAnrTracer extends Tracer {
     private synchronized static void onANRDumped() {
         onAnrDumpedTimeStamp = System.currentTimeMillis();
         MatrixLog.i(TAG, "onANRDumped");
+        //获取主线程的堆栈
         stackTrace = Utils.getMainThreadJavaStackTrace();
         MatrixLog.i(TAG, "onANRDumped, stackTrace = %s, duration = %d", stackTrace, (System.currentTimeMillis() - onAnrDumpedTimeStamp));
+        //
         cgroup = readCgroup();
-        MatrixLog.i(TAG, "onANRDumped, read cgroup duration = %d", (System.currentTimeMillis() - onAnrDumpedTimeStamp));
+        MatrixLog.i(TAG, "onANRDumped, read cgroup duration = " + cgroup);
         currentForeground = AppForegroundUtil.isInterestingToUser();
         MatrixLog.i(TAG, "onANRDumped, isInterestingToUser duration = %d", (System.currentTimeMillis() - onAnrDumpedTimeStamp));
         confirmRealAnr(true);
@@ -209,6 +214,7 @@ public class SignalAnrTracer extends Tracer {
                 return;
             }
 
+            //操作路径
             String scene = AppActiveMatrixDelegate.INSTANCE.getVisibleScene();
 
             JSONObject jsonObject = new JSONObject();
@@ -347,6 +353,7 @@ public class SignalAnrTracer extends Tracer {
 
     public interface SignalAnrDetectedListener {
         void onAnrDetected(String stackTrace, String mMessageString, long mMessageWhen, boolean fromProcessErrorState, String cpuset);
+
         void onNativeBacktraceDetected(String backtrace, String mMessageString, long mMessageWhen, boolean fromProcessErrorState);
     }
 }

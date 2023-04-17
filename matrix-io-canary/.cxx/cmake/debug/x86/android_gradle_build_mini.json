@@ -1,19 +1,19 @@
 {
   "buildFiles": [
-    "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-io-canary\\CMakeLists.txt",
-    "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\build\\cmake\\android.toolchain.cmake",
-    "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\build\\cmake\\platforms.cmake"
+    "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-io-canary/CMakeLists.txt",
+    "/Users/yr/Library/Android/sdk/ndk/21.1.6352462/build/cmake/android.toolchain.cmake",
+    "/Users/yr/Library/Android/sdk/ndk/21.1.6352462/build/cmake/platforms.cmake"
   ],
   "cleanCommands": [
-    "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-io-canary\\.cxx\\cmake\\debug\\x86\" clean"
+    "/Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/yr/AndroidStudioProjects/useful/matrix/matrix-io-canary/.cxx/cmake/debug/x86\" clean"
   ],
-  "buildTargetsCommand": "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-io-canary\\.cxx\\cmake\\debug\\x86\" {LIST_OF_TARGETS_TO_BUILD}",
+  "buildTargetsCommand": "/Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/Users/yr/AndroidStudioProjects/useful/matrix/matrix-io-canary/.cxx/cmake/debug/x86\" {LIST_OF_TARGETS_TO_BUILD}",
   "libraries": {
     "io-canary-Debug-x86": {
       "artifactName": "io-canary",
-      "buildCommand": "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-io-canary\\.cxx\\cmake\\debug\\x86\" io-canary",
+      "buildCommand": "/Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/yr/AndroidStudioProjects/useful/matrix/matrix-io-canary/.cxx/cmake/debug/x86\" io-canary",
       "abi": "x86",
-      "output": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-io-canary\\build\\intermediates\\cmake\\debug\\obj\\x86\\libio-canary.so",
+      "output": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-io-canary/build/intermediates/cmake/debug/obj/x86/libio-canary.so",
       "runtimeFiles": []
     }
   }

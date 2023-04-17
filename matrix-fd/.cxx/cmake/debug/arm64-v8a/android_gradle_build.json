@@ -1,39 +1,39 @@
 {
   "stringTable": {
-    "0": "C:/project/demo/matrix-dev/matrix/matrix-android/matrix-fd/.cxx/cmake/debug/arm64-v8a",
-    "1": "--target=aarch64-none-linux-android21 --gcc-toolchain=C:/Users/29655/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/29655/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dmatrix_fd_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC -std=c++17 -fno-exceptions -fno-rtti"
+    "0": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-fd/.cxx/cmake/debug/arm64-v8a",
+    "1": "--target=aarch64-none-linux-android21 --gcc-toolchain=/Users/yr/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/yr/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -Dmatrix_fd_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC -std=c++17 -fno-exceptions -fno-rtti"
   },
   "buildFiles": [
-    "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-fd\\CMakeLists.txt",
-    "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\build\\cmake\\android.toolchain.cmake",
-    "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\build\\cmake\\platforms.cmake"
+    "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-fd/CMakeLists.txt",
+    "/Users/yr/Library/Android/sdk/ndk/21.1.6352462/build/cmake/android.toolchain.cmake",
+    "/Users/yr/Library/Android/sdk/ndk/21.1.6352462/build/cmake/platforms.cmake"
   ],
   "cleanCommands": [
-    "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-fd\\.cxx\\cmake\\debug\\arm64-v8a\" clean"
+    "/Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/yr/AndroidStudioProjects/useful/matrix/matrix-fd/.cxx/cmake/debug/arm64-v8a\" clean"
   ],
-  "buildTargetsCommand": "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-fd\\.cxx\\cmake\\debug\\arm64-v8a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "buildTargetsCommand": "/Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/Users/yr/AndroidStudioProjects/useful/matrix/matrix-fd/.cxx/cmake/debug/arm64-v8a\" {LIST_OF_TARGETS_TO_BUILD}",
   "libraries": {
     "matrix-fd-Debug-arm64-v8a": {
-      "buildCommand": "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-fd\\.cxx\\cmake\\debug\\arm64-v8a\" matrix-fd",
+      "buildCommand": "/Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/yr/AndroidStudioProjects/useful/matrix/matrix-fd/.cxx/cmake/debug/arm64-v8a\" matrix-fd",
       "buildType": "debug",
-      "toolchain": "699593489",
+      "toolchain": "1490601464",
       "abi": "arm64-v8a",
       "artifactName": "matrix-fd",
       "files": [
         {
-          "src": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-fd\\src\\main\\cpp\\fd\\FDInfoReader.cpp",
+          "src": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-fd/src/main/cpp/fd/FDInfoReader.cpp",
           "flagsOrdinal": 1,
           "workingDirectoryOrdinal": 0
         }
       ],
       "headers": [],
-      "output": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-fd\\build\\intermediates\\cmake\\debug\\obj\\arm64-v8a\\libmatrix-fd.so",
+      "output": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-fd/build/intermediates/cmake/debug/obj/arm64-v8a/libmatrix-fd.so",
       "runtimeFiles": []
     }
   },
   "toolchains": {
-    "699593489": {
-      "cppCompilerExecutable": "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
+    "1490601464": {
+      "cppCompilerExecutable": "/Users/yr/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++"
     }
   },
   "cFileExtensions": [],

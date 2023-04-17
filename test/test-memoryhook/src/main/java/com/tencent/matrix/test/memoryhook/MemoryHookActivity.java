@@ -22,6 +22,7 @@ import com.tencent.matrix.backtrace.WeChatBacktrace;
 import com.tencent.matrix.hook.HookManager;
 import com.tencent.matrix.hook.memory.MemoryHook;
 import com.tencent.matrix.hook.pthread.PthreadHook;
+import com.tencent.matrix.trace.TracePlugin;
 
 public class MemoryHookActivity extends AppCompatActivity {
 
@@ -37,7 +38,6 @@ public class MemoryHookActivity extends AppCompatActivity {
         // Init Hooks.
         try {
             HookManager.INSTANCE
-
                     // Memory hook
                     .addHook(MemoryHook.INSTANCE
                             .addHookSo(".*test-memoryhook\\.so$")
@@ -194,6 +194,20 @@ public class MemoryHookActivity extends AppCompatActivity {
 
     public void estimateHash(View view) {
         MemoryHookTestNative.nativeHashCollisionEstimate();
+    }
+
+    public void anr(View view) {
+        new Handler().post(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    System.out.println("sleep "+Thread.currentThread().getName());
+                    Thread.sleep(10000);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
     }
 
     public void dump(View view) {

@@ -1,8 +1,8 @@
-# Install script for directory: C:/project/demo/matrix-dev/matrix/matrix-android/matrix-sqlite-lint
+# Install script for directory: /Users/yr/AndroidStudioProjects/useful/matrix/matrix-sqlite-lint
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/SQLiteLint")
+  set(CMAKE_INSTALL_PREFIX "/usr/local")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/project/demo/matrix-dev/matrix/matrix-android/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.cxx/cmake/fullDebug/x86/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.cxx/cmake/fullDebug/x86/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

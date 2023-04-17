@@ -1,318 +1,318 @@
 {
   "stringTable": {
-    "0": "C:/project/demo/matrix-dev/matrix/matrix-android/matrix-hooks/.cxx/cmake/debug/arm64-v8a",
-    "1": "--target=aarch64-none-linux-android21 --gcc-toolchain=C:/Users/29655/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/29655/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dmatrix_memguard_EXPORTS -I../../../../src/main/cpp/memguard -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp -I../../../../src/main/cpp/external/libcJSON -I../../../../src/main/cpp/external/fastunwind -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC -Wall -Wextra -Werror -Wno-unused-function -fvisibility=hidden -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -std=c++17 -fstack-protector -DMEMGUARD_LOG_LEVEL=4",
-    "2": "--target=aarch64-none-linux-android21 --gcc-toolchain=C:/Users/29655/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/29655/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot -I../../../../src/main/cpp/memguard -I../../../../src/main/cpp -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp/external/libcJSON -I../../../../src/main/cpp/external/fastunwind -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC -Wall -Wextra -Werror -Wno-unused-function -std=c++17 -fvisibility=hidden -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -DMEMGUARD_LOG_LEVEL=4 -fstack-protector",
-    "3": "--target=aarch64-none-linux-android21 --gcc-toolchain=C:/Users/29655/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/29655/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dmatrix_hookcommon_EXPORTS -I../../../../src/main/cpp -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp/external/libcJSON -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC -std=c++17 -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -fvisibility=hidden -fstack-protector",
-    "4": "--target=aarch64-none-linux-android21 --gcc-toolchain=C:/Users/29655/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/29655/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dmatrix_memoryhook_EXPORTS -I../../../../src/main/cpp -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp/external/libcJSON -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC -std=c++17 -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -fvisibility=hidden -fstack-protector",
-    "5": "--target=aarch64-none-linux-android21 --gcc-toolchain=C:/Users/29655/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/29655/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dmatrix_pthreadhook_EXPORTS -I../../../../src/main/cpp -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp/external/libcJSON -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC -std=c++17 -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -fvisibility=hidden -fstack-protector",
-    "6": "--target=aarch64-none-linux-android21 --gcc-toolchain=C:/Users/29655/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/29655/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot -I../../../../src/main/cpp/external/libcJSON -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC",
-    "7": "--target=aarch64-none-linux-android21 --gcc-toolchain=C:/Users/29655/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/29655/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot -I../../../../src/main/cpp/external/fastunwind -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC -Wall -Wextra -Werror -fvisibility=hidden"
+    "0": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/.cxx/cmake/debug/arm64-v8a",
+    "1": "--target=aarch64-none-linux-android21 --gcc-toolchain=/Users/yr/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/yr/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -Dmatrix_memguard_EXPORTS -I../../../../src/main/cpp/memguard -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp -I../../../../src/main/cpp/external/libcJSON -I../../../../src/main/cpp/external/fastunwind -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC -Wall -Wextra -Werror -Wno-unused-function -fvisibility=hidden -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -std=c++17 -fstack-protector -DMEMGUARD_LOG_LEVEL=4",
+    "2": "--target=aarch64-none-linux-android21 --gcc-toolchain=/Users/yr/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/yr/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -Dmatrix_pthreadhook_EXPORTS -I../../../../src/main/cpp -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp/external/libcJSON -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC -std=c++17 -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -fvisibility=hidden -fstack-protector",
+    "3": "--target=aarch64-none-linux-android21 --gcc-toolchain=/Users/yr/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/yr/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -Dmatrix_memoryhook_EXPORTS -I../../../../src/main/cpp -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp/external/libcJSON -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC -std=c++17 -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -fvisibility=hidden -fstack-protector",
+    "4": "--target=aarch64-none-linux-android21 --gcc-toolchain=/Users/yr/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/yr/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -I../../../../src/main/cpp/memguard -I../../../../src/main/cpp -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp/external/libcJSON -I../../../../src/main/cpp/external/fastunwind -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC -Wall -Wextra -Werror -Wno-unused-function -std=c++17 -fvisibility=hidden -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -DMEMGUARD_LOG_LEVEL=4 -fstack-protector",
+    "5": "--target=aarch64-none-linux-android21 --gcc-toolchain=/Users/yr/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/yr/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -Dmatrix_hookcommon_EXPORTS -I../../../../src/main/cpp -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp/external/libcJSON -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC -std=c++17 -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -fvisibility=hidden -fstack-protector",
+    "6": "--target=aarch64-none-linux-android21 --gcc-toolchain=/Users/yr/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/yr/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -I../../../../src/main/cpp/external/libcJSON -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC",
+    "7": "--target=aarch64-none-linux-android21 --gcc-toolchain=/Users/yr/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/yr/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -I../../../../src/main/cpp/external/fastunwind -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC -Wall -Wextra -Werror -fvisibility=hidden"
   },
   "buildFiles": [
-    "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\CMakeLists.txt",
-    "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\build\\cmake\\android.toolchain.cmake",
-    "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\build\\cmake\\platforms.cmake",
-    "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\src\\main\\cpp\\external\\libcJSON\\CMakeLists.txt",
-    "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\src\\main\\cpp\\external\\fastunwind\\CMakeLists.txt"
+    "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/CMakeLists.txt",
+    "/Users/yr/Library/Android/sdk/ndk/21.1.6352462/build/cmake/android.toolchain.cmake",
+    "/Users/yr/Library/Android/sdk/ndk/21.1.6352462/build/cmake/platforms.cmake",
+    "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/src/main/cpp/external/libcJSON/CMakeLists.txt",
+    "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/src/main/cpp/external/fastunwind/CMakeLists.txt"
   ],
   "cleanCommands": [
-    "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\.cxx\\cmake\\debug\\arm64-v8a\" clean"
+    "/Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/.cxx/cmake/debug/arm64-v8a\" clean"
   ],
-  "buildTargetsCommand": "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\.cxx\\cmake\\debug\\arm64-v8a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "buildTargetsCommand": "/Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/.cxx/cmake/debug/arm64-v8a\" {LIST_OF_TARGETS_TO_BUILD}",
   "libraries": {
     "matrix-memoryhook-Debug-arm64-v8a": {
-      "buildCommand": "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\.cxx\\cmake\\debug\\arm64-v8a\" matrix-memoryhook",
+      "buildCommand": "/Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/.cxx/cmake/debug/arm64-v8a\" matrix-memoryhook",
       "buildType": "debug",
-      "toolchain": "197339422",
+      "toolchain": "2873566928",
       "abi": "arm64-v8a",
       "artifactName": "matrix-memoryhook",
       "files": [
         {
-          "src": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\src\\main\\cpp\\memory\\GCSemiSpaceTrimmer.cpp",
-          "flagsOrdinal": 4,
+          "src": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/src/main/cpp/memory/GCSemiSpaceTrimmer.cpp",
+          "flagsOrdinal": 3,
           "workingDirectoryOrdinal": 0
         },
         {
-          "src": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\src\\main\\cpp\\memory\\GCSemiSpaceTrimmerJNI.cpp",
-          "flagsOrdinal": 4,
+          "src": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/src/main/cpp/memory/GCSemiSpaceTrimmerJNI.cpp",
+          "flagsOrdinal": 3,
           "workingDirectoryOrdinal": 0
         },
         {
-          "src": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\src\\main\\cpp\\memory\\MemoryHookJNI.cpp",
-          "flagsOrdinal": 4,
+          "src": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/src/main/cpp/memory/MemoryHookJNI.cpp",
+          "flagsOrdinal": 3,
           "workingDirectoryOrdinal": 0
         },
         {
-          "src": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\src\\main\\cpp\\memory\\MemoryHook.cpp",
-          "flagsOrdinal": 4,
+          "src": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/src/main/cpp/memory/MemoryHook.cpp",
+          "flagsOrdinal": 3,
           "workingDirectoryOrdinal": 0
         },
         {
-          "src": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\src\\main\\cpp\\memory\\MemoryBufferQueue.cpp",
-          "flagsOrdinal": 4,
+          "src": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/src/main/cpp/memory/MemoryBufferQueue.cpp",
+          "flagsOrdinal": 3,
           "workingDirectoryOrdinal": 0
         },
         {
-          "src": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\src\\main\\cpp\\memory\\MemoryHookFunctions.cpp",
-          "flagsOrdinal": 4,
+          "src": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/src/main/cpp/memory/MemoryHookFunctions.cpp",
+          "flagsOrdinal": 3,
           "workingDirectoryOrdinal": 0
         },
         {
-          "src": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\src\\main\\cpp\\memory\\WVPreAllocTrimmer.cpp",
-          "flagsOrdinal": 4,
+          "src": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/src/main/cpp/memory/WVPreAllocTrimmer.cpp",
+          "flagsOrdinal": 3,
           "workingDirectoryOrdinal": 0
         },
         {
-          "src": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\src\\main\\cpp\\memory\\WVPreAllocHookJNI.cpp",
-          "flagsOrdinal": 4,
+          "src": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/src/main/cpp/memory/WVPreAllocHookJNI.cpp",
+          "flagsOrdinal": 3,
           "workingDirectoryOrdinal": 0
         }
       ],
       "headers": [],
-      "output": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\build\\intermediates\\cmake\\debug\\obj\\arm64-v8a\\libmatrix-memoryhook.so",
+      "output": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/build/intermediates/cmake/debug/obj/arm64-v8a/libmatrix-memoryhook.so",
       "runtimeFiles": [
-        "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\build\\intermediates\\cmake\\debug\\obj\\arm64-v8a\\libmatrix-hookcommon.so"
+        "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/build/intermediates/cmake/debug/obj/arm64-v8a/libmatrix-hookcommon.so"
       ]
     },
     "matrix-pthreadhook-Debug-arm64-v8a": {
-      "buildCommand": "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\.cxx\\cmake\\debug\\arm64-v8a\" matrix-pthreadhook",
+      "buildCommand": "/Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/.cxx/cmake/debug/arm64-v8a\" matrix-pthreadhook",
       "buildType": "debug",
-      "toolchain": "197339422",
+      "toolchain": "2873566928",
       "abi": "arm64-v8a",
       "artifactName": "matrix-pthreadhook",
       "files": [
         {
-          "src": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\src\\main\\cpp\\pthread\\ThreadTrace.cpp",
-          "flagsOrdinal": 5,
+          "src": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/src/main/cpp/pthread/ThreadTrace.cpp",
+          "flagsOrdinal": 2,
           "workingDirectoryOrdinal": 0
         },
         {
-          "src": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\src\\main\\cpp\\pthread\\ThreadStackShink.cpp",
-          "flagsOrdinal": 5,
+          "src": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/src/main/cpp/pthread/ThreadStackShink.cpp",
+          "flagsOrdinal": 2,
           "workingDirectoryOrdinal": 0
         },
         {
-          "src": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\src\\main\\cpp\\pthread\\PthreadHook.cpp",
-          "flagsOrdinal": 5,
+          "src": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/src/main/cpp/pthread/PthreadHook.cpp",
+          "flagsOrdinal": 2,
           "workingDirectoryOrdinal": 0
         },
         {
-          "src": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\src\\main\\cpp\\pthread\\PthreadHookJNI.cpp",
-          "flagsOrdinal": 5,
+          "src": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/src/main/cpp/pthread/PthreadHookJNI.cpp",
+          "flagsOrdinal": 2,
           "workingDirectoryOrdinal": 0
         }
       ],
       "headers": [],
-      "output": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\build\\intermediates\\cmake\\debug\\obj\\arm64-v8a\\libmatrix-pthreadhook.so",
+      "output": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/build/intermediates/cmake/debug/obj/arm64-v8a/libmatrix-pthreadhook.so",
       "runtimeFiles": [
-        "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\build\\intermediates\\cmake\\debug\\obj\\arm64-v8a\\libmatrix-hookcommon.so"
+        "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/build/intermediates/cmake/debug/obj/arm64-v8a/libmatrix-hookcommon.so"
       ]
     },
     "matrix-memguard-Debug-arm64-v8a": {
-      "buildCommand": "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\.cxx\\cmake\\debug\\arm64-v8a\" matrix-memguard",
+      "buildCommand": "/Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/.cxx/cmake/debug/arm64-v8a\" matrix-memguard",
       "buildType": "debug",
-      "toolchain": "197339422",
+      "toolchain": "2873566928",
       "abi": "arm64-v8a",
       "artifactName": "matrix-memguard",
       "files": [
         {
-          "src": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\src\\main\\cpp\\memguard\\jni\\com_tencent_mm_tools_memguard_MemGuard.cpp",
+          "src": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/src/main/cpp/memguard/jni/com_tencent_mm_tools_memguard_MemGuard.cpp",
           "flagsOrdinal": 1,
           "workingDirectoryOrdinal": 0
         },
         {
-          "src": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\src\\main\\cpp\\memguard\\jni\\com_tencent_mm_tools_memguard_MemGuard_00024Options.cpp",
+          "src": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/src/main/cpp/memguard/jni/com_tencent_mm_tools_memguard_MemGuard_00024Options.cpp",
           "flagsOrdinal": 1,
           "workingDirectoryOrdinal": 0
         },
         {
-          "src": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\src\\main\\cpp\\memguard\\jni\\JNIAux.cpp",
+          "src": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/src/main/cpp/memguard/jni/JNIAux.cpp",
           "flagsOrdinal": 1,
           "workingDirectoryOrdinal": 0
         },
         {
-          "src": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\src\\main\\cpp\\memguard\\jni\\C2Java.cpp",
+          "src": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/src/main/cpp/memguard/jni/C2Java.cpp",
           "flagsOrdinal": 1,
           "workingDirectoryOrdinal": 0
         }
       ],
       "headers": [],
-      "output": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\build\\intermediates\\cmake\\debug\\obj\\arm64-v8a\\libmatrix-memguard.so",
+      "output": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/build/intermediates/cmake/debug/obj/arm64-v8a/libmatrix-memguard.so",
       "runtimeFiles": [
-        "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\build\\intermediates\\cmake\\debug\\obj\\arm64-v8a\\libmatrix-hookcommon.so"
+        "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/build/intermediates/cmake/debug/obj/arm64-v8a/libmatrix-hookcommon.so"
       ]
     },
-    "matrix-hookcommon-Debug-arm64-v8a": {
-      "buildCommand": "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\.cxx\\cmake\\debug\\arm64-v8a\" matrix-hookcommon",
-      "buildType": "debug",
-      "toolchain": "197339422",
-      "abi": "arm64-v8a",
-      "artifactName": "matrix-hookcommon",
-      "files": [
-        {
-          "src": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\src\\main\\cpp\\common\\JNICommon.cpp",
-          "flagsOrdinal": 3,
-          "workingDirectoryOrdinal": 0
-        },
-        {
-          "src": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\src\\main\\cpp\\common\\HookCommon.cpp",
-          "flagsOrdinal": 3,
-          "workingDirectoryOrdinal": 0
-        },
-        {
-          "src": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\src\\main\\cpp\\common\\ReentrantPrevention.cpp",
-          "flagsOrdinal": 3,
-          "workingDirectoryOrdinal": 0
-        },
-        {
-          "src": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\src\\main\\cpp\\common\\Log.cpp",
-          "flagsOrdinal": 3,
-          "workingDirectoryOrdinal": 0
-        },
-        {
-          "src": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\src\\main\\cpp\\common\\Maps.cpp",
-          "flagsOrdinal": 3,
-          "workingDirectoryOrdinal": 0
-        },
-        {
-          "src": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\src\\main\\cpp\\common\\SoLoadMonitor.cpp",
-          "flagsOrdinal": 3,
-          "workingDirectoryOrdinal": 0
-        },
-        {
-          "src": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\src\\main\\cpp\\common\\ProfileRecord.cpp",
-          "flagsOrdinal": 3,
-          "workingDirectoryOrdinal": 0
-        }
-      ],
-      "headers": [],
-      "output": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\build\\intermediates\\cmake\\debug\\obj\\arm64-v8a\\libmatrix-hookcommon.so",
-      "runtimeFiles": []
-    },
     "fastunwind-Debug-arm64-v8a": {
-      "buildCommand": "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\.cxx\\cmake\\debug\\arm64-v8a\" fastunwind",
+      "buildCommand": "/Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/.cxx/cmake/debug/arm64-v8a\" fastunwind",
       "buildType": "debug",
-      "toolchain": "197339422",
+      "toolchain": "2873566928",
       "abi": "arm64-v8a",
       "artifactName": "fastunwind",
       "files": [
         {
-          "src": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\src\\main\\cpp\\external\\fastunwind\\FastUnwind.cpp",
+          "src": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/src/main/cpp/external/fastunwind/FastUnwind.cpp",
           "flagsOrdinal": 7,
           "workingDirectoryOrdinal": 0
         }
       ],
       "headers": [],
-      "output": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\.cxx\\cmake\\debug\\arm64-v8a\\src\\main\\cpp\\external\\fastunwind\\libfastunwind.a"
+      "output": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/fastunwind/libfastunwind.a"
+    },
+    "matrix-hookcommon-Debug-arm64-v8a": {
+      "buildCommand": "/Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/.cxx/cmake/debug/arm64-v8a\" matrix-hookcommon",
+      "buildType": "debug",
+      "toolchain": "2873566928",
+      "abi": "arm64-v8a",
+      "artifactName": "matrix-hookcommon",
+      "files": [
+        {
+          "src": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/src/main/cpp/common/JNICommon.cpp",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/src/main/cpp/common/HookCommon.cpp",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/src/main/cpp/common/ReentrantPrevention.cpp",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/src/main/cpp/common/Log.cpp",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/src/main/cpp/common/Maps.cpp",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/src/main/cpp/common/SoLoadMonitor.cpp",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/src/main/cpp/common/ProfileRecord.cpp",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/build/intermediates/cmake/debug/obj/arm64-v8a/libmatrix-hookcommon.so",
+      "runtimeFiles": []
     },
     "cJSON-Debug-arm64-v8a": {
-      "buildCommand": "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\.cxx\\cmake\\debug\\arm64-v8a\" cJSON",
+      "buildCommand": "/Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/.cxx/cmake/debug/arm64-v8a\" cJSON",
       "buildType": "debug",
-      "toolchain": "197339422",
+      "toolchain": "2873566928",
       "abi": "arm64-v8a",
       "artifactName": "cJSON",
       "files": [
         {
-          "src": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\src\\main\\cpp\\external\\libcJSON\\cJSON.c",
+          "src": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/src/main/cpp/external/libcJSON/cJSON.c",
           "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         }
       ],
       "headers": [],
-      "output": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\.cxx\\cmake\\debug\\arm64-v8a\\src\\main\\cpp\\external\\libcJSON\\libcJSON.a"
+      "output": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libcJSON/libcJSON.a"
     },
     "memguard_base-Debug-arm64-v8a": {
-      "buildCommand": "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\.cxx\\cmake\\debug\\arm64-v8a\" memguard_base",
+      "buildCommand": "/Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/.cxx/cmake/debug/arm64-v8a\" memguard_base",
       "buildType": "debug",
-      "toolchain": "197339422",
+      "toolchain": "2873566928",
       "abi": "arm64-v8a",
       "artifactName": "memguard_base",
       "files": [
         {
-          "src": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\src\\main\\cpp\\memguard\\port\\Hook.cpp",
-          "flagsOrdinal": 2,
+          "src": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/src/main/cpp/memguard/port/Hook.cpp",
+          "flagsOrdinal": 4,
           "workingDirectoryOrdinal": 0
         },
         {
-          "src": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\src\\main\\cpp\\memguard\\port\\Log.cpp",
-          "flagsOrdinal": 2,
+          "src": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/src/main/cpp/memguard/port/Log.cpp",
+          "flagsOrdinal": 4,
           "workingDirectoryOrdinal": 0
         },
         {
-          "src": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\src\\main\\cpp\\memguard\\port\\Memory.cpp",
-          "flagsOrdinal": 2,
+          "src": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/src/main/cpp/memguard/port/Memory.cpp",
+          "flagsOrdinal": 4,
           "workingDirectoryOrdinal": 0
         },
         {
-          "src": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\src\\main\\cpp\\memguard\\port\\Mutex.cpp",
-          "flagsOrdinal": 2,
+          "src": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/src/main/cpp/memguard/port/Mutex.cpp",
+          "flagsOrdinal": 4,
           "workingDirectoryOrdinal": 0
         },
         {
-          "src": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\src\\main\\cpp\\memguard\\port\\Paths.cpp",
-          "flagsOrdinal": 2,
+          "src": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/src/main/cpp/memguard/port/Paths.cpp",
+          "flagsOrdinal": 4,
           "workingDirectoryOrdinal": 0
         },
         {
-          "src": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\src\\main\\cpp\\memguard\\port\\Random.cpp",
-          "flagsOrdinal": 2,
+          "src": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/src/main/cpp/memguard/port/Random.cpp",
+          "flagsOrdinal": 4,
           "workingDirectoryOrdinal": 0
         },
         {
-          "src": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\src\\main\\cpp\\memguard\\port\\Unwind.cpp",
-          "flagsOrdinal": 2,
+          "src": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/src/main/cpp/memguard/port/Unwind.cpp",
+          "flagsOrdinal": 4,
           "workingDirectoryOrdinal": 0
         },
         {
-          "src": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\src\\main\\cpp\\memguard\\port\\FdSanWrapper.cpp",
-          "flagsOrdinal": 2,
+          "src": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/src/main/cpp/memguard/port/FdSanWrapper.cpp",
+          "flagsOrdinal": 4,
           "workingDirectoryOrdinal": 0
         },
         {
-          "src": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\src\\main\\cpp\\memguard\\util\\SignalHandler.cpp",
-          "flagsOrdinal": 2,
+          "src": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/src/main/cpp/memguard/util/SignalHandler.cpp",
+          "flagsOrdinal": 4,
           "workingDirectoryOrdinal": 0
         },
         {
-          "src": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\src\\main\\cpp\\memguard\\util\\Interception.cpp",
-          "flagsOrdinal": 2,
+          "src": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/src/main/cpp/memguard/util/Interception.cpp",
+          "flagsOrdinal": 4,
           "workingDirectoryOrdinal": 0
         },
         {
-          "src": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\src\\main\\cpp\\memguard\\util\\PagePool.cpp",
-          "flagsOrdinal": 2,
+          "src": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/src/main/cpp/memguard/util/PagePool.cpp",
+          "flagsOrdinal": 4,
           "workingDirectoryOrdinal": 0
         },
         {
-          "src": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\src\\main\\cpp\\memguard\\util\\Allocation.cpp",
-          "flagsOrdinal": 2,
+          "src": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/src/main/cpp/memguard/util/Allocation.cpp",
+          "flagsOrdinal": 4,
           "workingDirectoryOrdinal": 0
         },
         {
-          "src": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\src\\main\\cpp\\memguard\\util\\Thread.cpp",
-          "flagsOrdinal": 2,
+          "src": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/src/main/cpp/memguard/util/Thread.cpp",
+          "flagsOrdinal": 4,
           "workingDirectoryOrdinal": 0
         },
         {
-          "src": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\src\\main\\cpp\\memguard\\util\\Issue.cpp",
-          "flagsOrdinal": 2,
+          "src": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/src/main/cpp/memguard/util/Issue.cpp",
+          "flagsOrdinal": 4,
           "workingDirectoryOrdinal": 0
         },
         {
-          "src": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\src\\main\\cpp\\memguard\\MemGuard.cpp",
-          "flagsOrdinal": 2,
+          "src": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/src/main/cpp/memguard/MemGuard.cpp",
+          "flagsOrdinal": 4,
           "workingDirectoryOrdinal": 0
         }
       ],
       "headers": [],
-      "output": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-hooks\\.cxx\\cmake\\debug\\arm64-v8a\\libmemguard_base.a"
+      "output": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/.cxx/cmake/debug/arm64-v8a/libmemguard_base.a"
     }
   },
   "toolchains": {
-    "197339422": {
-      "cCompilerExecutable": "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe",
-      "cppCompilerExecutable": "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
+    "2873566928": {
+      "cCompilerExecutable": "/Users/yr/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang",
+      "cppCompilerExecutable": "/Users/yr/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++"
     }
   },
   "cFileExtensions": [

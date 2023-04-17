@@ -1,8 +1,8 @@
-# Install script for directory: C:/project/demo/matrix-dev/matrix/matrix-android/matrix-android-commons/src/main/cpp/libsemi_dlfcn
+# Install script for directory: /Users/yr/AndroidStudioProjects/useful/matrix/matrix-android-commons/src/main/cpp/libsemi_dlfcn
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/android-commons")
+  set(CMAKE_INSTALL_PREFIX "/usr/local")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

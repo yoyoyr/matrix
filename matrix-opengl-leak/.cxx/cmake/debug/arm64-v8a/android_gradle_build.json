@@ -1,59 +1,59 @@
 {
   "stringTable": {
-    "0": "C:/project/demo/matrix-dev/matrix/matrix-android/matrix-opengl-leak/.cxx/cmake/debug/arm64-v8a",
-    "1": "--target=aarch64-none-linux-android21 --gcc-toolchain=C:/Users/29655/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/29655/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dmatrix_opengl_leak_EXPORTS -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC -std=c++17 -fno-exceptions -fno-rtti -fstack-protector"
+    "0": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-opengl-leak/.cxx/cmake/debug/arm64-v8a",
+    "1": "--target=aarch64-none-linux-android21 --gcc-toolchain=/Users/yr/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/yr/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -Dmatrix_opengl_leak_EXPORTS -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC -std=c++17 -fno-exceptions -fno-rtti -fstack-protector"
   },
   "buildFiles": [
-    "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-opengl-leak\\CMakeLists.txt",
-    "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\build\\cmake\\android.toolchain.cmake",
-    "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\build\\cmake\\platforms.cmake"
+    "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-opengl-leak/CMakeLists.txt",
+    "/Users/yr/Library/Android/sdk/ndk/21.1.6352462/build/cmake/android.toolchain.cmake",
+    "/Users/yr/Library/Android/sdk/ndk/21.1.6352462/build/cmake/platforms.cmake"
   ],
   "cleanCommands": [
-    "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-opengl-leak\\.cxx\\cmake\\debug\\arm64-v8a\" clean"
+    "/Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/yr/AndroidStudioProjects/useful/matrix/matrix-opengl-leak/.cxx/cmake/debug/arm64-v8a\" clean"
   ],
-  "buildTargetsCommand": "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-opengl-leak\\.cxx\\cmake\\debug\\arm64-v8a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "buildTargetsCommand": "/Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/Users/yr/AndroidStudioProjects/useful/matrix/matrix-opengl-leak/.cxx/cmake/debug/arm64-v8a\" {LIST_OF_TARGETS_TO_BUILD}",
   "libraries": {
     "matrix-opengl-leak-Debug-arm64-v8a": {
-      "buildCommand": "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-opengl-leak\\.cxx\\cmake\\debug\\arm64-v8a\" matrix-opengl-leak",
+      "buildCommand": "/Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/yr/AndroidStudioProjects/useful/matrix/matrix-opengl-leak/.cxx/cmake/debug/arm64-v8a\" matrix-opengl-leak",
       "buildType": "debug",
-      "toolchain": "699593489",
+      "toolchain": "1490601464",
       "abi": "arm64-v8a",
       "artifactName": "matrix-opengl-leak",
       "files": [
         {
-          "src": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-opengl-leak\\src\\main\\cpp\\com_tencent_matrix_openglleak_detector_FuncSeeker.cpp",
+          "src": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-opengl-leak/src/main/cpp/com_tencent_matrix_openglleak_detector_FuncSeeker.cpp",
           "flagsOrdinal": 1,
           "workingDirectoryOrdinal": 0
         },
         {
-          "src": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-opengl-leak\\src\\main\\cpp\\com_tencent_matrix_openglleak_hook_OpenGLHook.cpp",
+          "src": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-opengl-leak/src/main/cpp/com_tencent_matrix_openglleak_hook_OpenGLHook.cpp",
           "flagsOrdinal": 1,
           "workingDirectoryOrdinal": 0
         },
         {
-          "src": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-opengl-leak\\src\\main\\cpp\\com_tencent_matrix_openglleak_statistics_resource_ResRecordManager.cpp",
+          "src": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-opengl-leak/src/main/cpp/com_tencent_matrix_openglleak_statistics_resource_ResRecordManager.cpp",
           "flagsOrdinal": 1,
           "workingDirectoryOrdinal": 0
         },
         {
-          "src": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-opengl-leak\\src\\main\\cpp\\type.cpp",
+          "src": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-opengl-leak/src/main/cpp/type.cpp",
           "flagsOrdinal": 1,
           "workingDirectoryOrdinal": 0
         },
         {
-          "src": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-opengl-leak\\src\\main\\cpp\\get_tls.cpp",
+          "src": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-opengl-leak/src/main/cpp/get_tls.cpp",
           "flagsOrdinal": 1,
           "workingDirectoryOrdinal": 0
         }
       ],
       "headers": [],
-      "output": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-opengl-leak\\build\\intermediates\\cmake\\debug\\obj\\arm64-v8a\\libmatrix-opengl-leak.so",
+      "output": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-opengl-leak/build/intermediates/cmake/debug/obj/arm64-v8a/libmatrix-opengl-leak.so",
       "runtimeFiles": []
     }
   },
   "toolchains": {
-    "699593489": {
-      "cppCompilerExecutable": "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
+    "1490601464": {
+      "cppCompilerExecutable": "/Users/yr/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++"
     }
   },
   "cFileExtensions": [],

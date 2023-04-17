@@ -1,8 +1,8 @@
-# Install script for directory: C:/project/demo/matrix-dev/matrix/matrix-android/matrix-memory-dump
+# Install script for directory: /Users/yr/AndroidStudioProjects/useful/matrix/matrix-memory-dump
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/matrix-memorydump")
+  set(CMAKE_INSTALL_PREFIX "/usr/local")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/project/demo/matrix-dev/matrix/matrix-android/matrix-memory-dump/.cxx/cmake/debug/x86/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-memory-dump/.cxx/cmake/debug/x86/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

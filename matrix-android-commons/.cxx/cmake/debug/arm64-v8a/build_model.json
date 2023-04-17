@@ -5,9 +5,9 @@
     "environmentVariables": []
   },
   "cmake": {
-    "cmakeArtifactsBaseFolder": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-android-commons\\.cxx\\cmake\\debug\\arm64-v8a",
-    "cmakeServerLogFile": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-android-commons\\.cxx\\cmake\\debug\\arm64-v8a\\cmake_server_log.txt",
-    "cmakeWrappingBaseFolder": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-android-commons\\.cxx\\cxx\\debug\\arm64-v8a",
+    "cmakeArtifactsBaseFolder": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-android-commons/.cxx/cmake/debug/arm64-v8a",
+    "cmakeServerLogFile": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-android-commons/.cxx/cmake/debug/arm64-v8a/cmake_server_log.txt",
+    "cmakeWrappingBaseFolder": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-android-commons/.cxx/cxx/debug/arm64-v8a",
     "effectiveConfiguration": {
       "name": "traditional-android-studio-cmake-environment",
       "description": "Composite reified CMakeSettings configuration",
@@ -15,13 +15,13 @@
       "inheritEnvironments": [
         "ndk"
       ],
-      "buildRoot": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-android-commons\\.cxx\\cmake\\debug\\arm64-v8a",
-      "cmakeToolchain": "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\build\\cmake\\android.toolchain.cmake",
-      "cmakeExecutable": "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\cmake.exe",
+      "buildRoot": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-android-commons/.cxx/cmake/debug/arm64-v8a",
+      "cmakeToolchain": "/Users/yr/Library/Android/sdk/ndk/21.1.6352462/build/cmake/android.toolchain.cmake",
+      "cmakeExecutable": "/Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake",
       "variables": [
         {
           "name": "CMAKE_FIND_ROOT_PATH",
-          "value": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-android-commons\\.cxx\\cmake\\debug\\prefab\\arm64-v8a\\prefab"
+          "value": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-android-commons/.cxx/cmake/debug/prefab/arm64-v8a/prefab"
         },
         {
           "name": "CMAKE_BUILD_TYPE",
@@ -29,7 +29,7 @@
         },
         {
           "name": "CMAKE_TOOLCHAIN_FILE",
-          "value": "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\build\\cmake\\android.toolchain.cmake"
+          "value": "/Users/yr/Library/Android/sdk/ndk/21.1.6352462/build/cmake/android.toolchain.cmake"
         },
         {
           "name": "ANDROID_ABI",
@@ -37,7 +37,7 @@
         },
         {
           "name": "ANDROID_NDK",
-          "value": "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462"
+          "value": "/Users/yr/Library/Android/sdk/ndk/21.1.6352462"
         },
         {
           "name": "ANDROID_PLATFORM",
@@ -49,7 +49,7 @@
         },
         {
           "name": "CMAKE_ANDROID_NDK",
-          "value": "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462"
+          "value": "/Users/yr/Library/Android/sdk/ndk/21.1.6352462"
         },
         {
           "name": "CMAKE_EXPORT_COMPILE_COMMANDS",
@@ -57,11 +57,11 @@
         },
         {
           "name": "CMAKE_LIBRARY_OUTPUT_DIRECTORY",
-          "value": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-android-commons\\build\\intermediates\\cmake\\debug\\obj\\arm64-v8a"
+          "value": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-android-commons/build/intermediates/cmake/debug/obj/arm64-v8a"
         },
         {
           "name": "CMAKE_MAKE_PROGRAM",
-          "value": "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe"
+          "value": "/Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja"
         },
         {
           "name": "CMAKE_SYSTEM_NAME",
@@ -73,22 +73,22 @@
         },
         {
           "name": "EXT_DEP",
-          "value": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-android-commons\\build\\intermediates\\native_deps\\extracted_native_dependencies"
+          "value": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-android-commons/build/intermediates/native_deps/extracted_native_dependencies"
         }
       ]
     }
   },
-  "cxxBuildFolder": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-android-commons\\.cxx\\cmake\\debug\\arm64-v8a",
+  "cxxBuildFolder": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-android-commons/.cxx/cmake/debug/arm64-v8a",
   "info": {
     "abi": "ARM64_V8A",
     "bitness": 64,
     "deprecated": false,
     "default": true
   },
-  "originalCxxBuildFolder": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-android-commons\\.cxx\\cmake\\debug\\arm64-v8a",
+  "originalCxxBuildFolder": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-android-commons/.cxx/cmake/debug/arm64-v8a",
   "variant": {
     "buildSystemArgumentList": [
-      "-DEXT_DEP\u003dC:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-android-commons\\build\\intermediates\\native_deps\\extracted_native_dependencies"
+      "-DEXT_DEP\u003d/Users/yr/AndroidStudioProjects/useful/matrix/matrix-android-commons/build/intermediates/native_deps/extracted_native_dependencies"
     ],
     "buildTargetSet": [
       "xhook",
@@ -103,24 +103,24 @@
     "module": {
       "buildSystem": "CMAKE",
       "cmake": {
-        "cmakeExe": "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\cmake.exe",
+        "cmakeExe": "/Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake",
         "minimumCmakeVersion": "3.10.2",
-        "ninjaExe": "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe"
+        "ninjaExe": "/Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja"
       },
-      "cmakeToolchainFile": "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\build\\cmake\\android.toolchain.cmake",
-      "cxxFolder": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-android-commons\\.cxx",
+      "cmakeToolchainFile": "/Users/yr/Library/Android/sdk/ndk/21.1.6352462/build/cmake/android.toolchain.cmake",
+      "cxxFolder": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-android-commons/.cxx",
       "gradleModulePathName": ":matrix-android-commons",
-      "intermediatesFolder": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-android-commons\\build\\intermediates",
-      "makeFile": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-android-commons\\CMakeLists.txt",
-      "moduleBuildFile": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-android-commons\\build.gradle",
-      "moduleRootFolder": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-android-commons",
+      "intermediatesFolder": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-android-commons/build/intermediates",
+      "makeFile": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-android-commons/CMakeLists.txt",
+      "moduleBuildFile": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-android-commons/build.gradle",
+      "moduleRootFolder": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-android-commons",
       "ndkDefaultAbiList": [
         "ARMEABI_V7A",
         "ARM64_V8A",
         "X86",
         "X86_64"
       ],
-      "ndkFolder": "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462",
+      "ndkFolder": "/Users/yr/Library/Android/sdk/ndk/21.1.6352462",
       "ndkMetaAbiList": [
         {
           "abi": "ARMEABI_V7A",
@@ -177,36 +177,36 @@
       "ndkDefaultStl": "LIBCXX_STATIC",
       "ndkVersion": "21.1.6352462",
       "project": {
-        "compilerSettingsCacheFolder": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\.cxx",
-        "cxxFolder": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\.cxx",
+        "compilerSettingsCacheFolder": "/Users/yr/AndroidStudioProjects/useful/matrix/.cxx",
+        "cxxFolder": "/Users/yr/AndroidStudioProjects/useful/matrix/.cxx",
         "ideBuildTargetAbi": "arm64-v8a,armeabi-v7a,armeabi",
         "isBuildOnlyTargetAbiEnabled": true,
         "isCmakeBuildCohabitationEnabled": false,
         "isNativeCompilerSettingsCacheEnabled": false,
-        "rootBuildGradleFolder": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android",
-        "sdkFolder": "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk",
+        "rootBuildGradleFolder": "/Users/yr/AndroidStudioProjects/useful/matrix",
+        "sdkFolder": "/Users/yr/Library/Android/sdk",
         "isPrefabEnabled": false
       },
       "splitsAbiFilterSet": [],
       "stlSharedObjectMap": {
         "LIBCXX_SHARED": {
-          "ARMEABI_V7A": "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\arm-linux-androideabi\\libc++_shared.so",
-          "ARM64_V8A": "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\aarch64-linux-android\\libc++_shared.so",
-          "X86": "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\i686-linux-android\\libc++_shared.so",
-          "X86_64": "C:\\Users\\29655\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\x86_64-linux-android\\libc++_shared.so"
+          "ARMEABI_V7A": "/Users/yr/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/arm-linux-androideabi/libc++_shared.so",
+          "ARM64_V8A": "/Users/yr/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/aarch64-linux-android/libc++_shared.so",
+          "X86": "/Users/yr/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/i686-linux-android/libc++_shared.so",
+          "X86_64": "/Users/yr/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/x86_64-linux-android/libc++_shared.so"
         },
         "LIBCXX_STATIC": {},
         "NONE": {},
         "SYSTEM": {}
       }
     },
-    "objFolder": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-android-commons\\build\\intermediates\\cmake\\debug\\obj",
+    "objFolder": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-android-commons/build/intermediates/cmake/debug/obj",
     "variantName": "debug",
     "validAbiList": [
       "ARM64_V8A"
     ],
-    "prefabDirectory": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-android-commons\\.cxx\\cmake\\debug\\prefab",
+    "prefabDirectory": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-android-commons/.cxx/cmake/debug/prefab",
     "prefabPackageDirectoryList": []
   },
-  "prefabFolder": "C:\\project\\demo\\matrix-dev\\matrix\\matrix-android\\matrix-android-commons\\.cxx\\cmake\\debug\\prefab\\arm64-v8a"
+  "prefabFolder": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-android-commons/.cxx/cmake/debug/prefab/arm64-v8a"
 }

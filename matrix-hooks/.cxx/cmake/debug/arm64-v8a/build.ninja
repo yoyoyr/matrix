@@ -31,14 +31,13 @@ include rules.ninja
 
 
 #############################################
-# Utility command for rebuild_cache
+# Utility command for edit_cache
 
-build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\project\demo\matrix-dev\matrix\matrix-android\matrix-hooks\.cxx\cmake\debug\arm64-v8a && C:\Users\29655\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\cmake.exe -HC:\project\demo\matrix-dev\matrix\matrix-android\matrix-hooks -BC:\project\demo\matrix-dev\matrix\matrix-android\matrix-hooks\.cxx\cmake\debug\arm64-v8a"
-  DESC = Running CMake to regenerate build system...
-  pool = console
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/.cxx/cmake/debug/arm64-v8a && /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
   restat = 1
-build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+build edit_cache: phony CMakeFiles/edit_cache.util
 # =============================================================================
 # Object build statements for SHARED_LIBRARY target matrix-memguard
 
@@ -49,52 +48,202 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 build cmake_object_order_depends_target_matrix-memguard: phony || cmake_object_order_depends_target_cJSON cmake_object_order_depends_target_fastunwind cmake_object_order_depends_target_matrix-hookcommon cmake_object_order_depends_target_memguard_base
 build CMakeFiles/matrix-memguard.dir/src/main/cpp/memguard/jni/com_tencent_mm_tools_memguard_MemGuard.cpp.o: CXX_COMPILER__matrix-memguard ../../../../src/main/cpp/memguard/jni/com_tencent_mm_tools_memguard_MemGuard.cpp || cmake_object_order_depends_target_matrix-memguard
   DEFINES = -Dmatrix_memguard_EXPORTS
-  DEP_FILE = CMakeFiles\matrix-memguard.dir\src\main\cpp\memguard\jni\com_tencent_mm_tools_memguard_MemGuard.cpp.o.d
+  DEP_FILE = CMakeFiles/matrix-memguard.dir/src/main/cpp/memguard/jni/com_tencent_mm_tools_memguard_MemGuard.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -Werror -Wno-unused-function -fvisibility=hidden -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -std=c++17 -fstack-protector -DMEMGUARD_LOG_LEVEL=4
   INCLUDES = -I../../../../src/main/cpp/memguard -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp -I../../../../src/main/cpp/external/libcJSON -I../../../../src/main/cpp/external/fastunwind
-  OBJECT_DIR = CMakeFiles\matrix-memguard.dir
-  OBJECT_FILE_DIR = CMakeFiles\matrix-memguard.dir\src\main\cpp\memguard\jni
+  OBJECT_DIR = CMakeFiles/matrix-memguard.dir
+  OBJECT_FILE_DIR = CMakeFiles/matrix-memguard.dir/src/main/cpp/memguard/jni
 build CMakeFiles/matrix-memguard.dir/src/main/cpp/memguard/jni/com_tencent_mm_tools_memguard_MemGuard_00024Options.cpp.o: CXX_COMPILER__matrix-memguard ../../../../src/main/cpp/memguard/jni/com_tencent_mm_tools_memguard_MemGuard_00024Options.cpp || cmake_object_order_depends_target_matrix-memguard
   DEFINES = -Dmatrix_memguard_EXPORTS
-  DEP_FILE = CMakeFiles\matrix-memguard.dir\src\main\cpp\memguard\jni\com_tencent_mm_tools_memguard_MemGuard_00024Options.cpp.o.d
+  DEP_FILE = CMakeFiles/matrix-memguard.dir/src/main/cpp/memguard/jni/com_tencent_mm_tools_memguard_MemGuard_00024Options.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -Werror -Wno-unused-function -fvisibility=hidden -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -std=c++17 -fstack-protector -DMEMGUARD_LOG_LEVEL=4
   INCLUDES = -I../../../../src/main/cpp/memguard -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp -I../../../../src/main/cpp/external/libcJSON -I../../../../src/main/cpp/external/fastunwind
-  OBJECT_DIR = CMakeFiles\matrix-memguard.dir
-  OBJECT_FILE_DIR = CMakeFiles\matrix-memguard.dir\src\main\cpp\memguard\jni
+  OBJECT_DIR = CMakeFiles/matrix-memguard.dir
+  OBJECT_FILE_DIR = CMakeFiles/matrix-memguard.dir/src/main/cpp/memguard/jni
 build CMakeFiles/matrix-memguard.dir/src/main/cpp/memguard/jni/JNIAux.cpp.o: CXX_COMPILER__matrix-memguard ../../../../src/main/cpp/memguard/jni/JNIAux.cpp || cmake_object_order_depends_target_matrix-memguard
   DEFINES = -Dmatrix_memguard_EXPORTS
-  DEP_FILE = CMakeFiles\matrix-memguard.dir\src\main\cpp\memguard\jni\JNIAux.cpp.o.d
+  DEP_FILE = CMakeFiles/matrix-memguard.dir/src/main/cpp/memguard/jni/JNIAux.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -Werror -Wno-unused-function -fvisibility=hidden -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -std=c++17 -fstack-protector -DMEMGUARD_LOG_LEVEL=4
   INCLUDES = -I../../../../src/main/cpp/memguard -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp -I../../../../src/main/cpp/external/libcJSON -I../../../../src/main/cpp/external/fastunwind
-  OBJECT_DIR = CMakeFiles\matrix-memguard.dir
-  OBJECT_FILE_DIR = CMakeFiles\matrix-memguard.dir\src\main\cpp\memguard\jni
+  OBJECT_DIR = CMakeFiles/matrix-memguard.dir
+  OBJECT_FILE_DIR = CMakeFiles/matrix-memguard.dir/src/main/cpp/memguard/jni
 build CMakeFiles/matrix-memguard.dir/src/main/cpp/memguard/jni/C2Java.cpp.o: CXX_COMPILER__matrix-memguard ../../../../src/main/cpp/memguard/jni/C2Java.cpp || cmake_object_order_depends_target_matrix-memguard
   DEFINES = -Dmatrix_memguard_EXPORTS
-  DEP_FILE = CMakeFiles\matrix-memguard.dir\src\main\cpp\memguard\jni\C2Java.cpp.o.d
+  DEP_FILE = CMakeFiles/matrix-memguard.dir/src/main/cpp/memguard/jni/C2Java.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -Werror -Wno-unused-function -fvisibility=hidden -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -std=c++17 -fstack-protector -DMEMGUARD_LOG_LEVEL=4
   INCLUDES = -I../../../../src/main/cpp/memguard -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp -I../../../../src/main/cpp/external/libcJSON -I../../../../src/main/cpp/external/fastunwind
-  OBJECT_DIR = CMakeFiles\matrix-memguard.dir
-  OBJECT_FILE_DIR = CMakeFiles\matrix-memguard.dir\src\main\cpp\memguard\jni
+  OBJECT_DIR = CMakeFiles/matrix-memguard.dir
+  OBJECT_FILE_DIR = CMakeFiles/matrix-memguard.dir/src/main/cpp/memguard/jni
 
 # =============================================================================
 # Link build statements for SHARED_LIBRARY target matrix-memguard
 
 
 #############################################
-# Link the shared library ..\..\..\..\build\intermediates\cmake\debug\obj\arm64-v8a\libmatrix-memguard.so
+# Link the shared library ../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libmatrix-memguard.so
 
-build ../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libmatrix-memguard.so: CXX_SHARED_LIBRARY_LINKER__matrix-memguard CMakeFiles/matrix-memguard.dir/src/main/cpp/memguard/jni/com_tencent_mm_tools_memguard_MemGuard.cpp.o CMakeFiles/matrix-memguard.dir/src/main/cpp/memguard/jni/com_tencent_mm_tools_memguard_MemGuard_00024Options.cpp.o CMakeFiles/matrix-memguard.dir/src/main/cpp/memguard/jni/JNIAux.cpp.o CMakeFiles/matrix-memguard.dir/src/main/cpp/memguard/jni/C2Java.cpp.o | C$:/Users/29655/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/aarch64-linux-android/21/liblog.so libmemguard_base.a ../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libmatrix-hookcommon.so src/main/cpp/external/libcJSON/libcJSON.a C$:/Users/29655/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/aarch64-linux-android/21/liblog.so ../../../../build/intermediates/native_deps/extracted_native_dependencies/lib/arm64-v8a/libwechatbacktrace.so ../../../../build/intermediates/native_deps/extracted_native_dependencies/lib/arm64-v8a/libunwindstack.a src/main/cpp/external/fastunwind/libfastunwind.a || ../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libmatrix-hookcommon.so libmemguard_base.a src/main/cpp/external/fastunwind/libfastunwind.a src/main/cpp/external/libcJSON/libcJSON.a
+build ../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libmatrix-memguard.so: CXX_SHARED_LIBRARY_LINKER__matrix-memguard CMakeFiles/matrix-memguard.dir/src/main/cpp/memguard/jni/com_tencent_mm_tools_memguard_MemGuard.cpp.o CMakeFiles/matrix-memguard.dir/src/main/cpp/memguard/jni/com_tencent_mm_tools_memguard_MemGuard_00024Options.cpp.o CMakeFiles/matrix-memguard.dir/src/main/cpp/memguard/jni/JNIAux.cpp.o CMakeFiles/matrix-memguard.dir/src/main/cpp/memguard/jni/C2Java.cpp.o | /Users/yr/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/aarch64-linux-android/21/liblog.so libmemguard_base.a ../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libmatrix-hookcommon.so src/main/cpp/external/libcJSON/libcJSON.a /Users/yr/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/aarch64-linux-android/21/liblog.so ../../../../build/intermediates/native_deps/extracted_native_dependencies/lib/arm64-v8a/libwechatbacktrace.so ../../../../build/intermediates/native_deps/extracted_native_dependencies/lib/arm64-v8a/libunwindstack.a src/main/cpp/external/fastunwind/libfastunwind.a || ../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libmatrix-hookcommon.so libmemguard_base.a src/main/cpp/external/fastunwind/libfastunwind.a src/main/cpp/external/libcJSON/libcJSON.a
   LANGUAGE_COMPILE_FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info
   LINK_FLAGS = -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -Wl,--build-id -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments
-  LINK_LIBRARIES = -Wl,--gc-sections -Wl,--version-script=C:/project/demo/matrix-dev/matrix/matrix-android/matrix-hooks/src/main/cpp/memguard/memguard.map -llog libmemguard_base.a ../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libmatrix-hookcommon.so -Wl,--gc-sections src/main/cpp/external/libcJSON/libcJSON.a -llog -lwechatbacktrace -lwechatbacktrace ../../../../build/intermediates/native_deps/extracted_native_dependencies/lib/arm64-v8a/libunwindstack.a src/main/cpp/external/fastunwind/libfastunwind.a -latomic -lm
-  LINK_PATH = -LC:/project/demo/matrix-dev/matrix/matrix-android/matrix-hooks/build/intermediates/native_deps/extracted_native_dependencies/lib/arm64-v8a
-  OBJECT_DIR = CMakeFiles\matrix-memguard.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
+  LINK_LIBRARIES = -Wl,--gc-sections -Wl,--version-script=/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/src/main/cpp/memguard/memguard.map -llog libmemguard_base.a ../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libmatrix-hookcommon.so -Wl,--gc-sections src/main/cpp/external/libcJSON/libcJSON.a -llog -lwechatbacktrace -lwechatbacktrace ../../../../build/intermediates/native_deps/extracted_native_dependencies/lib/arm64-v8a/libunwindstack.a src/main/cpp/external/fastunwind/libfastunwind.a -latomic -lm
+  LINK_PATH = -L/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/build/intermediates/native_deps/extracted_native_dependencies/lib/arm64-v8a
+  OBJECT_DIR = CMakeFiles/matrix-memguard.dir
+  POST_BUILD = :
+  PRE_LINK = :
   SONAME = libmatrix-memguard.so
   SONAME_FLAG = -Wl,-soname,
-  TARGET_FILE = ..\..\..\..\build\intermediates\cmake\debug\obj\arm64-v8a\libmatrix-memguard.so
+  TARGET_FILE = ../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libmatrix-memguard.so
   TARGET_PDB = matrix-memguard.so.dbg
+# =============================================================================
+# Object build statements for SHARED_LIBRARY target matrix-pthreadhook
+
+
+#############################################
+# Order-only phony target for matrix-pthreadhook
+
+build cmake_object_order_depends_target_matrix-pthreadhook: phony || cmake_object_order_depends_target_cJSON cmake_object_order_depends_target_matrix-hookcommon
+build CMakeFiles/matrix-pthreadhook.dir/src/main/cpp/pthread/ThreadTrace.cpp.o: CXX_COMPILER__matrix-pthreadhook ../../../../src/main/cpp/pthread/ThreadTrace.cpp || cmake_object_order_depends_target_matrix-pthreadhook
+  DEFINES = -Dmatrix_pthreadhook_EXPORTS
+  DEP_FILE = CMakeFiles/matrix-pthreadhook.dir/src/main/cpp/pthread/ThreadTrace.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++17 -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -fvisibility=hidden -fstack-protector
+  INCLUDES = -I../../../../src/main/cpp -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp/external/libcJSON
+  OBJECT_DIR = CMakeFiles/matrix-pthreadhook.dir
+  OBJECT_FILE_DIR = CMakeFiles/matrix-pthreadhook.dir/src/main/cpp/pthread
+build CMakeFiles/matrix-pthreadhook.dir/src/main/cpp/pthread/ThreadStackShink.cpp.o: CXX_COMPILER__matrix-pthreadhook ../../../../src/main/cpp/pthread/ThreadStackShink.cpp || cmake_object_order_depends_target_matrix-pthreadhook
+  DEFINES = -Dmatrix_pthreadhook_EXPORTS
+  DEP_FILE = CMakeFiles/matrix-pthreadhook.dir/src/main/cpp/pthread/ThreadStackShink.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++17 -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -fvisibility=hidden -fstack-protector
+  INCLUDES = -I../../../../src/main/cpp -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp/external/libcJSON
+  OBJECT_DIR = CMakeFiles/matrix-pthreadhook.dir
+  OBJECT_FILE_DIR = CMakeFiles/matrix-pthreadhook.dir/src/main/cpp/pthread
+build CMakeFiles/matrix-pthreadhook.dir/src/main/cpp/pthread/PthreadHook.cpp.o: CXX_COMPILER__matrix-pthreadhook ../../../../src/main/cpp/pthread/PthreadHook.cpp || cmake_object_order_depends_target_matrix-pthreadhook
+  DEFINES = -Dmatrix_pthreadhook_EXPORTS
+  DEP_FILE = CMakeFiles/matrix-pthreadhook.dir/src/main/cpp/pthread/PthreadHook.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++17 -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -fvisibility=hidden -fstack-protector
+  INCLUDES = -I../../../../src/main/cpp -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp/external/libcJSON
+  OBJECT_DIR = CMakeFiles/matrix-pthreadhook.dir
+  OBJECT_FILE_DIR = CMakeFiles/matrix-pthreadhook.dir/src/main/cpp/pthread
+build CMakeFiles/matrix-pthreadhook.dir/src/main/cpp/pthread/PthreadHookJNI.cpp.o: CXX_COMPILER__matrix-pthreadhook ../../../../src/main/cpp/pthread/PthreadHookJNI.cpp || cmake_object_order_depends_target_matrix-pthreadhook
+  DEFINES = -Dmatrix_pthreadhook_EXPORTS
+  DEP_FILE = CMakeFiles/matrix-pthreadhook.dir/src/main/cpp/pthread/PthreadHookJNI.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++17 -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -fvisibility=hidden -fstack-protector
+  INCLUDES = -I../../../../src/main/cpp -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp/external/libcJSON
+  OBJECT_DIR = CMakeFiles/matrix-pthreadhook.dir
+  OBJECT_FILE_DIR = CMakeFiles/matrix-pthreadhook.dir/src/main/cpp/pthread
+
+# =============================================================================
+# Link build statements for SHARED_LIBRARY target matrix-pthreadhook
+
+
+#############################################
+# Link the shared library ../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libmatrix-pthreadhook.so
+
+build ../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libmatrix-pthreadhook.so: CXX_SHARED_LIBRARY_LINKER__matrix-pthreadhook CMakeFiles/matrix-pthreadhook.dir/src/main/cpp/pthread/ThreadTrace.cpp.o CMakeFiles/matrix-pthreadhook.dir/src/main/cpp/pthread/ThreadStackShink.cpp.o CMakeFiles/matrix-pthreadhook.dir/src/main/cpp/pthread/PthreadHook.cpp.o CMakeFiles/matrix-pthreadhook.dir/src/main/cpp/pthread/PthreadHookJNI.cpp.o | ../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libmatrix-hookcommon.so src/main/cpp/external/libcJSON/libcJSON.a /Users/yr/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/aarch64-linux-android/21/liblog.so ../../../../build/intermediates/native_deps/extracted_native_dependencies/lib/arm64-v8a/libwechatbacktrace.so || ../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libmatrix-hookcommon.so src/main/cpp/external/libcJSON/libcJSON.a
+  LANGUAGE_COMPILE_FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info
+  LINK_FLAGS = -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -Wl,--build-id -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments
+  LINK_LIBRARIES = ../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libmatrix-hookcommon.so -Wl,--version-script=/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/src/main/cpp/pthread/pthread.ver -Wl,--gc-sections src/main/cpp/external/libcJSON/libcJSON.a -llog -lwechatbacktrace -latomic -lm
+  LINK_PATH = -L/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/build/intermediates/native_deps/extracted_native_dependencies/lib/arm64-v8a
+  OBJECT_DIR = CMakeFiles/matrix-pthreadhook.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  SONAME = libmatrix-pthreadhook.so
+  SONAME_FLAG = -Wl,-soname,
+  TARGET_FILE = ../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libmatrix-pthreadhook.so
+  TARGET_PDB = matrix-pthreadhook.so.dbg
+# =============================================================================
+# Object build statements for SHARED_LIBRARY target matrix-memoryhook
+
+
+#############################################
+# Order-only phony target for matrix-memoryhook
+
+build cmake_object_order_depends_target_matrix-memoryhook: phony || cmake_object_order_depends_target_cJSON cmake_object_order_depends_target_matrix-hookcommon
+build CMakeFiles/matrix-memoryhook.dir/src/main/cpp/memory/GCSemiSpaceTrimmer.cpp.o: CXX_COMPILER__matrix-memoryhook ../../../../src/main/cpp/memory/GCSemiSpaceTrimmer.cpp || cmake_object_order_depends_target_matrix-memoryhook
+  DEFINES = -Dmatrix_memoryhook_EXPORTS
+  DEP_FILE = CMakeFiles/matrix-memoryhook.dir/src/main/cpp/memory/GCSemiSpaceTrimmer.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++17 -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -fvisibility=hidden -fstack-protector
+  INCLUDES = -I../../../../src/main/cpp -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp/external/libcJSON
+  OBJECT_DIR = CMakeFiles/matrix-memoryhook.dir
+  OBJECT_FILE_DIR = CMakeFiles/matrix-memoryhook.dir/src/main/cpp/memory
+build CMakeFiles/matrix-memoryhook.dir/src/main/cpp/memory/GCSemiSpaceTrimmerJNI.cpp.o: CXX_COMPILER__matrix-memoryhook ../../../../src/main/cpp/memory/GCSemiSpaceTrimmerJNI.cpp || cmake_object_order_depends_target_matrix-memoryhook
+  DEFINES = -Dmatrix_memoryhook_EXPORTS
+  DEP_FILE = CMakeFiles/matrix-memoryhook.dir/src/main/cpp/memory/GCSemiSpaceTrimmerJNI.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++17 -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -fvisibility=hidden -fstack-protector
+  INCLUDES = -I../../../../src/main/cpp -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp/external/libcJSON
+  OBJECT_DIR = CMakeFiles/matrix-memoryhook.dir
+  OBJECT_FILE_DIR = CMakeFiles/matrix-memoryhook.dir/src/main/cpp/memory
+build CMakeFiles/matrix-memoryhook.dir/src/main/cpp/memory/MemoryHookJNI.cpp.o: CXX_COMPILER__matrix-memoryhook ../../../../src/main/cpp/memory/MemoryHookJNI.cpp || cmake_object_order_depends_target_matrix-memoryhook
+  DEFINES = -Dmatrix_memoryhook_EXPORTS
+  DEP_FILE = CMakeFiles/matrix-memoryhook.dir/src/main/cpp/memory/MemoryHookJNI.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++17 -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -fvisibility=hidden -fstack-protector
+  INCLUDES = -I../../../../src/main/cpp -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp/external/libcJSON
+  OBJECT_DIR = CMakeFiles/matrix-memoryhook.dir
+  OBJECT_FILE_DIR = CMakeFiles/matrix-memoryhook.dir/src/main/cpp/memory
+build CMakeFiles/matrix-memoryhook.dir/src/main/cpp/memory/MemoryHook.cpp.o: CXX_COMPILER__matrix-memoryhook ../../../../src/main/cpp/memory/MemoryHook.cpp || cmake_object_order_depends_target_matrix-memoryhook
+  DEFINES = -Dmatrix_memoryhook_EXPORTS
+  DEP_FILE = CMakeFiles/matrix-memoryhook.dir/src/main/cpp/memory/MemoryHook.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++17 -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -fvisibility=hidden -fstack-protector
+  INCLUDES = -I../../../../src/main/cpp -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp/external/libcJSON
+  OBJECT_DIR = CMakeFiles/matrix-memoryhook.dir
+  OBJECT_FILE_DIR = CMakeFiles/matrix-memoryhook.dir/src/main/cpp/memory
+build CMakeFiles/matrix-memoryhook.dir/src/main/cpp/memory/MemoryBufferQueue.cpp.o: CXX_COMPILER__matrix-memoryhook ../../../../src/main/cpp/memory/MemoryBufferQueue.cpp || cmake_object_order_depends_target_matrix-memoryhook
+  DEFINES = -Dmatrix_memoryhook_EXPORTS
+  DEP_FILE = CMakeFiles/matrix-memoryhook.dir/src/main/cpp/memory/MemoryBufferQueue.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++17 -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -fvisibility=hidden -fstack-protector
+  INCLUDES = -I../../../../src/main/cpp -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp/external/libcJSON
+  OBJECT_DIR = CMakeFiles/matrix-memoryhook.dir
+  OBJECT_FILE_DIR = CMakeFiles/matrix-memoryhook.dir/src/main/cpp/memory
+build CMakeFiles/matrix-memoryhook.dir/src/main/cpp/memory/MemoryHookFunctions.cpp.o: CXX_COMPILER__matrix-memoryhook ../../../../src/main/cpp/memory/MemoryHookFunctions.cpp || cmake_object_order_depends_target_matrix-memoryhook
+  DEFINES = -Dmatrix_memoryhook_EXPORTS
+  DEP_FILE = CMakeFiles/matrix-memoryhook.dir/src/main/cpp/memory/MemoryHookFunctions.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++17 -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -fvisibility=hidden -fstack-protector
+  INCLUDES = -I../../../../src/main/cpp -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp/external/libcJSON
+  OBJECT_DIR = CMakeFiles/matrix-memoryhook.dir
+  OBJECT_FILE_DIR = CMakeFiles/matrix-memoryhook.dir/src/main/cpp/memory
+build CMakeFiles/matrix-memoryhook.dir/src/main/cpp/memory/WVPreAllocTrimmer.cpp.o: CXX_COMPILER__matrix-memoryhook ../../../../src/main/cpp/memory/WVPreAllocTrimmer.cpp || cmake_object_order_depends_target_matrix-memoryhook
+  DEFINES = -Dmatrix_memoryhook_EXPORTS
+  DEP_FILE = CMakeFiles/matrix-memoryhook.dir/src/main/cpp/memory/WVPreAllocTrimmer.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++17 -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -fvisibility=hidden -fstack-protector
+  INCLUDES = -I../../../../src/main/cpp -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp/external/libcJSON
+  OBJECT_DIR = CMakeFiles/matrix-memoryhook.dir
+  OBJECT_FILE_DIR = CMakeFiles/matrix-memoryhook.dir/src/main/cpp/memory
+build CMakeFiles/matrix-memoryhook.dir/src/main/cpp/memory/WVPreAllocHookJNI.cpp.o: CXX_COMPILER__matrix-memoryhook ../../../../src/main/cpp/memory/WVPreAllocHookJNI.cpp || cmake_object_order_depends_target_matrix-memoryhook
+  DEFINES = -Dmatrix_memoryhook_EXPORTS
+  DEP_FILE = CMakeFiles/matrix-memoryhook.dir/src/main/cpp/memory/WVPreAllocHookJNI.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++17 -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -fvisibility=hidden -fstack-protector
+  INCLUDES = -I../../../../src/main/cpp -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp/external/libcJSON
+  OBJECT_DIR = CMakeFiles/matrix-memoryhook.dir
+  OBJECT_FILE_DIR = CMakeFiles/matrix-memoryhook.dir/src/main/cpp/memory
+
+# =============================================================================
+# Link build statements for SHARED_LIBRARY target matrix-memoryhook
+
+
+#############################################
+# Link the shared library ../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libmatrix-memoryhook.so
+
+build ../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libmatrix-memoryhook.so: CXX_SHARED_LIBRARY_LINKER__matrix-memoryhook CMakeFiles/matrix-memoryhook.dir/src/main/cpp/memory/GCSemiSpaceTrimmer.cpp.o CMakeFiles/matrix-memoryhook.dir/src/main/cpp/memory/GCSemiSpaceTrimmerJNI.cpp.o CMakeFiles/matrix-memoryhook.dir/src/main/cpp/memory/MemoryHookJNI.cpp.o CMakeFiles/matrix-memoryhook.dir/src/main/cpp/memory/MemoryHook.cpp.o CMakeFiles/matrix-memoryhook.dir/src/main/cpp/memory/MemoryBufferQueue.cpp.o CMakeFiles/matrix-memoryhook.dir/src/main/cpp/memory/MemoryHookFunctions.cpp.o CMakeFiles/matrix-memoryhook.dir/src/main/cpp/memory/WVPreAllocTrimmer.cpp.o CMakeFiles/matrix-memoryhook.dir/src/main/cpp/memory/WVPreAllocHookJNI.cpp.o | ../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libmatrix-hookcommon.so src/main/cpp/external/libcJSON/libcJSON.a /Users/yr/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/aarch64-linux-android/21/liblog.so ../../../../build/intermediates/native_deps/extracted_native_dependencies/lib/arm64-v8a/libwechatbacktrace.so || ../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libmatrix-hookcommon.so src/main/cpp/external/libcJSON/libcJSON.a
+  LANGUAGE_COMPILE_FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info
+  LINK_FLAGS = -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -Wl,--build-id -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments
+  LINK_LIBRARIES = ../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libmatrix-hookcommon.so -Wl,--version-script=/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/src/main/cpp/memory/memory.ver -Wl,--gc-sections src/main/cpp/external/libcJSON/libcJSON.a -llog -lwechatbacktrace -latomic -lm
+  LINK_PATH = -L/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/build/intermediates/native_deps/extracted_native_dependencies/lib/arm64-v8a
+  OBJECT_DIR = CMakeFiles/matrix-memoryhook.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  SONAME = libmatrix-memoryhook.so
+  SONAME_FLAG = -Wl,-soname,
+  TARGET_FILE = ../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libmatrix-memoryhook.so
+  TARGET_PDB = matrix-memoryhook.so.dbg
+
+#############################################
+# Utility command for rebuild_cache
+
+build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/.cxx/cmake/debug/arm64-v8a && /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -H/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks -B/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/.cxx/cmake/debug/arm64-v8a
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target memguard_base
 
@@ -104,95 +253,95 @@ build ../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libmatrix-memgua
 
 build cmake_object_order_depends_target_memguard_base: phony || cmake_object_order_depends_target_cJSON cmake_object_order_depends_target_fastunwind cmake_object_order_depends_target_matrix-hookcommon
 build CMakeFiles/memguard_base.dir/src/main/cpp/memguard/port/Hook.cpp.o: CXX_COMPILER__memguard_base ../../../../src/main/cpp/memguard/port/Hook.cpp || cmake_object_order_depends_target_memguard_base
-  DEP_FILE = CMakeFiles\memguard_base.dir\src\main\cpp\memguard\port\Hook.cpp.o.d
+  DEP_FILE = CMakeFiles/memguard_base.dir/src/main/cpp/memguard/port/Hook.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -Werror -Wno-unused-function -std=c++17 -fvisibility=hidden -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -DMEMGUARD_LOG_LEVEL=4 -fstack-protector
   INCLUDES = -I../../../../src/main/cpp/memguard -I../../../../src/main/cpp -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp/external/libcJSON -I../../../../src/main/cpp/external/fastunwind
-  OBJECT_DIR = CMakeFiles\memguard_base.dir
-  OBJECT_FILE_DIR = CMakeFiles\memguard_base.dir\src\main\cpp\memguard\port
+  OBJECT_DIR = CMakeFiles/memguard_base.dir
+  OBJECT_FILE_DIR = CMakeFiles/memguard_base.dir/src/main/cpp/memguard/port
 build CMakeFiles/memguard_base.dir/src/main/cpp/memguard/port/Log.cpp.o: CXX_COMPILER__memguard_base ../../../../src/main/cpp/memguard/port/Log.cpp || cmake_object_order_depends_target_memguard_base
-  DEP_FILE = CMakeFiles\memguard_base.dir\src\main\cpp\memguard\port\Log.cpp.o.d
+  DEP_FILE = CMakeFiles/memguard_base.dir/src/main/cpp/memguard/port/Log.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -Werror -Wno-unused-function -std=c++17 -fvisibility=hidden -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -DMEMGUARD_LOG_LEVEL=4 -fstack-protector
   INCLUDES = -I../../../../src/main/cpp/memguard -I../../../../src/main/cpp -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp/external/libcJSON -I../../../../src/main/cpp/external/fastunwind
-  OBJECT_DIR = CMakeFiles\memguard_base.dir
-  OBJECT_FILE_DIR = CMakeFiles\memguard_base.dir\src\main\cpp\memguard\port
+  OBJECT_DIR = CMakeFiles/memguard_base.dir
+  OBJECT_FILE_DIR = CMakeFiles/memguard_base.dir/src/main/cpp/memguard/port
 build CMakeFiles/memguard_base.dir/src/main/cpp/memguard/port/Memory.cpp.o: CXX_COMPILER__memguard_base ../../../../src/main/cpp/memguard/port/Memory.cpp || cmake_object_order_depends_target_memguard_base
-  DEP_FILE = CMakeFiles\memguard_base.dir\src\main\cpp\memguard\port\Memory.cpp.o.d
+  DEP_FILE = CMakeFiles/memguard_base.dir/src/main/cpp/memguard/port/Memory.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -Werror -Wno-unused-function -std=c++17 -fvisibility=hidden -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -DMEMGUARD_LOG_LEVEL=4 -fstack-protector
   INCLUDES = -I../../../../src/main/cpp/memguard -I../../../../src/main/cpp -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp/external/libcJSON -I../../../../src/main/cpp/external/fastunwind
-  OBJECT_DIR = CMakeFiles\memguard_base.dir
-  OBJECT_FILE_DIR = CMakeFiles\memguard_base.dir\src\main\cpp\memguard\port
+  OBJECT_DIR = CMakeFiles/memguard_base.dir
+  OBJECT_FILE_DIR = CMakeFiles/memguard_base.dir/src/main/cpp/memguard/port
 build CMakeFiles/memguard_base.dir/src/main/cpp/memguard/port/Mutex.cpp.o: CXX_COMPILER__memguard_base ../../../../src/main/cpp/memguard/port/Mutex.cpp || cmake_object_order_depends_target_memguard_base
-  DEP_FILE = CMakeFiles\memguard_base.dir\src\main\cpp\memguard\port\Mutex.cpp.o.d
+  DEP_FILE = CMakeFiles/memguard_base.dir/src/main/cpp/memguard/port/Mutex.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -Werror -Wno-unused-function -std=c++17 -fvisibility=hidden -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -DMEMGUARD_LOG_LEVEL=4 -fstack-protector
   INCLUDES = -I../../../../src/main/cpp/memguard -I../../../../src/main/cpp -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp/external/libcJSON -I../../../../src/main/cpp/external/fastunwind
-  OBJECT_DIR = CMakeFiles\memguard_base.dir
-  OBJECT_FILE_DIR = CMakeFiles\memguard_base.dir\src\main\cpp\memguard\port
+  OBJECT_DIR = CMakeFiles/memguard_base.dir
+  OBJECT_FILE_DIR = CMakeFiles/memguard_base.dir/src/main/cpp/memguard/port
 build CMakeFiles/memguard_base.dir/src/main/cpp/memguard/port/Paths.cpp.o: CXX_COMPILER__memguard_base ../../../../src/main/cpp/memguard/port/Paths.cpp || cmake_object_order_depends_target_memguard_base
-  DEP_FILE = CMakeFiles\memguard_base.dir\src\main\cpp\memguard\port\Paths.cpp.o.d
+  DEP_FILE = CMakeFiles/memguard_base.dir/src/main/cpp/memguard/port/Paths.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -Werror -Wno-unused-function -std=c++17 -fvisibility=hidden -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -DMEMGUARD_LOG_LEVEL=4 -fstack-protector
   INCLUDES = -I../../../../src/main/cpp/memguard -I../../../../src/main/cpp -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp/external/libcJSON -I../../../../src/main/cpp/external/fastunwind
-  OBJECT_DIR = CMakeFiles\memguard_base.dir
-  OBJECT_FILE_DIR = CMakeFiles\memguard_base.dir\src\main\cpp\memguard\port
+  OBJECT_DIR = CMakeFiles/memguard_base.dir
+  OBJECT_FILE_DIR = CMakeFiles/memguard_base.dir/src/main/cpp/memguard/port
 build CMakeFiles/memguard_base.dir/src/main/cpp/memguard/port/Random.cpp.o: CXX_COMPILER__memguard_base ../../../../src/main/cpp/memguard/port/Random.cpp || cmake_object_order_depends_target_memguard_base
-  DEP_FILE = CMakeFiles\memguard_base.dir\src\main\cpp\memguard\port\Random.cpp.o.d
+  DEP_FILE = CMakeFiles/memguard_base.dir/src/main/cpp/memguard/port/Random.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -Werror -Wno-unused-function -std=c++17 -fvisibility=hidden -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -DMEMGUARD_LOG_LEVEL=4 -fstack-protector
   INCLUDES = -I../../../../src/main/cpp/memguard -I../../../../src/main/cpp -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp/external/libcJSON -I../../../../src/main/cpp/external/fastunwind
-  OBJECT_DIR = CMakeFiles\memguard_base.dir
-  OBJECT_FILE_DIR = CMakeFiles\memguard_base.dir\src\main\cpp\memguard\port
+  OBJECT_DIR = CMakeFiles/memguard_base.dir
+  OBJECT_FILE_DIR = CMakeFiles/memguard_base.dir/src/main/cpp/memguard/port
 build CMakeFiles/memguard_base.dir/src/main/cpp/memguard/port/Unwind.cpp.o: CXX_COMPILER__memguard_base ../../../../src/main/cpp/memguard/port/Unwind.cpp || cmake_object_order_depends_target_memguard_base
-  DEP_FILE = CMakeFiles\memguard_base.dir\src\main\cpp\memguard\port\Unwind.cpp.o.d
+  DEP_FILE = CMakeFiles/memguard_base.dir/src/main/cpp/memguard/port/Unwind.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -Werror -Wno-unused-function -std=c++17 -fvisibility=hidden -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -DMEMGUARD_LOG_LEVEL=4 -fstack-protector
   INCLUDES = -I../../../../src/main/cpp/memguard -I../../../../src/main/cpp -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp/external/libcJSON -I../../../../src/main/cpp/external/fastunwind
-  OBJECT_DIR = CMakeFiles\memguard_base.dir
-  OBJECT_FILE_DIR = CMakeFiles\memguard_base.dir\src\main\cpp\memguard\port
+  OBJECT_DIR = CMakeFiles/memguard_base.dir
+  OBJECT_FILE_DIR = CMakeFiles/memguard_base.dir/src/main/cpp/memguard/port
 build CMakeFiles/memguard_base.dir/src/main/cpp/memguard/port/FdSanWrapper.cpp.o: CXX_COMPILER__memguard_base ../../../../src/main/cpp/memguard/port/FdSanWrapper.cpp || cmake_object_order_depends_target_memguard_base
-  DEP_FILE = CMakeFiles\memguard_base.dir\src\main\cpp\memguard\port\FdSanWrapper.cpp.o.d
+  DEP_FILE = CMakeFiles/memguard_base.dir/src/main/cpp/memguard/port/FdSanWrapper.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -Werror -Wno-unused-function -std=c++17 -fvisibility=hidden -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -DMEMGUARD_LOG_LEVEL=4 -fstack-protector
   INCLUDES = -I../../../../src/main/cpp/memguard -I../../../../src/main/cpp -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp/external/libcJSON -I../../../../src/main/cpp/external/fastunwind
-  OBJECT_DIR = CMakeFiles\memguard_base.dir
-  OBJECT_FILE_DIR = CMakeFiles\memguard_base.dir\src\main\cpp\memguard\port
+  OBJECT_DIR = CMakeFiles/memguard_base.dir
+  OBJECT_FILE_DIR = CMakeFiles/memguard_base.dir/src/main/cpp/memguard/port
 build CMakeFiles/memguard_base.dir/src/main/cpp/memguard/util/SignalHandler.cpp.o: CXX_COMPILER__memguard_base ../../../../src/main/cpp/memguard/util/SignalHandler.cpp || cmake_object_order_depends_target_memguard_base
-  DEP_FILE = CMakeFiles\memguard_base.dir\src\main\cpp\memguard\util\SignalHandler.cpp.o.d
+  DEP_FILE = CMakeFiles/memguard_base.dir/src/main/cpp/memguard/util/SignalHandler.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -Werror -Wno-unused-function -std=c++17 -fvisibility=hidden -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -DMEMGUARD_LOG_LEVEL=4 -fstack-protector
   INCLUDES = -I../../../../src/main/cpp/memguard -I../../../../src/main/cpp -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp/external/libcJSON -I../../../../src/main/cpp/external/fastunwind
-  OBJECT_DIR = CMakeFiles\memguard_base.dir
-  OBJECT_FILE_DIR = CMakeFiles\memguard_base.dir\src\main\cpp\memguard\util
+  OBJECT_DIR = CMakeFiles/memguard_base.dir
+  OBJECT_FILE_DIR = CMakeFiles/memguard_base.dir/src/main/cpp/memguard/util
 build CMakeFiles/memguard_base.dir/src/main/cpp/memguard/util/Interception.cpp.o: CXX_COMPILER__memguard_base ../../../../src/main/cpp/memguard/util/Interception.cpp || cmake_object_order_depends_target_memguard_base
-  DEP_FILE = CMakeFiles\memguard_base.dir\src\main\cpp\memguard\util\Interception.cpp.o.d
+  DEP_FILE = CMakeFiles/memguard_base.dir/src/main/cpp/memguard/util/Interception.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -Werror -Wno-unused-function -std=c++17 -fvisibility=hidden -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -DMEMGUARD_LOG_LEVEL=4 -fstack-protector
   INCLUDES = -I../../../../src/main/cpp/memguard -I../../../../src/main/cpp -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp/external/libcJSON -I../../../../src/main/cpp/external/fastunwind
-  OBJECT_DIR = CMakeFiles\memguard_base.dir
-  OBJECT_FILE_DIR = CMakeFiles\memguard_base.dir\src\main\cpp\memguard\util
+  OBJECT_DIR = CMakeFiles/memguard_base.dir
+  OBJECT_FILE_DIR = CMakeFiles/memguard_base.dir/src/main/cpp/memguard/util
 build CMakeFiles/memguard_base.dir/src/main/cpp/memguard/util/PagePool.cpp.o: CXX_COMPILER__memguard_base ../../../../src/main/cpp/memguard/util/PagePool.cpp || cmake_object_order_depends_target_memguard_base
-  DEP_FILE = CMakeFiles\memguard_base.dir\src\main\cpp\memguard\util\PagePool.cpp.o.d
+  DEP_FILE = CMakeFiles/memguard_base.dir/src/main/cpp/memguard/util/PagePool.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -Werror -Wno-unused-function -std=c++17 -fvisibility=hidden -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -DMEMGUARD_LOG_LEVEL=4 -fstack-protector
   INCLUDES = -I../../../../src/main/cpp/memguard -I../../../../src/main/cpp -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp/external/libcJSON -I../../../../src/main/cpp/external/fastunwind
-  OBJECT_DIR = CMakeFiles\memguard_base.dir
-  OBJECT_FILE_DIR = CMakeFiles\memguard_base.dir\src\main\cpp\memguard\util
+  OBJECT_DIR = CMakeFiles/memguard_base.dir
+  OBJECT_FILE_DIR = CMakeFiles/memguard_base.dir/src/main/cpp/memguard/util
 build CMakeFiles/memguard_base.dir/src/main/cpp/memguard/util/Allocation.cpp.o: CXX_COMPILER__memguard_base ../../../../src/main/cpp/memguard/util/Allocation.cpp || cmake_object_order_depends_target_memguard_base
-  DEP_FILE = CMakeFiles\memguard_base.dir\src\main\cpp\memguard\util\Allocation.cpp.o.d
+  DEP_FILE = CMakeFiles/memguard_base.dir/src/main/cpp/memguard/util/Allocation.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -Werror -Wno-unused-function -std=c++17 -fvisibility=hidden -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -DMEMGUARD_LOG_LEVEL=4 -fstack-protector
   INCLUDES = -I../../../../src/main/cpp/memguard -I../../../../src/main/cpp -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp/external/libcJSON -I../../../../src/main/cpp/external/fastunwind
-  OBJECT_DIR = CMakeFiles\memguard_base.dir
-  OBJECT_FILE_DIR = CMakeFiles\memguard_base.dir\src\main\cpp\memguard\util
+  OBJECT_DIR = CMakeFiles/memguard_base.dir
+  OBJECT_FILE_DIR = CMakeFiles/memguard_base.dir/src/main/cpp/memguard/util
 build CMakeFiles/memguard_base.dir/src/main/cpp/memguard/util/Thread.cpp.o: CXX_COMPILER__memguard_base ../../../../src/main/cpp/memguard/util/Thread.cpp || cmake_object_order_depends_target_memguard_base
-  DEP_FILE = CMakeFiles\memguard_base.dir\src\main\cpp\memguard\util\Thread.cpp.o.d
+  DEP_FILE = CMakeFiles/memguard_base.dir/src/main/cpp/memguard/util/Thread.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -Werror -Wno-unused-function -std=c++17 -fvisibility=hidden -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -DMEMGUARD_LOG_LEVEL=4 -fstack-protector
   INCLUDES = -I../../../../src/main/cpp/memguard -I../../../../src/main/cpp -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp/external/libcJSON -I../../../../src/main/cpp/external/fastunwind
-  OBJECT_DIR = CMakeFiles\memguard_base.dir
-  OBJECT_FILE_DIR = CMakeFiles\memguard_base.dir\src\main\cpp\memguard\util
+  OBJECT_DIR = CMakeFiles/memguard_base.dir
+  OBJECT_FILE_DIR = CMakeFiles/memguard_base.dir/src/main/cpp/memguard/util
 build CMakeFiles/memguard_base.dir/src/main/cpp/memguard/util/Issue.cpp.o: CXX_COMPILER__memguard_base ../../../../src/main/cpp/memguard/util/Issue.cpp || cmake_object_order_depends_target_memguard_base
-  DEP_FILE = CMakeFiles\memguard_base.dir\src\main\cpp\memguard\util\Issue.cpp.o.d
+  DEP_FILE = CMakeFiles/memguard_base.dir/src/main/cpp/memguard/util/Issue.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -Werror -Wno-unused-function -std=c++17 -fvisibility=hidden -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -DMEMGUARD_LOG_LEVEL=4 -fstack-protector
   INCLUDES = -I../../../../src/main/cpp/memguard -I../../../../src/main/cpp -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp/external/libcJSON -I../../../../src/main/cpp/external/fastunwind
-  OBJECT_DIR = CMakeFiles\memguard_base.dir
-  OBJECT_FILE_DIR = CMakeFiles\memguard_base.dir\src\main\cpp\memguard\util
+  OBJECT_DIR = CMakeFiles/memguard_base.dir
+  OBJECT_FILE_DIR = CMakeFiles/memguard_base.dir/src/main/cpp/memguard/util
 build CMakeFiles/memguard_base.dir/src/main/cpp/memguard/MemGuard.cpp.o: CXX_COMPILER__memguard_base ../../../../src/main/cpp/memguard/MemGuard.cpp || cmake_object_order_depends_target_memguard_base
-  DEP_FILE = CMakeFiles\memguard_base.dir\src\main\cpp\memguard\MemGuard.cpp.o.d
+  DEP_FILE = CMakeFiles/memguard_base.dir/src/main/cpp/memguard/MemGuard.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -Werror -Wno-unused-function -std=c++17 -fvisibility=hidden -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -DMEMGUARD_LOG_LEVEL=4 -fstack-protector
   INCLUDES = -I../../../../src/main/cpp/memguard -I../../../../src/main/cpp -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp/external/libcJSON -I../../../../src/main/cpp/external/fastunwind
-  OBJECT_DIR = CMakeFiles\memguard_base.dir
-  OBJECT_FILE_DIR = CMakeFiles\memguard_base.dir\src\main\cpp\memguard
+  OBJECT_DIR = CMakeFiles/memguard_base.dir
+  OBJECT_FILE_DIR = CMakeFiles/memguard_base.dir/src/main/cpp/memguard
 
 # =============================================================================
 # Link build statements for STATIC_LIBRARY target memguard_base
@@ -203,9 +352,9 @@ build CMakeFiles/memguard_base.dir/src/main/cpp/memguard/MemGuard.cpp.o: CXX_COM
 
 build libmemguard_base.a: CXX_STATIC_LIBRARY_LINKER__memguard_base CMakeFiles/memguard_base.dir/src/main/cpp/memguard/port/Hook.cpp.o CMakeFiles/memguard_base.dir/src/main/cpp/memguard/port/Log.cpp.o CMakeFiles/memguard_base.dir/src/main/cpp/memguard/port/Memory.cpp.o CMakeFiles/memguard_base.dir/src/main/cpp/memguard/port/Mutex.cpp.o CMakeFiles/memguard_base.dir/src/main/cpp/memguard/port/Paths.cpp.o CMakeFiles/memguard_base.dir/src/main/cpp/memguard/port/Random.cpp.o CMakeFiles/memguard_base.dir/src/main/cpp/memguard/port/Unwind.cpp.o CMakeFiles/memguard_base.dir/src/main/cpp/memguard/port/FdSanWrapper.cpp.o CMakeFiles/memguard_base.dir/src/main/cpp/memguard/util/SignalHandler.cpp.o CMakeFiles/memguard_base.dir/src/main/cpp/memguard/util/Interception.cpp.o CMakeFiles/memguard_base.dir/src/main/cpp/memguard/util/PagePool.cpp.o CMakeFiles/memguard_base.dir/src/main/cpp/memguard/util/Allocation.cpp.o CMakeFiles/memguard_base.dir/src/main/cpp/memguard/util/Thread.cpp.o CMakeFiles/memguard_base.dir/src/main/cpp/memguard/util/Issue.cpp.o CMakeFiles/memguard_base.dir/src/main/cpp/memguard/MemGuard.cpp.o || ../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libmatrix-hookcommon.so src/main/cpp/external/fastunwind/libfastunwind.a src/main/cpp/external/libcJSON/libcJSON.a
   LANGUAGE_COMPILE_FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info
-  OBJECT_DIR = CMakeFiles\memguard_base.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
+  OBJECT_DIR = CMakeFiles/memguard_base.dir
+  POST_BUILD = :
+  PRE_LINK = :
   TARGET_FILE = libmemguard_base.a
   TARGET_PDB = memguard_base.a.dbg
 # =============================================================================
@@ -218,227 +367,97 @@ build libmemguard_base.a: CXX_STATIC_LIBRARY_LINKER__memguard_base CMakeFiles/me
 build cmake_object_order_depends_target_matrix-hookcommon: phony || cmake_object_order_depends_target_cJSON
 build CMakeFiles/matrix-hookcommon.dir/src/main/cpp/common/JNICommon.cpp.o: CXX_COMPILER__matrix-hookcommon ../../../../src/main/cpp/common/JNICommon.cpp || cmake_object_order_depends_target_matrix-hookcommon
   DEFINES = -Dmatrix_hookcommon_EXPORTS
-  DEP_FILE = CMakeFiles\matrix-hookcommon.dir\src\main\cpp\common\JNICommon.cpp.o.d
+  DEP_FILE = CMakeFiles/matrix-hookcommon.dir/src/main/cpp/common/JNICommon.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++17 -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -fvisibility=hidden -fstack-protector
   INCLUDES = -I../../../../src/main/cpp -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp/external/libcJSON
-  OBJECT_DIR = CMakeFiles\matrix-hookcommon.dir
-  OBJECT_FILE_DIR = CMakeFiles\matrix-hookcommon.dir\src\main\cpp\common
+  OBJECT_DIR = CMakeFiles/matrix-hookcommon.dir
+  OBJECT_FILE_DIR = CMakeFiles/matrix-hookcommon.dir/src/main/cpp/common
 build CMakeFiles/matrix-hookcommon.dir/src/main/cpp/common/HookCommon.cpp.o: CXX_COMPILER__matrix-hookcommon ../../../../src/main/cpp/common/HookCommon.cpp || cmake_object_order_depends_target_matrix-hookcommon
   DEFINES = -Dmatrix_hookcommon_EXPORTS
-  DEP_FILE = CMakeFiles\matrix-hookcommon.dir\src\main\cpp\common\HookCommon.cpp.o.d
+  DEP_FILE = CMakeFiles/matrix-hookcommon.dir/src/main/cpp/common/HookCommon.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++17 -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -fvisibility=hidden -fstack-protector
   INCLUDES = -I../../../../src/main/cpp -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp/external/libcJSON
-  OBJECT_DIR = CMakeFiles\matrix-hookcommon.dir
-  OBJECT_FILE_DIR = CMakeFiles\matrix-hookcommon.dir\src\main\cpp\common
+  OBJECT_DIR = CMakeFiles/matrix-hookcommon.dir
+  OBJECT_FILE_DIR = CMakeFiles/matrix-hookcommon.dir/src/main/cpp/common
 build CMakeFiles/matrix-hookcommon.dir/src/main/cpp/common/ReentrantPrevention.cpp.o: CXX_COMPILER__matrix-hookcommon ../../../../src/main/cpp/common/ReentrantPrevention.cpp || cmake_object_order_depends_target_matrix-hookcommon
   DEFINES = -Dmatrix_hookcommon_EXPORTS
-  DEP_FILE = CMakeFiles\matrix-hookcommon.dir\src\main\cpp\common\ReentrantPrevention.cpp.o.d
+  DEP_FILE = CMakeFiles/matrix-hookcommon.dir/src/main/cpp/common/ReentrantPrevention.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++17 -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -fvisibility=hidden -fstack-protector
   INCLUDES = -I../../../../src/main/cpp -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp/external/libcJSON
-  OBJECT_DIR = CMakeFiles\matrix-hookcommon.dir
-  OBJECT_FILE_DIR = CMakeFiles\matrix-hookcommon.dir\src\main\cpp\common
+  OBJECT_DIR = CMakeFiles/matrix-hookcommon.dir
+  OBJECT_FILE_DIR = CMakeFiles/matrix-hookcommon.dir/src/main/cpp/common
 build CMakeFiles/matrix-hookcommon.dir/src/main/cpp/common/Log.cpp.o: CXX_COMPILER__matrix-hookcommon ../../../../src/main/cpp/common/Log.cpp || cmake_object_order_depends_target_matrix-hookcommon
   DEFINES = -Dmatrix_hookcommon_EXPORTS
-  DEP_FILE = CMakeFiles\matrix-hookcommon.dir\src\main\cpp\common\Log.cpp.o.d
+  DEP_FILE = CMakeFiles/matrix-hookcommon.dir/src/main/cpp/common/Log.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++17 -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -fvisibility=hidden -fstack-protector
   INCLUDES = -I../../../../src/main/cpp -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp/external/libcJSON
-  OBJECT_DIR = CMakeFiles\matrix-hookcommon.dir
-  OBJECT_FILE_DIR = CMakeFiles\matrix-hookcommon.dir\src\main\cpp\common
+  OBJECT_DIR = CMakeFiles/matrix-hookcommon.dir
+  OBJECT_FILE_DIR = CMakeFiles/matrix-hookcommon.dir/src/main/cpp/common
 build CMakeFiles/matrix-hookcommon.dir/src/main/cpp/common/Maps.cpp.o: CXX_COMPILER__matrix-hookcommon ../../../../src/main/cpp/common/Maps.cpp || cmake_object_order_depends_target_matrix-hookcommon
   DEFINES = -Dmatrix_hookcommon_EXPORTS
-  DEP_FILE = CMakeFiles\matrix-hookcommon.dir\src\main\cpp\common\Maps.cpp.o.d
+  DEP_FILE = CMakeFiles/matrix-hookcommon.dir/src/main/cpp/common/Maps.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++17 -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -fvisibility=hidden -fstack-protector
   INCLUDES = -I../../../../src/main/cpp -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp/external/libcJSON
-  OBJECT_DIR = CMakeFiles\matrix-hookcommon.dir
-  OBJECT_FILE_DIR = CMakeFiles\matrix-hookcommon.dir\src\main\cpp\common
+  OBJECT_DIR = CMakeFiles/matrix-hookcommon.dir
+  OBJECT_FILE_DIR = CMakeFiles/matrix-hookcommon.dir/src/main/cpp/common
 build CMakeFiles/matrix-hookcommon.dir/src/main/cpp/common/SoLoadMonitor.cpp.o: CXX_COMPILER__matrix-hookcommon ../../../../src/main/cpp/common/SoLoadMonitor.cpp || cmake_object_order_depends_target_matrix-hookcommon
   DEFINES = -Dmatrix_hookcommon_EXPORTS
-  DEP_FILE = CMakeFiles\matrix-hookcommon.dir\src\main\cpp\common\SoLoadMonitor.cpp.o.d
+  DEP_FILE = CMakeFiles/matrix-hookcommon.dir/src/main/cpp/common/SoLoadMonitor.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++17 -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -fvisibility=hidden -fstack-protector
   INCLUDES = -I../../../../src/main/cpp -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp/external/libcJSON
-  OBJECT_DIR = CMakeFiles\matrix-hookcommon.dir
-  OBJECT_FILE_DIR = CMakeFiles\matrix-hookcommon.dir\src\main\cpp\common
+  OBJECT_DIR = CMakeFiles/matrix-hookcommon.dir
+  OBJECT_FILE_DIR = CMakeFiles/matrix-hookcommon.dir/src/main/cpp/common
 build CMakeFiles/matrix-hookcommon.dir/src/main/cpp/common/ProfileRecord.cpp.o: CXX_COMPILER__matrix-hookcommon ../../../../src/main/cpp/common/ProfileRecord.cpp || cmake_object_order_depends_target_matrix-hookcommon
   DEFINES = -Dmatrix_hookcommon_EXPORTS
-  DEP_FILE = CMakeFiles\matrix-hookcommon.dir\src\main\cpp\common\ProfileRecord.cpp.o.d
+  DEP_FILE = CMakeFiles/matrix-hookcommon.dir/src/main/cpp/common/ProfileRecord.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++17 -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -fvisibility=hidden -fstack-protector
   INCLUDES = -I../../../../src/main/cpp -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp/external/libcJSON
-  OBJECT_DIR = CMakeFiles\matrix-hookcommon.dir
-  OBJECT_FILE_DIR = CMakeFiles\matrix-hookcommon.dir\src\main\cpp\common
+  OBJECT_DIR = CMakeFiles/matrix-hookcommon.dir
+  OBJECT_FILE_DIR = CMakeFiles/matrix-hookcommon.dir/src/main/cpp/common
 
 # =============================================================================
 # Link build statements for SHARED_LIBRARY target matrix-hookcommon
 
 
 #############################################
-# Link the shared library ..\..\..\..\build\intermediates\cmake\debug\obj\arm64-v8a\libmatrix-hookcommon.so
+# Link the shared library ../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libmatrix-hookcommon.so
 
-build ../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libmatrix-hookcommon.so: CXX_SHARED_LIBRARY_LINKER__matrix-hookcommon CMakeFiles/matrix-hookcommon.dir/src/main/cpp/common/JNICommon.cpp.o CMakeFiles/matrix-hookcommon.dir/src/main/cpp/common/HookCommon.cpp.o CMakeFiles/matrix-hookcommon.dir/src/main/cpp/common/ReentrantPrevention.cpp.o CMakeFiles/matrix-hookcommon.dir/src/main/cpp/common/Log.cpp.o CMakeFiles/matrix-hookcommon.dir/src/main/cpp/common/Maps.cpp.o CMakeFiles/matrix-hookcommon.dir/src/main/cpp/common/SoLoadMonitor.cpp.o CMakeFiles/matrix-hookcommon.dir/src/main/cpp/common/ProfileRecord.cpp.o | src/main/cpp/external/libcJSON/libcJSON.a C$:/Users/29655/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/aarch64-linux-android/21/liblog.so ../../../../build/intermediates/native_deps/extracted_native_dependencies/lib/arm64-v8a/libwechatbacktrace.so ../../../../build/intermediates/native_deps/extracted_native_dependencies/lib/arm64-v8a/libxhook.a ../../../../build/intermediates/native_deps/extracted_native_dependencies/lib/arm64-v8a/libsemi_dlfcn.a || src/main/cpp/external/libcJSON/libcJSON.a
+build ../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libmatrix-hookcommon.so: CXX_SHARED_LIBRARY_LINKER__matrix-hookcommon CMakeFiles/matrix-hookcommon.dir/src/main/cpp/common/JNICommon.cpp.o CMakeFiles/matrix-hookcommon.dir/src/main/cpp/common/HookCommon.cpp.o CMakeFiles/matrix-hookcommon.dir/src/main/cpp/common/ReentrantPrevention.cpp.o CMakeFiles/matrix-hookcommon.dir/src/main/cpp/common/Log.cpp.o CMakeFiles/matrix-hookcommon.dir/src/main/cpp/common/Maps.cpp.o CMakeFiles/matrix-hookcommon.dir/src/main/cpp/common/SoLoadMonitor.cpp.o CMakeFiles/matrix-hookcommon.dir/src/main/cpp/common/ProfileRecord.cpp.o | src/main/cpp/external/libcJSON/libcJSON.a /Users/yr/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/aarch64-linux-android/21/liblog.so ../../../../build/intermediates/native_deps/extracted_native_dependencies/lib/arm64-v8a/libwechatbacktrace.so ../../../../build/intermediates/native_deps/extracted_native_dependencies/lib/arm64-v8a/libxhook.a ../../../../build/intermediates/native_deps/extracted_native_dependencies/lib/arm64-v8a/libsemi_dlfcn.a || src/main/cpp/external/libcJSON/libcJSON.a
   LANGUAGE_COMPILE_FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info
   LINK_FLAGS = -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -Wl,--build-id -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments
-  LINK_LIBRARIES = -Wl,--gc-sections src/main/cpp/external/libcJSON/libcJSON.a -llog -lwechatbacktrace -Wl,--whole-archive ../../../../build/intermediates/native_deps/extracted_native_dependencies/lib/arm64-v8a/libxhook.a -Wl,--no-whole-archive -Wl,--whole-archive ../../../../build/intermediates/native_deps/extracted_native_dependencies/lib/arm64-v8a/libsemi_dlfcn.a -Wl,--no-whole-archive -Wl,--version-script=C:/project/demo/matrix-dev/matrix/matrix-android/matrix-hooks/src/main/cpp/common/common.ver -latomic -lm
-  LINK_PATH = -LC:/project/demo/matrix-dev/matrix/matrix-android/matrix-hooks/build/intermediates/native_deps/extracted_native_dependencies/lib/arm64-v8a
-  OBJECT_DIR = CMakeFiles\matrix-hookcommon.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
+  LINK_LIBRARIES = -Wl,--gc-sections src/main/cpp/external/libcJSON/libcJSON.a -llog -lwechatbacktrace -Wl,--whole-archive ../../../../build/intermediates/native_deps/extracted_native_dependencies/lib/arm64-v8a/libxhook.a -Wl,--no-whole-archive -Wl,--whole-archive ../../../../build/intermediates/native_deps/extracted_native_dependencies/lib/arm64-v8a/libsemi_dlfcn.a -Wl,--no-whole-archive -Wl,--version-script=/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/src/main/cpp/common/common.ver -latomic -lm
+  LINK_PATH = -L/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/build/intermediates/native_deps/extracted_native_dependencies/lib/arm64-v8a
+  OBJECT_DIR = CMakeFiles/matrix-hookcommon.dir
+  POST_BUILD = :
+  PRE_LINK = :
   SONAME = libmatrix-hookcommon.so
   SONAME_FLAG = -Wl,-soname,
-  TARGET_FILE = ..\..\..\..\build\intermediates\cmake\debug\obj\arm64-v8a\libmatrix-hookcommon.so
+  TARGET_FILE = ../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libmatrix-hookcommon.so
   TARGET_PDB = matrix-hookcommon.so.dbg
 # =============================================================================
-# Object build statements for SHARED_LIBRARY target matrix-memoryhook
-
-
-#############################################
-# Order-only phony target for matrix-memoryhook
-
-build cmake_object_order_depends_target_matrix-memoryhook: phony || cmake_object_order_depends_target_cJSON cmake_object_order_depends_target_matrix-hookcommon
-build CMakeFiles/matrix-memoryhook.dir/src/main/cpp/memory/GCSemiSpaceTrimmer.cpp.o: CXX_COMPILER__matrix-memoryhook ../../../../src/main/cpp/memory/GCSemiSpaceTrimmer.cpp || cmake_object_order_depends_target_matrix-memoryhook
-  DEFINES = -Dmatrix_memoryhook_EXPORTS
-  DEP_FILE = CMakeFiles\matrix-memoryhook.dir\src\main\cpp\memory\GCSemiSpaceTrimmer.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++17 -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -fvisibility=hidden -fstack-protector
-  INCLUDES = -I../../../../src/main/cpp -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp/external/libcJSON
-  OBJECT_DIR = CMakeFiles\matrix-memoryhook.dir
-  OBJECT_FILE_DIR = CMakeFiles\matrix-memoryhook.dir\src\main\cpp\memory
-build CMakeFiles/matrix-memoryhook.dir/src/main/cpp/memory/GCSemiSpaceTrimmerJNI.cpp.o: CXX_COMPILER__matrix-memoryhook ../../../../src/main/cpp/memory/GCSemiSpaceTrimmerJNI.cpp || cmake_object_order_depends_target_matrix-memoryhook
-  DEFINES = -Dmatrix_memoryhook_EXPORTS
-  DEP_FILE = CMakeFiles\matrix-memoryhook.dir\src\main\cpp\memory\GCSemiSpaceTrimmerJNI.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++17 -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -fvisibility=hidden -fstack-protector
-  INCLUDES = -I../../../../src/main/cpp -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp/external/libcJSON
-  OBJECT_DIR = CMakeFiles\matrix-memoryhook.dir
-  OBJECT_FILE_DIR = CMakeFiles\matrix-memoryhook.dir\src\main\cpp\memory
-build CMakeFiles/matrix-memoryhook.dir/src/main/cpp/memory/MemoryHookJNI.cpp.o: CXX_COMPILER__matrix-memoryhook ../../../../src/main/cpp/memory/MemoryHookJNI.cpp || cmake_object_order_depends_target_matrix-memoryhook
-  DEFINES = -Dmatrix_memoryhook_EXPORTS
-  DEP_FILE = CMakeFiles\matrix-memoryhook.dir\src\main\cpp\memory\MemoryHookJNI.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++17 -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -fvisibility=hidden -fstack-protector
-  INCLUDES = -I../../../../src/main/cpp -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp/external/libcJSON
-  OBJECT_DIR = CMakeFiles\matrix-memoryhook.dir
-  OBJECT_FILE_DIR = CMakeFiles\matrix-memoryhook.dir\src\main\cpp\memory
-build CMakeFiles/matrix-memoryhook.dir/src/main/cpp/memory/MemoryHook.cpp.o: CXX_COMPILER__matrix-memoryhook ../../../../src/main/cpp/memory/MemoryHook.cpp || cmake_object_order_depends_target_matrix-memoryhook
-  DEFINES = -Dmatrix_memoryhook_EXPORTS
-  DEP_FILE = CMakeFiles\matrix-memoryhook.dir\src\main\cpp\memory\MemoryHook.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++17 -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -fvisibility=hidden -fstack-protector
-  INCLUDES = -I../../../../src/main/cpp -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp/external/libcJSON
-  OBJECT_DIR = CMakeFiles\matrix-memoryhook.dir
-  OBJECT_FILE_DIR = CMakeFiles\matrix-memoryhook.dir\src\main\cpp\memory
-build CMakeFiles/matrix-memoryhook.dir/src/main/cpp/memory/MemoryBufferQueue.cpp.o: CXX_COMPILER__matrix-memoryhook ../../../../src/main/cpp/memory/MemoryBufferQueue.cpp || cmake_object_order_depends_target_matrix-memoryhook
-  DEFINES = -Dmatrix_memoryhook_EXPORTS
-  DEP_FILE = CMakeFiles\matrix-memoryhook.dir\src\main\cpp\memory\MemoryBufferQueue.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++17 -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -fvisibility=hidden -fstack-protector
-  INCLUDES = -I../../../../src/main/cpp -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp/external/libcJSON
-  OBJECT_DIR = CMakeFiles\matrix-memoryhook.dir
-  OBJECT_FILE_DIR = CMakeFiles\matrix-memoryhook.dir\src\main\cpp\memory
-build CMakeFiles/matrix-memoryhook.dir/src/main/cpp/memory/MemoryHookFunctions.cpp.o: CXX_COMPILER__matrix-memoryhook ../../../../src/main/cpp/memory/MemoryHookFunctions.cpp || cmake_object_order_depends_target_matrix-memoryhook
-  DEFINES = -Dmatrix_memoryhook_EXPORTS
-  DEP_FILE = CMakeFiles\matrix-memoryhook.dir\src\main\cpp\memory\MemoryHookFunctions.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++17 -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -fvisibility=hidden -fstack-protector
-  INCLUDES = -I../../../../src/main/cpp -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp/external/libcJSON
-  OBJECT_DIR = CMakeFiles\matrix-memoryhook.dir
-  OBJECT_FILE_DIR = CMakeFiles\matrix-memoryhook.dir\src\main\cpp\memory
-build CMakeFiles/matrix-memoryhook.dir/src/main/cpp/memory/WVPreAllocTrimmer.cpp.o: CXX_COMPILER__matrix-memoryhook ../../../../src/main/cpp/memory/WVPreAllocTrimmer.cpp || cmake_object_order_depends_target_matrix-memoryhook
-  DEFINES = -Dmatrix_memoryhook_EXPORTS
-  DEP_FILE = CMakeFiles\matrix-memoryhook.dir\src\main\cpp\memory\WVPreAllocTrimmer.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++17 -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -fvisibility=hidden -fstack-protector
-  INCLUDES = -I../../../../src/main/cpp -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp/external/libcJSON
-  OBJECT_DIR = CMakeFiles\matrix-memoryhook.dir
-  OBJECT_FILE_DIR = CMakeFiles\matrix-memoryhook.dir\src\main\cpp\memory
-build CMakeFiles/matrix-memoryhook.dir/src/main/cpp/memory/WVPreAllocHookJNI.cpp.o: CXX_COMPILER__matrix-memoryhook ../../../../src/main/cpp/memory/WVPreAllocHookJNI.cpp || cmake_object_order_depends_target_matrix-memoryhook
-  DEFINES = -Dmatrix_memoryhook_EXPORTS
-  DEP_FILE = CMakeFiles\matrix-memoryhook.dir\src\main\cpp\memory\WVPreAllocHookJNI.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++17 -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -fvisibility=hidden -fstack-protector
-  INCLUDES = -I../../../../src/main/cpp -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp/external/libcJSON
-  OBJECT_DIR = CMakeFiles\matrix-memoryhook.dir
-  OBJECT_FILE_DIR = CMakeFiles\matrix-memoryhook.dir\src\main\cpp\memory
-
+# Write statements declared in CMakeLists.txt:
+# /Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/CMakeLists.txt
 # =============================================================================
-# Link build statements for SHARED_LIBRARY target matrix-memoryhook
 
 
 #############################################
-# Link the shared library ..\..\..\..\build\intermediates\cmake\debug\obj\arm64-v8a\libmatrix-memoryhook.so
+# Utility command for rebuild_cache
 
-build ../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libmatrix-memoryhook.so: CXX_SHARED_LIBRARY_LINKER__matrix-memoryhook CMakeFiles/matrix-memoryhook.dir/src/main/cpp/memory/GCSemiSpaceTrimmer.cpp.o CMakeFiles/matrix-memoryhook.dir/src/main/cpp/memory/GCSemiSpaceTrimmerJNI.cpp.o CMakeFiles/matrix-memoryhook.dir/src/main/cpp/memory/MemoryHookJNI.cpp.o CMakeFiles/matrix-memoryhook.dir/src/main/cpp/memory/MemoryHook.cpp.o CMakeFiles/matrix-memoryhook.dir/src/main/cpp/memory/MemoryBufferQueue.cpp.o CMakeFiles/matrix-memoryhook.dir/src/main/cpp/memory/MemoryHookFunctions.cpp.o CMakeFiles/matrix-memoryhook.dir/src/main/cpp/memory/WVPreAllocTrimmer.cpp.o CMakeFiles/matrix-memoryhook.dir/src/main/cpp/memory/WVPreAllocHookJNI.cpp.o | ../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libmatrix-hookcommon.so src/main/cpp/external/libcJSON/libcJSON.a C$:/Users/29655/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/aarch64-linux-android/21/liblog.so ../../../../build/intermediates/native_deps/extracted_native_dependencies/lib/arm64-v8a/libwechatbacktrace.so || ../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libmatrix-hookcommon.so src/main/cpp/external/libcJSON/libcJSON.a
-  LANGUAGE_COMPILE_FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info
-  LINK_FLAGS = -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -Wl,--build-id -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments
-  LINK_LIBRARIES = ../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libmatrix-hookcommon.so -Wl,--version-script=C:/project/demo/matrix-dev/matrix/matrix-android/matrix-hooks/src/main/cpp/memory/memory.ver -Wl,--gc-sections src/main/cpp/external/libcJSON/libcJSON.a -llog -lwechatbacktrace -latomic -lm
-  LINK_PATH = -LC:/project/demo/matrix-dev/matrix/matrix-android/matrix-hooks/build/intermediates/native_deps/extracted_native_dependencies/lib/arm64-v8a
-  OBJECT_DIR = CMakeFiles\matrix-memoryhook.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  SONAME = libmatrix-memoryhook.so
-  SONAME_FLAG = -Wl,-soname,
-  TARGET_FILE = ..\..\..\..\build\intermediates\cmake\debug\obj\arm64-v8a\libmatrix-memoryhook.so
-  TARGET_PDB = matrix-memoryhook.so.dbg
-# =============================================================================
-# Object build statements for SHARED_LIBRARY target matrix-pthreadhook
-
-
-#############################################
-# Order-only phony target for matrix-pthreadhook
-
-build cmake_object_order_depends_target_matrix-pthreadhook: phony || cmake_object_order_depends_target_cJSON cmake_object_order_depends_target_matrix-hookcommon
-build CMakeFiles/matrix-pthreadhook.dir/src/main/cpp/pthread/ThreadTrace.cpp.o: CXX_COMPILER__matrix-pthreadhook ../../../../src/main/cpp/pthread/ThreadTrace.cpp || cmake_object_order_depends_target_matrix-pthreadhook
-  DEFINES = -Dmatrix_pthreadhook_EXPORTS
-  DEP_FILE = CMakeFiles\matrix-pthreadhook.dir\src\main\cpp\pthread\ThreadTrace.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++17 -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -fvisibility=hidden -fstack-protector
-  INCLUDES = -I../../../../src/main/cpp -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp/external/libcJSON
-  OBJECT_DIR = CMakeFiles\matrix-pthreadhook.dir
-  OBJECT_FILE_DIR = CMakeFiles\matrix-pthreadhook.dir\src\main\cpp\pthread
-build CMakeFiles/matrix-pthreadhook.dir/src/main/cpp/pthread/ThreadStackShink.cpp.o: CXX_COMPILER__matrix-pthreadhook ../../../../src/main/cpp/pthread/ThreadStackShink.cpp || cmake_object_order_depends_target_matrix-pthreadhook
-  DEFINES = -Dmatrix_pthreadhook_EXPORTS
-  DEP_FILE = CMakeFiles\matrix-pthreadhook.dir\src\main\cpp\pthread\ThreadStackShink.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++17 -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -fvisibility=hidden -fstack-protector
-  INCLUDES = -I../../../../src/main/cpp -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp/external/libcJSON
-  OBJECT_DIR = CMakeFiles\matrix-pthreadhook.dir
-  OBJECT_FILE_DIR = CMakeFiles\matrix-pthreadhook.dir\src\main\cpp\pthread
-build CMakeFiles/matrix-pthreadhook.dir/src/main/cpp/pthread/PthreadHook.cpp.o: CXX_COMPILER__matrix-pthreadhook ../../../../src/main/cpp/pthread/PthreadHook.cpp || cmake_object_order_depends_target_matrix-pthreadhook
-  DEFINES = -Dmatrix_pthreadhook_EXPORTS
-  DEP_FILE = CMakeFiles\matrix-pthreadhook.dir\src\main\cpp\pthread\PthreadHook.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++17 -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -fvisibility=hidden -fstack-protector
-  INCLUDES = -I../../../../src/main/cpp -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp/external/libcJSON
-  OBJECT_DIR = CMakeFiles\matrix-pthreadhook.dir
-  OBJECT_FILE_DIR = CMakeFiles\matrix-pthreadhook.dir\src\main\cpp\pthread
-build CMakeFiles/matrix-pthreadhook.dir/src/main/cpp/pthread/PthreadHookJNI.cpp.o: CXX_COMPILER__matrix-pthreadhook ../../../../src/main/cpp/pthread/PthreadHookJNI.cpp || cmake_object_order_depends_target_matrix-pthreadhook
-  DEFINES = -Dmatrix_pthreadhook_EXPORTS
-  DEP_FILE = CMakeFiles\matrix-pthreadhook.dir\src\main\cpp\pthread\PthreadHookJNI.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++17 -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -fvisibility=hidden -fstack-protector
-  INCLUDES = -I../../../../src/main/cpp -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace -I../../../../build/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp/external/libcJSON
-  OBJECT_DIR = CMakeFiles\matrix-pthreadhook.dir
-  OBJECT_FILE_DIR = CMakeFiles\matrix-pthreadhook.dir\src\main\cpp\pthread
-
-# =============================================================================
-# Link build statements for SHARED_LIBRARY target matrix-pthreadhook
-
-
-#############################################
-# Link the shared library ..\..\..\..\build\intermediates\cmake\debug\obj\arm64-v8a\libmatrix-pthreadhook.so
-
-build ../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libmatrix-pthreadhook.so: CXX_SHARED_LIBRARY_LINKER__matrix-pthreadhook CMakeFiles/matrix-pthreadhook.dir/src/main/cpp/pthread/ThreadTrace.cpp.o CMakeFiles/matrix-pthreadhook.dir/src/main/cpp/pthread/ThreadStackShink.cpp.o CMakeFiles/matrix-pthreadhook.dir/src/main/cpp/pthread/PthreadHook.cpp.o CMakeFiles/matrix-pthreadhook.dir/src/main/cpp/pthread/PthreadHookJNI.cpp.o | ../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libmatrix-hookcommon.so src/main/cpp/external/libcJSON/libcJSON.a C$:/Users/29655/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/aarch64-linux-android/21/liblog.so ../../../../build/intermediates/native_deps/extracted_native_dependencies/lib/arm64-v8a/libwechatbacktrace.so || ../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libmatrix-hookcommon.so src/main/cpp/external/libcJSON/libcJSON.a
-  LANGUAGE_COMPILE_FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info
-  LINK_FLAGS = -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -Wl,--build-id -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments
-  LINK_LIBRARIES = ../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libmatrix-hookcommon.so -Wl,--version-script=C:/project/demo/matrix-dev/matrix/matrix-android/matrix-hooks/src/main/cpp/pthread/pthread.ver -Wl,--gc-sections src/main/cpp/external/libcJSON/libcJSON.a -llog -lwechatbacktrace -latomic -lm
-  LINK_PATH = -LC:/project/demo/matrix-dev/matrix/matrix-android/matrix-hooks/build/intermediates/native_deps/extracted_native_dependencies/lib/arm64-v8a
-  OBJECT_DIR = CMakeFiles\matrix-pthreadhook.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  SONAME = libmatrix-pthreadhook.so
-  SONAME_FLAG = -Wl,-soname,
-  TARGET_FILE = ..\..\..\..\build\intermediates\cmake\debug\obj\arm64-v8a\libmatrix-pthreadhook.so
-  TARGET_PDB = matrix-pthreadhook.so.dbg
+build src/main/cpp/external/libcJSON/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libcJSON && /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -H/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks -B/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/.cxx/cmake/debug/arm64-v8a
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+build src/main/cpp/external/libcJSON/rebuild_cache: phony src/main/cpp/external/libcJSON/CMakeFiles/rebuild_cache.util
 
 #############################################
 # Utility command for edit_cache
 
-build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\project\demo\matrix-dev\matrix\matrix-android\matrix-hooks\.cxx\cmake\debug\arm64-v8a && C:\Users\29655\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+build src/main/cpp/external/libcJSON/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libcJSON && /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
-build edit_cache: phony CMakeFiles/edit_cache.util
-# =============================================================================
-# Write statements declared in CMakeLists.txt:
-# C:/project/demo/matrix-dev/matrix/matrix-android/matrix-hooks/CMakeLists.txt
-# =============================================================================
-
+build src/main/cpp/external/libcJSON/edit_cache: phony src/main/cpp/external/libcJSON/CMakeFiles/edit_cache.util
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target cJSON
 
@@ -448,50 +467,50 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 
 build cmake_object_order_depends_target_cJSON: phony
 build src/main/cpp/external/libcJSON/CMakeFiles/cJSON.dir/cJSON.c.o: C_COMPILER__cJSON ../../../../src/main/cpp/external/libcJSON/cJSON.c || cmake_object_order_depends_target_cJSON
-  DEP_FILE = src\main\cpp\external\libcJSON\CMakeFiles\cJSON.dir\cJSON.c.o.d
+  DEP_FILE = src/main/cpp/external/libcJSON/CMakeFiles/cJSON.dir/cJSON.c.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC
   INCLUDES = -I../../../../src/main/cpp/external/libcJSON
-  OBJECT_DIR = src\main\cpp\external\libcJSON\CMakeFiles\cJSON.dir
-  OBJECT_FILE_DIR = src\main\cpp\external\libcJSON\CMakeFiles\cJSON.dir
+  OBJECT_DIR = src/main/cpp/external/libcJSON/CMakeFiles/cJSON.dir
+  OBJECT_FILE_DIR = src/main/cpp/external/libcJSON/CMakeFiles/cJSON.dir
 
 # =============================================================================
 # Link build statements for STATIC_LIBRARY target cJSON
 
 
 #############################################
-# Link the static library src\main\cpp\external\libcJSON\libcJSON.a
+# Link the static library src/main/cpp/external/libcJSON/libcJSON.a
 
 build src/main/cpp/external/libcJSON/libcJSON.a: C_STATIC_LIBRARY_LINKER__cJSON src/main/cpp/external/libcJSON/CMakeFiles/cJSON.dir/cJSON.c.o
   LANGUAGE_COMPILE_FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info
-  OBJECT_DIR = src\main\cpp\external\libcJSON\CMakeFiles\cJSON.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = src\main\cpp\external\libcJSON\libcJSON.a
+  OBJECT_DIR = src/main/cpp/external/libcJSON/CMakeFiles/cJSON.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = src/main/cpp/external/libcJSON/libcJSON.a
   TARGET_PDB = cJSON.a.dbg
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/CMakeLists.txt
+# =============================================================================
 
-#############################################
-# Utility command for edit_cache
-
-build src/main/cpp/external/libcJSON/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\project\demo\matrix-dev\matrix\matrix-android\matrix-hooks\.cxx\cmake\debug\arm64-v8a\src\main\cpp\external\libcJSON && C:\Users\29655\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\cmake.exe -E echo "No interactive CMake dialog available.""
-  DESC = No interactive CMake dialog available...
-  restat = 1
-build src/main/cpp/external/libcJSON/edit_cache: phony src/main/cpp/external/libcJSON/CMakeFiles/edit_cache.util
 
 #############################################
 # Utility command for rebuild_cache
 
-build src/main/cpp/external/libcJSON/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\project\demo\matrix-dev\matrix\matrix-android\matrix-hooks\.cxx\cmake\debug\arm64-v8a\src\main\cpp\external\libcJSON && C:\Users\29655\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\cmake.exe -HC:\project\demo\matrix-dev\matrix\matrix-android\matrix-hooks -BC:\project\demo\matrix-dev\matrix\matrix-android\matrix-hooks\.cxx\cmake\debug\arm64-v8a"
+build src/main/cpp/external/fastunwind/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/fastunwind && /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -H/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks -B/Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/.cxx/cmake/debug/arm64-v8a
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
-build src/main/cpp/external/libcJSON/rebuild_cache: phony src/main/cpp/external/libcJSON/CMakeFiles/rebuild_cache.util
-# =============================================================================
-# Write statements declared in CMakeLists.txt:
-# C:/project/demo/matrix-dev/matrix/matrix-android/matrix-hooks/CMakeLists.txt
-# =============================================================================
+build src/main/cpp/external/fastunwind/rebuild_cache: phony src/main/cpp/external/fastunwind/CMakeFiles/rebuild_cache.util
 
+#############################################
+# Utility command for edit_cache
+
+build src/main/cpp/external/fastunwind/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/fastunwind && /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+build src/main/cpp/external/fastunwind/edit_cache: phony src/main/cpp/external/fastunwind/CMakeFiles/edit_cache.util
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target fastunwind
 
@@ -501,45 +520,26 @@ build src/main/cpp/external/libcJSON/rebuild_cache: phony src/main/cpp/external/
 
 build cmake_object_order_depends_target_fastunwind: phony
 build src/main/cpp/external/fastunwind/CMakeFiles/fastunwind.dir/FastUnwind.cpp.o: CXX_COMPILER__fastunwind ../../../../src/main/cpp/external/fastunwind/FastUnwind.cpp || cmake_object_order_depends_target_fastunwind
-  DEP_FILE = src\main\cpp\external\fastunwind\CMakeFiles\fastunwind.dir\FastUnwind.cpp.o.d
+  DEP_FILE = src/main/cpp/external/fastunwind/CMakeFiles/fastunwind.dir/FastUnwind.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -Werror -fvisibility=hidden
   INCLUDES = -I../../../../src/main/cpp/external/fastunwind
-  OBJECT_DIR = src\main\cpp\external\fastunwind\CMakeFiles\fastunwind.dir
-  OBJECT_FILE_DIR = src\main\cpp\external\fastunwind\CMakeFiles\fastunwind.dir
+  OBJECT_DIR = src/main/cpp/external/fastunwind/CMakeFiles/fastunwind.dir
+  OBJECT_FILE_DIR = src/main/cpp/external/fastunwind/CMakeFiles/fastunwind.dir
 
 # =============================================================================
 # Link build statements for STATIC_LIBRARY target fastunwind
 
 
 #############################################
-# Link the static library src\main\cpp\external\fastunwind\libfastunwind.a
+# Link the static library src/main/cpp/external/fastunwind/libfastunwind.a
 
 build src/main/cpp/external/fastunwind/libfastunwind.a: CXX_STATIC_LIBRARY_LINKER__fastunwind src/main/cpp/external/fastunwind/CMakeFiles/fastunwind.dir/FastUnwind.cpp.o
   LANGUAGE_COMPILE_FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info
-  OBJECT_DIR = src\main\cpp\external\fastunwind\CMakeFiles\fastunwind.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = src\main\cpp\external\fastunwind\libfastunwind.a
+  OBJECT_DIR = src/main/cpp/external/fastunwind/CMakeFiles/fastunwind.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = src/main/cpp/external/fastunwind/libfastunwind.a
   TARGET_PDB = fastunwind.a.dbg
-
-#############################################
-# Utility command for edit_cache
-
-build src/main/cpp/external/fastunwind/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\project\demo\matrix-dev\matrix\matrix-android\matrix-hooks\.cxx\cmake\debug\arm64-v8a\src\main\cpp\external\fastunwind && C:\Users\29655\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\cmake.exe -E echo "No interactive CMake dialog available.""
-  DESC = No interactive CMake dialog available...
-  restat = 1
-build src/main/cpp/external/fastunwind/edit_cache: phony src/main/cpp/external/fastunwind/CMakeFiles/edit_cache.util
-
-#############################################
-# Utility command for rebuild_cache
-
-build src/main/cpp/external/fastunwind/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\project\demo\matrix-dev\matrix\matrix-android\matrix-hooks\.cxx\cmake\debug\arm64-v8a\src\main\cpp\external\fastunwind && C:\Users\29655\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\cmake.exe -HC:\project\demo\matrix-dev\matrix\matrix-android\matrix-hooks -BC:\project\demo\matrix-dev\matrix\matrix-android\matrix-hooks\.cxx\cmake\debug\arm64-v8a"
-  DESC = Running CMake to regenerate build system...
-  pool = console
-  restat = 1
-build src/main/cpp/external/fastunwind/rebuild_cache: phony src/main/cpp/external/fastunwind/CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
@@ -563,13 +563,13 @@ build memguard_base: phony libmemguard_base.a
 # =============================================================================
 
 #############################################
-# Folder: C:/project/demo/matrix-dev/matrix/matrix-android/matrix-hooks/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/fastunwind
+# Folder: /Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/fastunwind
 
 build  src/main/cpp/external/fastunwind/all: phony fastunwind
 # =============================================================================
 
 #############################################
-# Folder: C:/project/demo/matrix-dev/matrix/matrix-android/matrix-hooks/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libcJSON
+# Folder: /Users/yr/AndroidStudioProjects/useful/matrix/matrix-hooks/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libcJSON
 
 build  src/main/cpp/external/libcJSON/all: phony cJSON
 # =============================================================================
@@ -579,7 +579,7 @@ build  src/main/cpp/external/libcJSON/all: phony cJSON
 #############################################
 # The main all target.
 
-build all: phony ../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libmatrix-memguard.so libmemguard_base.a ../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libmatrix-hookcommon.so ../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libmatrix-memoryhook.so ../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libmatrix-pthreadhook.so src/main/cpp/external/libcJSON/libcJSON.a src/main/cpp/external/fastunwind/libfastunwind.a
+build all: phony ../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libmatrix-memguard.so ../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libmatrix-pthreadhook.so ../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libmatrix-memoryhook.so libmemguard_base.a ../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libmatrix-hookcommon.so src/main/cpp/external/libcJSON/libcJSON.a src/main/cpp/external/fastunwind/libfastunwind.a
 
 #############################################
 # Make the all target the default.
@@ -589,13 +589,13 @@ default all
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../../../../CMakeLists.txt ../../../../src/main/cpp/external/fastunwind/CMakeLists.txt ../../../../src/main/cpp/external/libcJSON/CMakeLists.txt C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCCompiler.cmake.in C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCCompilerABI.c C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCInformation.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXCompiler.cmake.in C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXInformation.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCCompiler.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCXXCompiler.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompileFeatures.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompiler.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompilerABI.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineSystem.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeFindBinUtils.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeGenericSystem.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeLanguageInformation.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeParseImplicitLinkInfo.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystem.cmake.in C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCCompiler.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCXXCompiler.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCompilerCommon.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C-FeatureTests.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-FeatureTests.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-TestableFeatures.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-FindBinUtils.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/GNU.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Internal/FeatureTesting.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang-C.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang-CXX.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Determine-C.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Determine-CXX.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Determine.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Initialize.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android/Determine-Compiler.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Linux.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/UnixPaths.cmake C$:/Users/29655/AppData/Local/Android/Sdk/ndk/21.1.6352462/build/cmake/android.toolchain.cmake C$:/Users/29655/AppData/Local/Android/Sdk/ndk/21.1.6352462/build/cmake/platforms.cmake CMakeCache.txt CMakeFiles/3.10.2/CMakeCCompiler.cmake CMakeFiles/3.10.2/CMakeCXXCompiler.cmake CMakeFiles/3.10.2/CMakeSystem.cmake CMakeFiles/feature_tests.c CMakeFiles/feature_tests.cxx
+build build.ninja: RERUN_CMAKE | ../../../../CMakeLists.txt ../../../../src/main/cpp/external/fastunwind/CMakeLists.txt ../../../../src/main/cpp/external/libcJSON/CMakeLists.txt /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCCompiler.cmake.in /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCCompilerABI.c /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCInformation.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXCompiler.cmake.in /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXInformation.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCommonLanguageInclude.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCCompiler.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCXXCompiler.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompileFeatures.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompiler.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompilerABI.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineSystem.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeFindBinUtils.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeGenericSystem.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeLanguageInformation.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeParseImplicitLinkInfo.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystem.cmake.in /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystemSpecificInformation.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystemSpecificInitialize.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCCompiler.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCXXCompiler.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCompilerCommon.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C-FeatureTests.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-FeatureTests.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-TestableFeatures.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-FindBinUtils.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/GNU.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Internal/FeatureTesting.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang-C.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang-CXX.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Determine-C.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Determine-CXX.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Determine.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Initialize.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android/Determine-Compiler.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Linux.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/UnixPaths.cmake /Users/yr/Library/Android/sdk/ndk/21.1.6352462/build/cmake/android.toolchain.cmake /Users/yr/Library/Android/sdk/ndk/21.1.6352462/build/cmake/platforms.cmake CMakeCache.txt CMakeFiles/3.10.2/CMakeCCompiler.cmake CMakeFiles/3.10.2/CMakeCXXCompiler.cmake CMakeFiles/3.10.2/CMakeSystem.cmake CMakeFiles/feature_tests.c CMakeFiles/feature_tests.cxx
   pool = console
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../../../../CMakeLists.txt ../../../../src/main/cpp/external/fastunwind/CMakeLists.txt ../../../../src/main/cpp/external/libcJSON/CMakeLists.txt C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCCompiler.cmake.in C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCCompilerABI.c C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCInformation.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXCompiler.cmake.in C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXInformation.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCCompiler.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCXXCompiler.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompileFeatures.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompiler.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompilerABI.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineSystem.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeFindBinUtils.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeGenericSystem.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeLanguageInformation.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeParseImplicitLinkInfo.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystem.cmake.in C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCCompiler.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCXXCompiler.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCompilerCommon.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C-FeatureTests.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-FeatureTests.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-TestableFeatures.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-FindBinUtils.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/GNU.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Internal/FeatureTesting.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang-C.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang-CXX.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Determine-C.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Determine-CXX.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Determine.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Initialize.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android/Determine-Compiler.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Linux.cmake C$:/Users/29655/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/UnixPaths.cmake C$:/Users/29655/AppData/Local/Android/Sdk/ndk/21.1.6352462/build/cmake/android.toolchain.cmake C$:/Users/29655/AppData/Local/Android/Sdk/ndk/21.1.6352462/build/cmake/platforms.cmake CMakeCache.txt CMakeFiles/3.10.2/CMakeCCompiler.cmake CMakeFiles/3.10.2/CMakeCXXCompiler.cmake CMakeFiles/3.10.2/CMakeSystem.cmake CMakeFiles/feature_tests.c CMakeFiles/feature_tests.cxx: phony
+build ../../../../CMakeLists.txt ../../../../src/main/cpp/external/fastunwind/CMakeLists.txt ../../../../src/main/cpp/external/libcJSON/CMakeLists.txt /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCCompiler.cmake.in /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCCompilerABI.c /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCInformation.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXCompiler.cmake.in /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXInformation.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCommonLanguageInclude.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCCompiler.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCXXCompiler.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompileFeatures.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompiler.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompilerABI.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineSystem.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeFindBinUtils.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeGenericSystem.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeLanguageInformation.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeParseImplicitLinkInfo.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystem.cmake.in /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystemSpecificInformation.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystemSpecificInitialize.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCCompiler.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCXXCompiler.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCompilerCommon.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C-FeatureTests.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-FeatureTests.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-TestableFeatures.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-FindBinUtils.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/GNU.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Internal/FeatureTesting.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang-C.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang-CXX.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Determine-C.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Determine-CXX.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Determine.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Initialize.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android/Determine-Compiler.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Linux.cmake /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/UnixPaths.cmake /Users/yr/Library/Android/sdk/ndk/21.1.6352462/build/cmake/android.toolchain.cmake /Users/yr/Library/Android/sdk/ndk/21.1.6352462/build/cmake/platforms.cmake CMakeCache.txt CMakeFiles/3.10.2/CMakeCCompiler.cmake CMakeFiles/3.10.2/CMakeCXXCompiler.cmake CMakeFiles/3.10.2/CMakeSystem.cmake CMakeFiles/feature_tests.c CMakeFiles/feature_tests.cxx: phony
 
 #############################################
 # Clean all the built files.
