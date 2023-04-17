@@ -193,7 +193,6 @@
       "project": {
         "compilerSettingsCacheFolder": "/Users/yr/AndroidStudioProjects/useful/matrix/.cxx",
         "cxxFolder": "/Users/yr/AndroidStudioProjects/useful/matrix/.cxx",
-        "ideBuildTargetAbi": "arm64-v8a,armeabi-v7a,armeabi",
         "isBuildOnlyTargetAbiEnabled": true,
         "isCmakeBuildCohabitationEnabled": false,
         "isNativeCompilerSettingsCacheEnabled": false,
@@ -217,6 +216,7 @@
     "objFolder": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-backtrace/build/intermediates/cmake/debug/obj",
     "variantName": "debug",
     "validAbiList": [
+      "ARMEABI_V7A",
       "ARM64_V8A"
     ],
     "prefabDirectory": "/Users/yr/AndroidStudioProjects/useful/matrix/matrix-backtrace/.cxx/cmake/debug/prefab",

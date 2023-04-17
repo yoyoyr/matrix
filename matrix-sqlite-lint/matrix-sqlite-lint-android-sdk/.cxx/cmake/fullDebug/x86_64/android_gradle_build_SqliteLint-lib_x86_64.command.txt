@@ -1,7 +1,7 @@
-Executable : C:\Users\29655\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe
+Executable : /Users/yr/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja
 arguments : 
 -C
-C:\project\demo\matrix-dev\matrix\matrix-android\matrix-sqlite-lint\matrix-sqlite-lint-android-sdk\.cxx\cmake\fullDebug\x86_64
+/Users/yr/AndroidStudioProjects/useful/matrix/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.cxx/cmake/fullDebug/x86_64
 SqliteLint-lib
 jvmArgs : 
 

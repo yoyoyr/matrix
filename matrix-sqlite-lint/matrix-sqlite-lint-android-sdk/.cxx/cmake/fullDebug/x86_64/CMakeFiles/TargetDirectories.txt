@@ -1,3 +1,3 @@
-C:/project/demo/matrix-dev/matrix/matrix-android/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.cxx/cmake/fullDebug/x86_64/CMakeFiles/SqliteLint-lib.dir
-C:/project/demo/matrix-dev/matrix/matrix-android/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.cxx/cmake/fullDebug/x86_64/CMakeFiles/edit_cache.dir
-C:/project/demo/matrix-dev/matrix/matrix-android/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.cxx/cmake/fullDebug/x86_64/CMakeFiles/rebuild_cache.dir
+/Users/yr/AndroidStudioProjects/useful/matrix/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.cxx/cmake/fullDebug/x86_64/CMakeFiles/rebuild_cache.dir
+/Users/yr/AndroidStudioProjects/useful/matrix/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.cxx/cmake/fullDebug/x86_64/CMakeFiles/edit_cache.dir
+/Users/yr/AndroidStudioProjects/useful/matrix/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.cxx/cmake/fullDebug/x86_64/CMakeFiles/SqliteLint-lib.dir
