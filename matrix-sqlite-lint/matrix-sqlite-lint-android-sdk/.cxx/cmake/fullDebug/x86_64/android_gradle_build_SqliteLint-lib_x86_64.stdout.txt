@@ -1,3 +1,0 @@
-ninja: Entering directory `/Users/yr/AndroidStudioProjects/useful/matrix/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.cxx/cmake/fullDebug/x86_64'
-[1/2] Building CXX object CMakeFiles/SqliteLint-lib.dir/matrix-sqlite-lint-android-sdk/src/full/cpp/sqlite3_profile_hook.cc.o
-[2/2] Linking CXX shared library ../../../../build/intermediates/cmake/fullDebug/obj/x86_64/libSqliteLint-lib.so
