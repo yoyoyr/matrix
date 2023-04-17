@@ -1,35 +1,76 @@
 *.iml
-*/build/
-build/
-app/
 .gradle
 /local.properties
-.idea/*
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
 .DS_Store
+**/build/
 /captures
-.externalNativeBuild
-**/.cxx
-*/cmake/
-local.properties
-.gradle/6.5/executionHistory
-repo
-.gradle/
+**/.externalNativeBuild/
 .idea/
-app/build/
-app/app.iml
+**/.*
+**/bin/
+/gradle/oss-android-template.gradle
+build_macos
+build_ios
+reports
+
+## compatibility with Xcode 8 and earlier (ignoring not required starting Xcode 9)
+*.xcscmblueprint
+*.xccheckout
+
+## compatibility with Xcode 3 and earlier (ignoring not required starting Xcode 4)
 build/
-BeautyPlus.iml
-expandablerecyclerview/expandablerecyclerview.iml
-local.properties
-*.puml
-greenDao/greenDao.iml
+DerivedData/
+*.moved-aside
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+=======
+#
+# Buck generated
+#
+buck_gen/
+**/buck-out
+**/buck-cache
+**/.buckd
+**/BUCK
+**/sim_*
+
+#
+# Visual Studio Code
+#
+**/.vscode
+
+#
+# Eclipse
+#
+**/.settings
+**/.externalToolBuilders
+
+#
+# IntelliJ IDEA
+#
+**/.idea/
+*.iws
+*.ipr
 *.iml
 
-matrix-android-commons/.cxx/
+#
+# and Android Studio
+#
+build/
+**/build/
+.gradle/
+**/local.properties
+reports/
+captures/
 
+**/gen
+**/bin
+**/classes
+*.apk

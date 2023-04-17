@@ -41,3 +41,6 @@
 2767	5372	1681730750	CMakeFiles/SqliteLint-lib.dir/src/checker/eqp/explain_query_plan_tree.cc.o	d2b76bb27ead65d4
 2755	5675	1681730750	CMakeFiles/SqliteLint-lib.dir/src/checker/eqp/explain_query_plan_checker.cc.o	1df4c13a85d88751
 5676	5975	1681730750	../../../../build/intermediates/cmake/fullDebug/obj/x86_64/libSqliteLint-lib.so	fd1cafadd2258828
+3	404	1681731143	CMakeFiles/SqliteLint-lib.dir/matrix-sqlite-lint-android-sdk/src/full/cpp/sqlite3_profile_hook.cc.o	3b6371dfa2ba1fea
+404	775	1681731144	../../../../build/intermediates/cmake/fullDebug/obj/x86_64/libSqliteLint-lib.so	fd1cafadd2258828
+0	10	0	clean	7c4053ba4f5cdd9

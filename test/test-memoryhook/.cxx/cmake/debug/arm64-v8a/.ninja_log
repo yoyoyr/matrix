@@ -25,3 +25,6 @@
 1643	1934	1681724500	../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libtest-memoryhook.so	9850fe078bc501ed
 2	2460	1681730789	CMakeFiles/test-memoryhook.dir/src/main/cpp/test/MemoryHookTest.cpp.o	35008db17639f100
 2460	2959	1681730790	../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libtest-memoryhook.so	9850fe078bc501ed
+1	1628	1681731169	CMakeFiles/test-memoryhook.dir/src/main/cpp/test/MemoryHookTest.cpp.o	35008db17639f100
+1628	1897	1681731169	../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libtest-memoryhook.so	9850fe078bc501ed
+0	9	0	clean	7c4053ba4f5cdd9
