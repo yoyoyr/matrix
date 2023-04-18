@@ -2,6 +2,8 @@ package com.tencent.matrix.test.memoryhook;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
+import android.app.ActivityManager;
+import android.content.Context;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
@@ -9,6 +11,7 @@ import android.os.Environment;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.Process;
+import android.os.SystemClock;
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
@@ -17,12 +20,25 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
+import com.tencent.matrix.AppActiveMatrixDelegate;
+import com.tencent.matrix.Matrix;
 import com.tencent.matrix.backtrace.WarmUpReporter;
 import com.tencent.matrix.backtrace.WeChatBacktrace;
 import com.tencent.matrix.hook.HookManager;
 import com.tencent.matrix.hook.memory.MemoryHook;
 import com.tencent.matrix.hook.pthread.PthreadHook;
+import com.tencent.matrix.plugin.Plugin;
+import com.tencent.matrix.plugin.PluginListener;
+import com.tencent.matrix.report.Issue;
 import com.tencent.matrix.trace.TracePlugin;
+import com.tencent.matrix.trace.config.SharePluginInfo;
+import com.tencent.matrix.trace.config.TraceConfig;
+import com.tencent.matrix.trace.constants.Constants;
+import com.tencent.matrix.util.MatrixLog;
+
+import org.json.JSONException;
+
+import java.util.List;
 
 public class MemoryHookActivity extends AppCompatActivity {
 
@@ -201,7 +217,7 @@ public class MemoryHookActivity extends AppCompatActivity {
             @Override
             public void run() {
                 try {
-                    System.out.println("sleep "+Thread.currentThread().getName());
+                    System.out.println("sleep " + Thread.currentThread().getName());
                     Thread.sleep(10000);
                 } catch (InterruptedException e) {
                     throw new RuntimeException(e);

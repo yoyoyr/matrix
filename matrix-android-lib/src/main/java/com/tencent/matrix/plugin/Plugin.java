@@ -82,7 +82,7 @@ public abstract class Plugin implements IPlugin, IssuePublisher.OnIssueDetectLis
             MatrixLog.e(TAG, "json error", e);
         }
 
-        //MatrixLog.e(TAG, "detect issue:%s", issue);
+        MatrixLog.e(TAG, "detect issue:%s", issue);
         pluginListener.onReportIssue(issue);
     }
 
